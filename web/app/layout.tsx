@@ -1,7 +1,12 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Unbounded } from 'next/font/google'
+import localFont from "@next/font/local"
 
-const inter = Inter({ subsets: ['latin'] })
+const unbounded = Unbounded({ subsets: ['latin'], variable: '--font-unbounded' })
+const neue_machina = localFont({
+  src: '/NeueMachina-Regular.otf',
+  variable: '--font-neuemachina'
+})
 
 export const metadata = {
   title: 'GDSC VIT',
@@ -14,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <html lang="en" className={`${unbounded.variable} ${neue_machina.variable} text-[10px] md:text-[16px]`} >
+      <body>{children}</body>
+    </ html>
   )
 }
