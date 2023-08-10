@@ -43,7 +43,7 @@ export default function Home() {
                 That said, we conduct two Flagship events, namely, DevFest and WomenTechies, and tons of insightful workshops!
               </p>
               <div className='m-auto lg:m-0 self-end max-w-[700px] w-[100%] flex justify-evenly lg:justify-between'>
-                {socials.map(social => <Icon {...social} />)}
+                {socials.map((social, i) => <Icon key={"soc" + i} {...social} />)}
               </div>
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function Home() {
         </div>
         <div className='text-dark mt-[20vh] top-[50vh] -translate-y-[50%] left-[50%] sticky'>
           <div className='flex justify-center sm:justify-start w-[90vw] mx-auto overflow-scroll'>
-            {team_members.map(mem => <TeamCard title={mem.name} img={mem.img} subtitle={mem.position} />)}
+            {team_members.map((mem, i) => <TeamCard key={"mem" + i} title={mem.name} img={mem.img} subtitle={mem.position} />)}
           </div>
         </div>
       </Section>
@@ -99,7 +99,7 @@ export default function Home() {
         </div>
         <div className='text-dark mt-[20vh] top-[50vh] -translate-y-[50%] left-[50%] sticky'>
           <div className='flex justify-center sm:justify-start w-[90vw] mx-auto overflow-scroll'>
-            {projects.map(proj => <ProjectCard {...proj} />)}
+            {projects.map((proj, i) => <ProjectCard key={"mem" + i} {...proj} />)}
           </div>
         </div>
       </Section>
