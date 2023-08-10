@@ -20,6 +20,10 @@ export default function Home() {
     setPage(page)
   }, [setPage])
 
+  useEffect(() => {
+    console.log(page)
+  }, [page])
+
   return (
     <main>
       <Navbar theme={page === "home" ? 'light' : "dark"} />
@@ -49,7 +53,7 @@ export default function Home() {
           </div>
         </div>
       </Section>
-      <Section color='blue' page='fame'>
+      <Section color='blue' page='fame' setIntersecting={setIntersecting}>
         <div className='sticky top-0 left-0 w-full py-[8vh] text-dark'>
           <div className='w-[100vw] lg:w-[30vw] lg:min-w-[600px] mx-auto'>
             <h1 className='font-sans text-[3rem] font-extrabold text-center tracking-wider'>WALL OF FAME</h1>
@@ -68,7 +72,7 @@ export default function Home() {
           </div>
         </div>
       </Section>
-      <Section color='green' page='fame' >
+      <Section color='green' page='events' setIntersecting={setIntersecting}>
         <div className='sticky top-0 left-0 w-full py-[8vh] text-dark'>
           <div className='w-[100vw] lg:w-[30vw] lg:min-w-[600px] mx-auto'>
             <h1 className='font-sans text-[3rem] font-extrabold text-center tracking-wider'>EVENTS</h1>
