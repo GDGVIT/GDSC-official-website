@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${unbounded.variable} ${neue_machina.variable} text-[10px] md:text-[16px]`} >
-      <body>{children}</body>
+      <body className='overflow-hidden'>{children}</body>
     </ html>
   )
 }
