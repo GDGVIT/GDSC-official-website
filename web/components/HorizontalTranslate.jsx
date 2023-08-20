@@ -67,7 +67,7 @@ const HorizontalScroll = ({ title, children }) => {
   return (
     <TallOuterContainer dynamicHeight={dynamicHeight}>
       <StickyInnerContainer ref={containerRef}>
-        <div className=" top-0 left-0 w-full py-[11vh] text-dark">
+        <div className=" top-0 left-0 w-full pt-[15vh] text-dark">
           <motion.div
             initial={{ scale: 1.5 }}
             whileInView={{ scale: 1 }}

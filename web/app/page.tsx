@@ -48,7 +48,7 @@ export default function Home() {
     console.log(scrollY)
   }, [scrollY])
   return (
-    <main id='main-thing' ref={mainRef} className='h-[100vh] overflow-scroll overflow-x-hidden'>
+    <main id='main-thing' ref={mainRef} className='h-[100vh] overflow-scroll overflow-x-hidden snap-y'>
       <Navbar theme={page === "home" ? 'light' : "dark"} />
       <Section color="dark" page="home" setIntersecting={setIntersecting}>
 
@@ -77,7 +77,7 @@ export default function Home() {
         </motion.div>
       </Section>
       <Section color='blue' page='fame' setIntersecting={setIntersecting}>
-        <div className='top-0 left-0 w-full py-[8vh] text-dark'>
+        <div className='top-0 left-0 w-full pt-[15vh] text-dark'>
           <motion.div initial={{ scale: 1.5 }} whileInView={{ scale: 1 }} viewport={{ once: false, amount: 1 }} transition={{ duration: 1 }} className='w-[100vw] lg:w-[30vw] lg:min-w-[600px] mx-auto'>
             <h1 className='font-sans text-[3rem] font-extrabold text-center tracking-wider' >WALL OF FAME</h1>
             <p className='font-mono text-xl tracking-[1.8rem] ml-10 text-center'>ACHIEVEMENTS</p>
@@ -96,8 +96,8 @@ export default function Home() {
         </div>
       </Section>
       <Level level={"04"} />
-      <Section color='green' page='events' setIntersecting={setIntersecting}>
-        <div className='top-0 left-0 w-full py-[8vh] text-dark'>
+      <Section snap color='green' page='events' setIntersecting={setIntersecting}>
+        <div className='top-0 left-0 w-full pt-[15vh] text-dark'>
           <motion.div initial={{ scale: 1.5 }} whileInView={{ scale: 1 }} viewport={{ once: false, amount: 1 }} transition={{ duration: 1 }} className='w-[100vw] lg:w-[30vw] lg:min-w-[600px] mx-auto'>
             <h1 className='font-sans text-[3rem] font-extrabold text-center tracking-wider'>EVENTS</h1>
           </motion.div>
@@ -108,7 +108,7 @@ export default function Home() {
         </div>
       </Section>
       <Level level={"03"} />
-      <Section color='yellow' page='team' >
+      <Section snap color='yellow' page='team' >
         <HorizontalTranslate title={"Meet the Team"}>
           <CardsContainer className='text-dark'>
             {/* <SampleCards /> */}
@@ -125,17 +125,17 @@ export default function Home() {
         </HorizontalTranslate>
       </Section>
       <Level level={"01"} />
-      <Section color='blue' page='blogs' >
+      <Section snap color='blue' page='blogs' >
 
-        <div className='flex flex-col md:flex-row p-5 h-[100vh] items-center'>
+        <div className='flex flex-col md:flex-row xl:p-16 p-5 pt-[11vh] h-[100vh] items-center'>
           <div className='flex-1 hidden md:block'>
             <Image src="/blogs.svg" alt="" width={500} height={500} layout='responsive' />
           </div>
           <div className='w-full p-5 text-black md:flex-1 h-fit'>
             <div className='flex flex-col'>
               <motion.h1 className='text-black font-sans text-[3rem] font-extrabold tracking-wider'>Blogs</motion.h1>
-              <div className='self-center flex-1 block m-2 max max-h-[50vh] aspect-square md:hidden'>
-                <Image src="/blogs.svg" alt="" width={300} height={300} layout='responsive' />
+              <div className='self-center flex-1 block m-2 max-h-[50vh] mb-10 md:hidden'>
+                <Image className='mx-auto w-2/3 h-auto' src="/blogs.svg" alt="" width={200} height={200} />
               </div>
 
               <div className='flex flex-col overflow-scroll h-fit max-h-[60vh]'>{blogs.map((blog, i) => <BlogListItem key={"blog" + i} {...blog} />)}</div>
