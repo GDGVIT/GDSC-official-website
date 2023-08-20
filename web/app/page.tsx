@@ -17,6 +17,9 @@ import projects from "@/content/projects.json"
 import ProjectCard from '@/components/ProjectCard'
 import blogs from "@/content/blogs.json"
 import BlogListItem from '@/components/BlogListItem'
+import HorizontalTranslate from '../components/HorizontalTranslate'
+import styled from 'styled-components'
+import React from 'react'
 export default function Home() {
   const [page, setPage] = useState("home");
   const mainRef = useRef<HTMLElement>(null)
@@ -33,8 +36,45 @@ export default function Home() {
     console.log(scrollY)
   }, [scrollY])
 
+  const HorizontalSection = styled.section`
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+  `;
+
+  const BumperSection = styled.section`
+    text-align: center;
+    padding: 128px 16px;
+    background-color: #efefef;
+  `;
+
+  const CardsContainer = styled.div`
+    position: relative;
+    height: 100%;
+    padding: 0 0 0 150px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  `;
+
+  const SampleCard = styled.div`
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: #111f30;
+    margin-right: 75px;
+    flex-shrink: 0;
+  `;
+
+  const SampleCards = React.memo(() =>
+    Array(10)
+      .fill(0)
+      .map((_e, i) => <SampleCard key={`sampleCard-${i}`} />)
+  );
+
   return (
-    <main ref={mainRef} className='h-[100vh] overflow-scroll'>
+    <main id='main-thing' ref={mainRef} className='h-[100vh] overflow-scroll overflow-x-hidden'>
       <Navbar theme={page === "home" ? 'light' : "dark"} />
       <Section color="dark" page="home" setIntersecting={setIntersecting}>
 
@@ -93,16 +133,12 @@ export default function Home() {
         </div>
       </Section>
       <Section color='yellow' page='fame' >
-        <div className=' top-0 left-0 w-full py-[8vh] text-dark'>
-          <motion.div initial={{ scale: 1.5 }} whileInView={{ scale: 1 }} viewport={{ once: false, amount: 1 }} transition={{ duration: 1 }} className='w-[100vw] lg:w-[30vw] lg:min-w-[600px] mx-auto'>
-            <h1 className='font-sans text-[3rem] font-extrabold text-center tracking-wider'>MEET THE TEAM</h1>
-          </motion.div>
-        </div>
-        <div className='text-dark mt-[20vh] top-[50vh] -translate-y-[50%] left-[50%] '>
-          <div className='flex justify-start w-[90vw] mx-auto overflow-scroll'>
+        <HorizontalTranslate title={"Meet the Team"}>
+          <CardsContainer className='text-dark'>
+            {/* <SampleCards /> */}
             {team_members.map((mem, i) => <TeamCard key={"mem" + i} title={mem.name} img={mem.img} subtitle={mem.position} />)}
-          </div>
-        </div>
+          </CardsContainer>
+        </HorizontalTranslate>
       </Section>
       <Section color='pastel_red' page='projects' >
         <div className=' top-0 left-0 w-full py-[8vh] text-dark'>
