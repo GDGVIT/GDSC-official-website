@@ -4,3 +4,28 @@
 * {
   box-sizing: border-box;
 }
+
+.horizontal-section, .horizontal-section2 {
+  padding: 100px 0;
+  background-color: pink;
+}
+
+.sticky-wrapper, .sticky-wrapper2 {
+  position: sticky;
+  top: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.element-wrapper, .element-wrapper2 {
+  position: relative;
+  display: flex;
+}
+
+.element {
+  width: 500px;
+  height: 400px;
+  background-color: purple;
+  margin: 0 20px 0 0;
+  flex-shrink: 0;
+}

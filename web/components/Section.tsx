@@ -8,9 +8,10 @@ interface Props {
     page?: string
     setIntersecting?: (page: string) => void
     propRef?: RefObject<HTMLElement>
+    snap?: boolean
 }
 
-const Section: FC<Props> = ({ children, color, page, setIntersecting }) => {
+const Section: FC<Props> = ({ children, color, page, setIntersecting, snap }) => {
     const ref = useRef<HTMLElement>(null)
 
 
@@ -40,7 +41,7 @@ const Section: FC<Props> = ({ children, color, page, setIntersecting }) => {
     }, [ref.current])
 
     return (
-        <section className={`relative w-[100vw] text-white min-h-[100vh] h-fit snap-y`} style={{ backgroundColor: fullConfig?.theme?.colors![color as keyof typeof fullConfig.theme.colors] as string || "dark" }} ref={ref} >
+        <section className={`relative w-[100vw] text-white min-h-[100vh] max-h-fit snap-y ${snap ? "" :""}`} style={{ backgroundColor: fullConfig?.theme?.colors![color as keyof typeof fullConfig.theme.colors] as string || "dark" }} ref={ref} >
             {children}
         </section >
     );
