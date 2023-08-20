@@ -28,22 +28,22 @@ const HorizontalTranslateContainer = styled.div.attrs(({ translateX }) => ({
 const calcDynamicHeight = (objectWidth) => {
   const vw = window.innerWidth;
   const vh = window.innerHeight;
-  return objectWidth - vw + vh + 150;
+  return objectWidth - vw + vh -160;
 };
 
 const handleDynamicHeight = (ref, setDynamicHeight) => {
   const objectWidth = ref.current.scrollWidth;
   const dynamicHeight = calcDynamicHeight(objectWidth);
-  setDynamicHeight(dynamicHeight);
+  setDynamicHeight(dynamicHeight*4/3);
 };
 
 const applyScrollListener = (ref, setTranslateX) => {
   const elem = document.getElementById('main-thing');
   elem?.addEventListener('scroll', () => {
-    console.log(ref);
+    // console.log(ref);
     const offsetTop = -ref.current?.offsetTop;
-    setTranslateX(offsetTop);
-    console.log(offsetTop);
+    setTranslateX(offsetTop*3/4);
+    // console.log(offsetTop);
   });
 };
 
@@ -67,7 +67,7 @@ const HorizontalScroll = ({ title, children }) => {
   return (
     <TallOuterContainer dynamicHeight={dynamicHeight}>
       <StickyInnerContainer ref={containerRef}>
-        <div className=" top-0 left-0 w-full py-[8vh] text-dark">
+        <div className=" top-0 left-0 w-full py-[11vh] text-dark">
           <motion.div
             initial={{ scale: 1.5 }}
             whileInView={{ scale: 1 }}

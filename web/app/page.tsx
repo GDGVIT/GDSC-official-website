@@ -25,7 +25,7 @@ import Level from '@/components/Level'
 const CardsContainer = styled.div`
     position: relative;
     height: 100%;
-    padding: 0 0 0 150px;
+    padding: 0 0 0 100px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
