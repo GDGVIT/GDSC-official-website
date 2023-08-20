@@ -1,4 +1,5 @@
 "use client"
+
 import Navbar from '@/components/Navbar'
 import { Unbounded } from 'next/font/google'
 import hqImage from "@/assets/hq.svg"
@@ -8,7 +9,7 @@ import Section from '@/components/Section'
 import Icon from '@/components/Icons'
 import socials from "@/content/social.json"
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { motion, useScroll } from "framer-motion"
+import { motion, useScroll, useTransform } from "framer-motion"
 import FameCard from '@/components/FameCard'
 import { useHorizontalScroll } from '@/hooks/useHorizontalScroll'
 import TeamCard from '@/components/TeamCard'
@@ -35,25 +36,26 @@ const CardsContainer = styled.div`
 
 export default function Home() {
   const [page, setPage] = useState("home");
-  const mainRef = useRef<HTMLElement>(null)
-  const { scrollY } = useScroll({ container: mainRef })
+  const mainRef = useRef<HTMLDivElement>(null)
+  const { scrollYProgress } = useScroll({ container: mainRef })
   const [startAnimationComplete, setStartAnimationComplete] = useState(false);
   const setIntersecting = useCallback((page: string) => {
     setPage(page)
   }, [setPage])
 
-  useEffect(() => {
-    console.log(page)
-  }, [page])
-
-  useEffect(() => {
-    console.log(scrollY)
-  }, [scrollY])
 
 
-  return <><StartAnim onComplete={() => { setStartAnimationComplete(true) }} />
+  const fameScale = useTransform(scrollYProgress, [0, 0.05], [1.5, 1])
+  const eventScale = useTransform(scrollYProgress, [0.13, 0.18], [1.5, 1])
+  const teamScale = useTransform(scrollYProgress, [0.28, 0.33], [1.5, 1])
+  const projectScale = useTransform(scrollYProgress, [0.4, 0.45], [1.5, 1])
+
+
+  return <main id='main-thing' ref={mainRef} className='h-[100vh] overflow-scroll overflow-x-hidden snap-y'>
+    <StartAnim onComplete={() => { setStartAnimationComplete(true) }} />
     {
-      startAnimationComplete && <main id='main-thing' ref={mainRef} className='h-[100vh] overflow-scroll overflow-x-hidden snap-y'>
+      startAnimationComplete &&
+      <>
         <Navbar theme={page === "home" ? 'light' : "dark"} />
         <Section color="dark" page="home" setIntersecting={setIntersecting}>
 
@@ -82,12 +84,12 @@ export default function Home() {
           </motion.div>
         </Section>
         <Section color='blue' page='fame' setIntersecting={setIntersecting}>
-          <div className='top-0 left-0 w-full pt-[15vh] text-dark'>
-            <motion.div initial={{ scale: 1.5 }} whileInView={{ scale: 1 }} viewport={{ once: false, amount: 1 }} transition={{ duration: 1 }} className='w-[100vw] lg:w-[30vw] lg:min-w-[600px] mx-auto'>
+          <motion.div className='top-0 left-0 w-full pt-[15vh] text-dark' style={{ scale: fameScale }} initial={{ scale: 0 }} >
+            <div className='w-[100vw] lg:w-[30vw] lg:min-w-[600px] mx-auto'>
               <h1 className='font-sans text-[3rem] font-extrabold text-center tracking-wider' >WALL OF FAME</h1>
               <p className='font-mono text-xl tracking-[1.8rem] ml-10 text-center'>ACHIEVEMENTS</p>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
           <div className='mt-4 text-dark'>
             <div className='flex justify-start w-[90vw] mx-auto overflow-scroll'>
               <FameCard title={<>Best Club <br /> Award 2019</>} />
@@ -102,11 +104,11 @@ export default function Home() {
         </Section>
         <Level level={"04"} />
         <Section snap color='green' page='events' setIntersecting={setIntersecting}>
-          <div className='top-0 left-0 w-full pt-[15vh] text-dark'>
-            <motion.div initial={{ scale: 1.5 }} whileInView={{ scale: 1 }} viewport={{ once: false, amount: 1 }} transition={{ duration: 1 }} className='w-[100vw] lg:w-[30vw] lg:min-w-[600px] mx-auto'>
+          <motion.div style={{ scale: eventScale }} className='top-0 left-0 w-full pt-[15vh] text-dark'>
+            <div className='w-[100vw] lg:w-[30vw] lg:min-w-[600px] mx-auto'>
               <h1 className='font-sans text-[3rem] font-extrabold text-center tracking-wider'>EVENTS</h1>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
           <div className='text-dark mt-[20vh] top-[50vh] -translate-y-[50%] left-[50%] '>
             <div className='flex justify-start w-[90vw] mx-auto overflow-scroll'>
             </div>
@@ -114,7 +116,7 @@ export default function Home() {
         </Section>
         <Level level={"03"} />
         <Section snap color='yellow' page='team' >
-          <HorizontalTranslate title={"Meet the Team"}>
+          <HorizontalTranslate mainRef={mainRef} title={"Meet the Team"} style={{ scale: teamScale }}>
             <CardsContainer className='text-dark'>
               {/* <SampleCards /> */}
               {team_members.map((mem, i) => <TeamCard key={"mem" + i} title={mem.name} img={mem.img} subtitle={mem.position} />)}
@@ -123,7 +125,7 @@ export default function Home() {
         </Section>
         <Level level={"02"} />
         <Section color='pastel_red' page='projects' >
-          <HorizontalTranslate title={"Projects"}>
+          <HorizontalTranslate mainRef={mainRef} title={"Projects"} style={{ scale: projectScale }}>
             <CardsContainer className='text-dark'>
               {projects.map((proj, i) => <ProjectCard key={"mem" + i} {...proj} />)}
             </CardsContainer>
@@ -148,9 +150,9 @@ export default function Home() {
             </div>
           </div>
 
-        </Section>
-      </main >
+        </Section></>}
+  </main >
 
-    }</>
+
 
 }
