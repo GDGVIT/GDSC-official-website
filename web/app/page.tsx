@@ -20,6 +20,7 @@ import BlogListItem from '@/components/BlogListItem'
 import HorizontalTranslate from '../components/HorizontalTranslate'
 import styled from 'styled-components'
 import React from 'react'
+import Level from '@/components/Level'
 
 const CardsContainer = styled.div`
     position: relative;
@@ -30,7 +31,7 @@ const CardsContainer = styled.div`
     justify-content: flex-start;
     align-items: center;
   `;
-  
+
 export default function Home() {
   const [page, setPage] = useState("home");
   const mainRef = useRef<HTMLElement>(null)
@@ -94,6 +95,7 @@ export default function Home() {
           </div>
         </div>
       </Section>
+      <Level level={"04"} />
       <Section color='green' page='events' setIntersecting={setIntersecting}>
         <div className='top-0 left-0 w-full py-[8vh] text-dark'>
           <motion.div initial={{ scale: 1.5 }} whileInView={{ scale: 1 }} viewport={{ once: false, amount: 1 }} transition={{ duration: 1 }} className='w-[100vw] lg:w-[30vw] lg:min-w-[600px] mx-auto'>
@@ -105,6 +107,7 @@ export default function Home() {
           </div>
         </div>
       </Section>
+      <Level level={"03"} />
       <Section color='yellow' page='team' >
         <HorizontalTranslate title={"Meet the Team"}>
           <CardsContainer className='text-dark'>
@@ -113,6 +116,7 @@ export default function Home() {
           </CardsContainer>
         </HorizontalTranslate>
       </Section>
+      <Level level={"02"} />
       <Section color='pastel_red' page='projects' >
         <HorizontalTranslate title={"Projects"}>
           <CardsContainer className='text-dark'>
@@ -120,6 +124,7 @@ export default function Home() {
           </CardsContainer>
         </HorizontalTranslate>
       </Section>
+      <Level level={"01"} />
       <Section color='blue' page='blogs' >
 
         <div className='flex flex-col md:flex-row p-5 h-[100vh] items-center'>
