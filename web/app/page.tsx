@@ -45,10 +45,10 @@ export default function Home() {
 
 
 
-  const fameScale = useTransform(scrollYProgress, [0, 0.05], [1.5, 1])
-  const eventScale = useTransform(scrollYProgress, [0.13, 0.18], [1.5, 1])
+  const fameScale = useTransform(scrollYProgress, [0.02, 0.09], [1.5, 1])
+  const eventScale = useTransform(scrollYProgress, [0.15, 0.22], [1.5, 1])
   const teamScale = useTransform(scrollYProgress, [0.28, 0.33], [1.5, 1])
-  const projectScale = useTransform(scrollYProgress, [0.4, 0.45], [1.5, 1])
+  const projectScale = useTransform(scrollYProgress, [0.65, 0.73], [1.5, 1])
 
 
   return <main id='main-thing' ref={mainRef} className='h-[100vh] overflow-scroll overflow-x-hidden snap-y'>
@@ -90,7 +90,7 @@ export default function Home() {
               <p className='font-mono text-xl tracking-[1.8rem] ml-10 text-center'>ACHIEVEMENTS</p>
             </div>
           </motion.div>
-          <div className='mt-4 text-dark'>
+          <div className='mt-10 text-dark'>
             <div className='flex justify-start w-[90vw] mx-auto overflow-scroll'>
               <FameCard title={<>Best Club <br /> Award 2019</>} />
               <FameCard title={<>Best Club <br /> Award 2019</>} />
