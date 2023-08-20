@@ -20,6 +20,17 @@ import BlogListItem from '@/components/BlogListItem'
 import HorizontalTranslate from '../components/HorizontalTranslate'
 import styled from 'styled-components'
 import React from 'react'
+
+const CardsContainer = styled.div`
+    position: relative;
+    height: 100%;
+    padding: 0 0 0 150px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  `;
+  
 export default function Home() {
   const [page, setPage] = useState("home");
   const mainRef = useRef<HTMLElement>(null)
@@ -35,44 +46,6 @@ export default function Home() {
   useEffect(() => {
     console.log(scrollY)
   }, [scrollY])
-
-  const HorizontalSection = styled.section`
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-  `;
-
-  const BumperSection = styled.section`
-    text-align: center;
-    padding: 128px 16px;
-    background-color: #efefef;
-  `;
-
-  const CardsContainer = styled.div`
-    position: relative;
-    height: 100%;
-    padding: 0 0 0 150px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
-  `;
-
-  const SampleCard = styled.div`
-    position: relative;
-    height: 300px;
-    width: 500px;
-    background-color: #111f30;
-    margin-right: 75px;
-    flex-shrink: 0;
-  `;
-
-  const SampleCards = React.memo(() =>
-    Array(10)
-      .fill(0)
-      .map((_e, i) => <SampleCard key={`sampleCard-${i}`} />)
-  );
-
   return (
     <main id='main-thing' ref={mainRef} className='h-[100vh] overflow-scroll overflow-x-hidden'>
       <Navbar theme={page === "home" ? 'light' : "dark"} />
@@ -140,7 +113,7 @@ export default function Home() {
           </CardsContainer>
         </HorizontalTranslate>
       </Section>
-      <Section color='pasted_red' page='projects' >
+      <Section color='pastel_red' page='projects' >
         <HorizontalTranslate title={"Projects"}>
           <CardsContainer className='text-dark'>
             {projects.map((proj, i) => <ProjectCard key={"mem" + i} {...proj} />)}
