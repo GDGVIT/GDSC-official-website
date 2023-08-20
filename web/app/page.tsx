@@ -132,7 +132,7 @@ export default function Home() {
           </div>
         </div>
       </Section>
-      <Section color='yellow' page='fame' >
+      <Section color='yellow' page='team' >
         <HorizontalTranslate title={"Meet the Team"}>
           <CardsContainer className='text-dark'>
             {/* <SampleCards /> */}
@@ -140,17 +140,12 @@ export default function Home() {
           </CardsContainer>
         </HorizontalTranslate>
       </Section>
-      <Section color='pastel_red' page='projects' >
-        <div className=' top-0 left-0 w-full py-[8vh] text-dark'>
-          <motion.div initial={{ scale: 1.5 }} whileInView={{ scale: 1 }} viewport={{ once: false, amount: 1 }} transition={{ duration: 1 }} className='w-[100vw] lg:w-[30vw] lg:min-w-[600px] mx-auto'>
-            <h1 className='font-sans text-[3rem] font-extrabold text-center tracking-wider'>Projects</h1>
-          </motion.div>
-        </div>
-        <div className='text-dark mt-[20vh] top-[50vh] -translate-y-[50%] left-[50%] '>
-          <div className='flex justify-start w-[90vw] mx-auto overflow-scroll'>
+      <Section color='pasted_red' page='projects' >
+        <HorizontalTranslate title={"Projects"}>
+          <CardsContainer className='text-dark'>
             {projects.map((proj, i) => <ProjectCard key={"mem" + i} {...proj} />)}
-          </div>
-        </div>
+          </CardsContainer>
+        </HorizontalTranslate>
       </Section>
       <Section color='blue' page='blogs' >
 
