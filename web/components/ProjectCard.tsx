@@ -6,12 +6,13 @@ type Props = {
     img: string
     title: string
     description?: string
-    slug?: string
+    slug?: string;
+    i: number;
 }
 
-const ProjectCard = ({ img, title, description, slug }: Props) => {
+const ProjectCard = ({ img, title, description, slug, i }: Props) => {
     return (
-        <Card bg="transparent">
+        <Card bg="transparent" i={i}>
             <div className='w-full border-2 border-black rounded-md '>
                 <Image src={img} layout='responsive' width={300} height={300} alt='Logo' />
             </div>

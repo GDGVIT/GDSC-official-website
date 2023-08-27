@@ -4,12 +4,13 @@ import Card from './Card'
 type Props = {
     img: string
     title: string
-    subtitle?: string
+    subtitle?: string;
+    i: number;
 }
 
-const TeamCard = ({ img, title, subtitle }: Props) => {
+const TeamCard = ({ img, title, subtitle, i }: Props) => {
     return (
-        <Card bg='white'>
+        <Card bg='white' i={i}>
             <div className='w-full border-2 border-black rounded-md '>
                 <Image src={img} layout='responsive' width={300} height={300} alt='Logo' />
             </div>

@@ -15,6 +15,7 @@ import { useHorizontalScroll } from '@/hooks/useHorizontalScroll'
 import TeamCard from '@/components/TeamCard'
 import team_members from "@/content/team_members.json"
 import projects from "@/content/projects.json"
+import fame from "@/content/fame.json"
 import ProjectCard from '@/components/ProjectCard'
 import blogs from "@/content/blogs.json"
 import BlogListItem from '@/components/BlogListItem'
@@ -24,21 +25,31 @@ import React from 'react'
 import Level from '@/components/Level'
 import StartAnim from '@/components/StartAnim'
 import { useScreenWidth } from '@/hooks/useScreenWidth'
+import { useNumInView } from '@/hooks/useNumInView'
+import { useScrollDirection } from 'react-use-scroll-direction'
+
 
 const CardsContainer = styled.div`
     position: relative;
     height: 100%;
-    max-width:800px;
     padding: 0 0 0 100px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
+    overflow-y:hidden;
   `;
 
 export default function Home() {
   const [page, setPage] = useState("home");
   const mainRef = useRef<HTMLDivElement>(null)
+  const fameRef = useRef<HTMLDivElement>(null)
+  const projectRef = useRef<HTMLDivElement>(null)
+  const teamRef = useRef<HTMLDivElement>(null)
+  const numFameInView = useNumInView({ ref: fameRef, arr: fame })
+  const numProjectInView = useNumInView({ ref: projectRef, arr: projects })
+  const numTeamInView = useNumInView({ ref: teamRef, arr: team_members })
+  const { isScrollingDown } = useScrollDirection(mainRef?.current)
   const screenWidth = useScreenWidth()
   const { scrollYProgress } = useScroll({ container: mainRef })
   const [startAnimationComplete, setStartAnimationComplete] = useState(false);
@@ -46,10 +57,13 @@ export default function Home() {
     setPage(page)
   }, [setPage])
 
+
+
+
   const inputRanges = {
     fame: screenWidth > 650 ? [0.02, 0.09] : [0.02, 0.07],
     event: screenWidth > 650 ? [0.15, 0.22] : [0.1, 0.15],
-    team: screenWidth > 650 ? [0.33, 0.38] : [0.18, 0.23],
+    team: screenWidth > 650 ? [0.3, 0.35] : [0.18, 0.23],
     project: screenWidth > 650 ? [0.65, 0.73] : [0.6, 0.65]
   }
   const outputRanges = {
@@ -105,14 +119,8 @@ export default function Home() {
             </div>
           </motion.div>
           <div className='h-[50vh] flex items-center text-dark'>
-            <div className='flex justify-start w-[90vw] mx-auto overflow-scroll'>
-              <FameCard title={<>Best Club <br /> Award 2019</>} />
-              <FameCard title={<>Best Club <br /> Award 2019</>} />
-              <FameCard title={<>Best Club <br /> Award 2019</>} />
-              <FameCard title={<>Best Club <br /> Award 2019</>} />
-              <FameCard title={<>Best Club <br /> Award 2019</>} />
-              <FameCard title={<>Best Club <br /> Award 2019</>} />
-              <FameCard title={<>Best Club <br /> Award 2019</>} />
+            <div className='flex justify-start w-[90vw] mx-auto overflow-x-scroll overflow-y-hidden' ref={fameRef}>
+              {fame.map((f, i) => <FameCard i={(numFameInView > i) ? i : 0} title={f.title} />)}
             </div>
           </div>
         </Section>
@@ -131,17 +139,17 @@ export default function Home() {
         <Level level={"03"} />
         <Section snap color='yellow' page='team' >
           <HorizontalTranslate mainRef={mainRef} title={"Meet the Team"} style={{ scale: teamScale }}>
-            <CardsContainer style={{ paddingLeft: screenWidth > 650 ? "100px" : "5vw" }} className='text-dark'>
+            <CardsContainer style={{ paddingLeft: screenWidth > 650 ? "100px" : "5vw" }} className='text-dark' ref={teamRef}>
               {/* <SampleCards /> */}
-              {team_members.map((mem, i) => <TeamCard key={"mem" + i} title={mem.name} img={mem.img} subtitle={mem.position} />)}
+              {team_members.map((mem, i) => <TeamCard i={(numTeamInView > i) ? i : 0} key={"mem" + i} title={mem.name} img={mem.img} subtitle={mem.position} />)}
             </CardsContainer>
           </HorizontalTranslate>
         </Section>
         <Level level={"02"} />
         <Section color='pastel_red' page='projects' >
           <HorizontalTranslate mainRef={mainRef} title={"Projects"} style={{ scale: projectScale }}>
-            <CardsContainer style={{ paddingLeft: screenWidth > 650 ? "100px" : "5vw", paddingRight: screenWidth > 650 ? "100px" : "5vw" }} className='text-dark'>
-              {projects.map((proj, i) => <ProjectCard key={"mem" + i} {...proj} />)}
+            <CardsContainer style={{ paddingLeft: screenWidth > 650 ? "100px" : "5vw", paddingRight: screenWidth > 650 ? "100px" : "5vw" }} className='text-dark' ref={projectRef}>
+              {projects.map((proj, i) => <ProjectCard i={(numProjectInView > i) ? i : 0} key={"mem" + i} {...proj} />)}
             </CardsContainer>
           </HorizontalTranslate>
         </Section>

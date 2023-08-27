@@ -6,10 +6,11 @@ import { title } from 'process';
 import Card from './Card';
 interface Props {
     title: ReactNode;
+    i: number
 }
-const FameCard: FC<Props> = ({ title }) => {
+const FameCard: FC<Props> = ({ title, i }) => {
     return (
-        <Card bg={'white'}>
+        <Card bg={'white'} i={i}>
             <div className='w-full p-5 border-2 border-black rounded-md '>
                 <Image src={fameImage} layout='responsive' width={300} height={300} alt='Logo' />
             </div>
