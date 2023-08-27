@@ -23,10 +23,12 @@ import styled from 'styled-components'
 import React from 'react'
 import Level from '@/components/Level'
 import StartAnim from '@/components/StartAnim'
+import { useScreenWidth } from '@/hooks/useScreenWidth'
 
 const CardsContainer = styled.div`
     position: relative;
     height: 100%;
+    max-width:800px;
     padding: 0 0 0 100px;
     display: flex;
     flex-flow: row nowrap;
@@ -37,18 +39,30 @@ const CardsContainer = styled.div`
 export default function Home() {
   const [page, setPage] = useState("home");
   const mainRef = useRef<HTMLDivElement>(null)
+  const screenWidth = useScreenWidth()
   const { scrollYProgress } = useScroll({ container: mainRef })
   const [startAnimationComplete, setStartAnimationComplete] = useState(false);
   const setIntersecting = useCallback((page: string) => {
     setPage(page)
   }, [setPage])
 
+  const inputRanges = {
+    fame: screenWidth > 650 ? [0.02, 0.09] : [0.02, 0.07],
+    event: screenWidth > 650 ? [0.15, 0.22] : [0.1, 0.15],
+    team: screenWidth > 650 ? [0.33, 0.38] : [0.18, 0.23],
+    project: screenWidth > 650 ? [0.65, 0.73] : [0.6, 0.65]
+  }
+  const outputRanges = {
+    fame: screenWidth > 650 ? [1.5, 1] : [1.3, 1],
+    event: screenWidth > 650 ? [1.5, 1] : [1.5, 1],
+    team: screenWidth > 650 ? [1.5, 1] : [1.2, 1],
+    project: screenWidth > 650 ? [1.5, 1] : [1.5, 1]
+  }
 
-
-  const fameScale = useTransform(scrollYProgress, [0.02, 0.09], [1.5, 1])
-  const eventScale = useTransform(scrollYProgress, [0.15, 0.22], [1.5, 1])
-  const teamScale = useTransform(scrollYProgress, [0.28, 0.33], [1.5, 1])
-  const projectScale = useTransform(scrollYProgress, [0.65, 0.73], [1.5, 1])
+  const fameScale = useTransform(scrollYProgress, inputRanges.fame, outputRanges.fame)
+  const eventScale = useTransform(scrollYProgress, inputRanges.event, outputRanges.event)
+  const teamScale = useTransform(scrollYProgress, inputRanges.team, outputRanges.team)
+  const projectScale = useTransform(scrollYProgress, inputRanges.project, outputRanges.project)
 
 
   return <main id='main-thing' ref={mainRef} className='h-[100vh] overflow-scroll overflow-x-hidden snap-y'>
@@ -84,13 +98,13 @@ export default function Home() {
           </motion.div>
         </Section>
         <Section color='blue' page='fame' setIntersecting={setIntersecting}>
-          <motion.div className='top-0 left-0 w-full pt-[15vh] text-dark' style={{ scale: fameScale }} initial={{ scale: 0 }} >
+          <motion.div className='top-0 left-0 w-full pt-[15vh] mb-20 text-dark' style={{ scale: fameScale }} initial={{ scale: 0 }} >
             <div className='w-[100vw] lg:w-[30vw] lg:min-w-[600px] mx-auto'>
               <h1 className='font-sans text-[3rem] font-extrabold text-center tracking-wider' >WALL OF FAME</h1>
               <p className='font-mono text-xl tracking-[1.8rem] ml-10 text-center'>ACHIEVEMENTS</p>
             </div>
           </motion.div>
-          <div className='mt-10 text-dark'>
+          <div className='h-[50vh] flex items-center text-dark'>
             <div className='flex justify-start w-[90vw] mx-auto overflow-scroll'>
               <FameCard title={<>Best Club <br /> Award 2019</>} />
               <FameCard title={<>Best Club <br /> Award 2019</>} />
@@ -117,7 +131,7 @@ export default function Home() {
         <Level level={"03"} />
         <Section snap color='yellow' page='team' >
           <HorizontalTranslate mainRef={mainRef} title={"Meet the Team"} style={{ scale: teamScale }}>
-            <CardsContainer className='text-dark'>
+            <CardsContainer style={{ paddingLeft: screenWidth > 650 ? "100px" : "5vw" }} className='text-dark'>
               {/* <SampleCards /> */}
               {team_members.map((mem, i) => <TeamCard key={"mem" + i} title={mem.name} img={mem.img} subtitle={mem.position} />)}
             </CardsContainer>
@@ -126,7 +140,7 @@ export default function Home() {
         <Level level={"02"} />
         <Section color='pastel_red' page='projects' >
           <HorizontalTranslate mainRef={mainRef} title={"Projects"} style={{ scale: projectScale }}>
-            <CardsContainer className='text-dark'>
+            <CardsContainer style={{ paddingLeft: screenWidth > 650 ? "100px" : "5vw", paddingRight: screenWidth > 650 ? "100px" : "5vw" }} className='text-dark'>
               {projects.map((proj, i) => <ProjectCard key={"mem" + i} {...proj} />)}
             </CardsContainer>
           </HorizontalTranslate>
