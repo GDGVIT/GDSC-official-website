@@ -26,6 +26,7 @@
     "react-horizontal-vertical": "^1.0.4",
     "react-scroll-parallax": "^3.4.2",
     "react-scroll-percentage": "^4.3.0",
+    "react-use-scroll-direction": "^0.1.0",
     "styled-components": "^6.0.7",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.6"
