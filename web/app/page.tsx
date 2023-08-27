@@ -49,7 +49,7 @@ export default function Home() {
   const numFameInView = useNumInView({ ref: fameRef, arr: fame })
   const numProjectInView = useNumInView({ ref: projectRef, arr: projects })
   const numTeamInView = useNumInView({ ref: teamRef, arr: team_members })
-  const { isScrollingDown } = useScrollDirection(mainRef?.current)
+  // const { isScrollingDown } = useScrollDirection(mainRef?.current || undefined)
   const screenWidth = useScreenWidth()
   const { scrollYProgress } = useScroll({ container: mainRef })
   const [startAnimationComplete, setStartAnimationComplete] = useState(false);
@@ -120,7 +120,7 @@ export default function Home() {
           </motion.div>
           <div className='h-[50vh] flex items-center text-dark'>
             <div className='flex justify-start w-[90vw] mx-auto overflow-x-scroll overflow-y-hidden' ref={fameRef}>
-              {fame.map((f, i) => <FameCard i={(numFameInView > i) ? i : 0} title={f.title} />)}
+              {fame.map((f, i) => <FameCard key={"fame" + i} i={(numFameInView > i) ? i : 0} title={f.title} />)}
             </div>
           </div>
         </Section>
