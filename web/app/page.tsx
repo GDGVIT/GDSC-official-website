@@ -27,6 +27,7 @@ import StartAnim from '@/components/StartAnim'
 import { useScreenWidth } from '@/hooks/useScreenWidth'
 import { useNumInView } from '@/hooks/useNumInView'
 import { useScrollDirection } from 'react-use-scroll-direction'
+import {Element} from 'react-scroll'
 
 
 const CardsContainer = styled.div`
@@ -84,6 +85,7 @@ export default function Home() {
     {
       startAnimationComplete &&
       <>
+        <Element name="home" />
         <Navbar theme={page === "home" ? 'light' : "dark"} />
         <Section color="dark" page="home" setIntersecting={setIntersecting}>
 
@@ -111,6 +113,7 @@ export default function Home() {
             </div>
           </motion.div>
         </Section>
+        <Element name="fame" />
         <Section color='blue' page='fame' setIntersecting={setIntersecting}>
           <motion.div className='top-0 left-0 w-full pt-[15vh] mb-20 text-dark' style={{ scale: fameScale }} initial={{ scale: 0 }} >
             <div className='w-[100vw] lg:w-[30vw] lg:min-w-[600px] mx-auto'>
@@ -125,6 +128,7 @@ export default function Home() {
           </div>
         </Section>
         <Level level={"04"} />
+        <Element name="events" />
         <Section snap color='green' page='events' setIntersecting={setIntersecting}>
           <motion.div style={{ scale: eventScale }} className='top-0 left-0 w-full pt-[15vh] text-dark'>
             <div className='w-[100vw] lg:w-[30vw] lg:min-w-[600px] mx-auto'>
@@ -137,6 +141,7 @@ export default function Home() {
           </div>
         </Section>
         <Level level={"03"} />
+        <Element name="team" />
         <Section snap color='yellow' page='team' >
           <HorizontalTranslate mainRef={mainRef} title={"Meet the Team"} style={{ scale: teamScale }}>
             <CardsContainer style={{ paddingLeft: screenWidth > 650 ? "100px" : "5vw" }} className='text-dark' ref={teamRef}>
@@ -146,6 +151,7 @@ export default function Home() {
           </HorizontalTranslate>
         </Section>
         <Level level={"02"} />
+        <Element name="projects" />
         <Section color='pastel_red' page='projects' >
           <HorizontalTranslate mainRef={mainRef} title={"Projects"} style={{ scale: projectScale }}>
             <CardsContainer style={{ paddingLeft: screenWidth > 650 ? "100px" : "5vw", paddingRight: screenWidth > 650 ? "100px" : "5vw" }} className='text-dark' ref={projectRef}>
@@ -154,6 +160,7 @@ export default function Home() {
           </HorizontalTranslate>
         </Section>
         <Level level={"01"} />
+        <Element name="blogs" />
         <Section snap color='blue' page='blogs' >
 
           <div className='flex flex-col md:flex-row xl:p-16 p-5 pt-[11vh] h-[100vh] items-center'>
@@ -172,7 +179,9 @@ export default function Home() {
             </div>
           </div>
 
-        </Section></>}
+        </Section>
+        <Element name="footer" />
+        </>}
   </main >
 
 
