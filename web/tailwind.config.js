@@ -12,18 +12,19 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-      colors:{
-        'pastel_red':'#EF7167',
-        'dark':'#15171B',
-        'blue':'#4285F4BF',
-        'green':"#0F9D58BF",
-        'yellow':"#FBCC43"
-      }
+      colors: {
+        pastel_red: '#EF7167',
+        dark: '#15171B',
+        blue: '#4285F4BF',
+        green: '#0F9D58BF',
+        yellow: '#FBCC43',
+        grey: '#576279',
+      },
     },
-    fontFamily:{
+    fontFamily: {
       sans: ['var(--font-unbounded)'],
-      mono: ['var(--font-neuemachina)']
+      mono: ['var(--font-neuemachina)'],
     },
   },
   plugins: [],
-}
+};
