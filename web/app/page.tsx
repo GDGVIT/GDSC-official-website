@@ -14,6 +14,7 @@ import FameCard from '@/components/FameCard'
 import { useHorizontalScroll } from '@/hooks/useHorizontalScroll'
 import TeamCard from '@/components/TeamCard'
 import team_members from "@/content/team_members.json"
+import events from "@/content/events.json"
 import projects from "@/content/projects.json"
 import fame from "@/content/fame.json"
 import ProjectCard from '@/components/ProjectCard'
@@ -165,64 +166,31 @@ export default function Home() {
             {/* <div className='flex justify-start w-[90vw] mx-auto overflow-scroll'> */}
             <div className='w-5/6 h-full mx-auto mt-[10vh] p-4 pb-3 bg-white border-2 border-black rounded-md'>
               <Slider ref={sliderRef} {...settings}>
-                <div>
-                  <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
-                </div>
-                <div>
-                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
-                </div>
-                <div>
-                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
-                </div>
-                <div>
-                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
-                </div>
-                <div>
-                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
-                </div>
-                <div>
-                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
-                </div>
-                <div>
-                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
-                </div>
-                <div>
-                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
-                </div>
-                <div>
-                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
-                </div>
-                <div>
-                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
-                </div>
-                <div>
-                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
-                </div>
-                <div>
-                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
-                </div>
+                {events.map((event, i) => {
+                  return (
+                    event.photos.map((pic, j) => {
+                      return (
+                        <div key={`event${i}pic${j}`}>
+                          <Image src={pic.img} layout='responsive' width={300} height={300} alt='event' />
+                        </div>
+                      )
+                    })
+                  )
+                })}
               </Slider>
               {/* </div> */}
             </div>
             <div className='w-5/6 text-white relative mx-auto mt-14 mb-10'>
               <hr className='border top-[18%] border-white bg-white absolute w-full border-2' />
               <div className="flex flex-row justify-evenly">
-                <div onClick={() => sliderRef.current?.slickGoTo(0)} className='cursor-pointer flex flex-col items-center'>
-                  <div className={`${slideIndex/3==0 ? "w-8" : "w-4"} transition-all h-8 rounded-md bg-white`}></div>
-                  <p className='mt-2 w-min'>Women Techies</p>
-                </div>
-                <div onClick={() => sliderRef.current?.slickGoTo(3)} className='cursor-pointer flex flex-col items-center'>
-                  <div className={`${slideIndex/3==1 ? "w-8" : "w-4"} transition-all h-8 rounded-md bg-white`}></div>
-                  <p className='mt-2 w-min'>Women Techies</p>
-                </div>
-                <div onClick={() => sliderRef.current?.slickGoTo(6)} className='cursor-pointer flex flex-col items-center'>
-                  <div className={`${slideIndex/3==2 ? "w-8" : "w-4"} transition-all h-8 rounded-md bg-white`}></div>
-                  <p className='mt-2 w-min'>Women Techies</p>
-                </div>
-                <div onClick={() => sliderRef.current?.slickGoTo(9)} className='cursor-pointer flex flex-col items-center'>
-                  <div className={`${slideIndex/3==3 ? "w-8" : "w-4"} transition-all h-8 rounded-md bg-white`}></div>
-                  <p className='mt-2 w-min'>Women Techies</p>
-                </div>
+                {events.map((event, i) => {
+                  return (
+                    <div key={"eventname"+i} onClick={() => sliderRef.current?.slickGoTo(i*3)} className='cursor-pointer flex flex-col items-center'>
+                      <div className={`${slideIndex/3==i ? "w-8" : "w-4"} transition-all h-8 rounded-md bg-white`}></div>
+                      <p className='mt-2 w-min text-center'>{event.name}</p>
+                    </div>
+                  )
+                })}
               </div>
             </div>
           </div>
