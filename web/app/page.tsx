@@ -28,7 +28,9 @@ import { useScreenWidth } from '@/hooks/useScreenWidth'
 import { useNumInView } from '@/hooks/useNumInView'
 import { useScrollDirection } from 'react-use-scroll-direction'
 import {Element} from 'react-scroll'
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const CardsContainer = styled.div`
     position: relative;
@@ -58,8 +60,32 @@ export default function Home() {
     setPage(page)
   }, [setPage])
 
+  const sliderRef = useRef<Slider | null>(null);
+  const [slideIndex, setSlideIndex] = useState<number>(0);
 
-
+  const settings = {
+    infinite: true,
+    speed: 800,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows: false,
+    dots: false,
+    beforeChange: (_:any, next:any) => {setSlideIndex(next);console.log(next);},
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
+  };
 
   const inputRanges = {
     fame: screenWidth > 650 ? [0.02, 0.09] : [0.02, 0.07],
@@ -135,8 +161,69 @@ export default function Home() {
               <h1 className='font-sans text-[3rem] font-extrabold text-center tracking-wider'>EVENTS</h1>
             </div>
           </motion.div>
-          <div className='text-dark mt-[20vh] top-[50vh] -translate-y-[50%] left-[50%] '>
-            <div className='flex justify-start w-[90vw] mx-auto overflow-scroll'>
+          <div className='text-dark flex flex-col'>
+            {/* <div className='flex justify-start w-[90vw] mx-auto overflow-scroll'> */}
+            <div className='w-5/6 h-full mx-auto mt-[10vh] p-4 pb-3 bg-white border-2 border-black rounded-md'>
+              <Slider ref={sliderRef} {...settings}>
+                <div>
+                  <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
+                </div>
+                <div>
+                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
+                </div>
+                <div>
+                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
+                </div>
+                <div>
+                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
+                </div>
+                <div>
+                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
+                </div>
+                <div>
+                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
+                </div>
+                <div>
+                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
+                </div>
+                <div>
+                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
+                </div>
+                <div>
+                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
+                </div>
+                <div>
+                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
+                </div>
+                <div>
+                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
+                </div>
+                <div>
+                <Image src={"/vishesh.jpg"} layout='responsive' width={300} height={300} alt='event' />
+                </div>
+              </Slider>
+              {/* </div> */}
+            </div>
+            <div className='w-5/6 text-white relative mx-auto mt-14 mb-10'>
+              <hr className='border top-[18%] border-white bg-white absolute w-full border-2' />
+              <div className="flex flex-row justify-evenly">
+                <div onClick={() => sliderRef.current?.slickGoTo(0)} className='cursor-pointer flex flex-col items-center'>
+                  <div className={`${slideIndex/3==0 ? "w-8" : "w-4"} transition-all h-8 rounded-md bg-white`}></div>
+                  <p className='mt-2 w-min'>Women Techies</p>
+                </div>
+                <div onClick={() => sliderRef.current?.slickGoTo(3)} className='cursor-pointer flex flex-col items-center'>
+                  <div className={`${slideIndex/3==1 ? "w-8" : "w-4"} transition-all h-8 rounded-md bg-white`}></div>
+                  <p className='mt-2 w-min'>Women Techies</p>
+                </div>
+                <div onClick={() => sliderRef.current?.slickGoTo(6)} className='cursor-pointer flex flex-col items-center'>
+                  <div className={`${slideIndex/3==2 ? "w-8" : "w-4"} transition-all h-8 rounded-md bg-white`}></div>
+                  <p className='mt-2 w-min'>Women Techies</p>
+                </div>
+                <div onClick={() => sliderRef.current?.slickGoTo(9)} className='cursor-pointer flex flex-col items-center'>
+                  <div className={`${slideIndex/3==3 ? "w-8" : "w-4"} transition-all h-8 rounded-md bg-white`}></div>
+                  <p className='mt-2 w-min'>Women Techies</p>
+                </div>
+              </div>
             </div>
           </div>
         </Section>
