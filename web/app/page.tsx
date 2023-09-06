@@ -61,6 +61,11 @@ export default function Home() {
     setPage(page)
   }, [setPage])
 
+  useEffect(() => {
+    if (mainRef.current)
+      mainRef.current?.scrollTo({ top: 0, behavior: "instant" })
+
+  }, [mainRef.current])
   const sliderRef = useRef<Slider | null>(null);
   const [slideIndex, setSlideIndex] = useState<number>(0);
 
@@ -162,7 +167,7 @@ export default function Home() {
               <h1 className='font-sans text-[3rem] font-extrabold text-center tracking-wider'>EVENTS</h1>
             </div>
           </motion.div>
-          <div className='text-dark flex flex-col'>
+          <div className='flex flex-col text-dark'>
             {/* <div className='flex justify-start w-[90vw] mx-auto overflow-scroll'> */}
             <div className='w-5/6 h-full mx-auto mt-[10vh] p-4 pb-3 bg-white border-2 border-black rounded-md'>
               <Slider ref={sliderRef} {...settings}>
@@ -180,14 +185,14 @@ export default function Home() {
               </Slider>
               {/* </div> */}
             </div>
-            <div className='w-5/6 text-white relative mx-auto mt-14 mb-10'>
+            <div className='relative w-5/6 mx-auto mb-10 text-white mt-14'>
               <hr className='border top-[18%] border-white bg-white absolute w-full border-2' />
               <div className="flex flex-row justify-evenly">
                 {events.map((event, i) => {
                   return (
-                    <div key={"eventname"+i} onClick={() => sliderRef.current?.slickGoTo(i*3)} className='cursor-pointer flex flex-col items-center'>
+                    <div key={"eventname"+i} onClick={() => sliderRef.current?.slickGoTo(i*3)} className='flex flex-col items-center cursor-pointer'>
                       <div className={`${slideIndex/3==i ? "w-8" : "w-4"} transition-all h-8 rounded-md bg-white`}></div>
-                      <p className='mt-2 w-min text-center'>{event.name}</p>
+                      <p className='mt-2 text-center w-min'>{event.name}</p>
                     </div>
                   )
                 })}
