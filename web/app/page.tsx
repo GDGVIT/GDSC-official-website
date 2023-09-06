@@ -57,6 +57,11 @@ export default function Home() {
     setPage(page)
   }, [setPage])
 
+  useEffect(() => {
+    if (mainRef.current)
+      mainRef.current?.scrollTo({ top: 0, behavior: "instant" })
+
+  }, [mainRef.current])
 
 
 
