@@ -14,6 +14,7 @@ import FameCard from '@/components/FameCard'
 import { useHorizontalScroll } from '@/hooks/useHorizontalScroll'
 import TeamCard from '@/components/TeamCard'
 import team_members from "@/content/team_members.json"
+import events from "@/content/events.json"
 import projects from "@/content/projects.json"
 import fame from "@/content/fame.json"
 import ProjectCard from '@/components/ProjectCard'
@@ -27,7 +28,10 @@ import StartAnim from '@/components/StartAnim'
 import { useScreenWidth } from '@/hooks/useScreenWidth'
 import { useNumInView } from '@/hooks/useNumInView'
 import { useScrollDirection } from 'react-use-scroll-direction'
-
+import {Element} from 'react-scroll'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const CardsContainer = styled.div`
     position: relative;
@@ -62,8 +66,32 @@ export default function Home() {
       mainRef.current?.scrollTo({ top: 0, behavior: "instant" })
 
   }, [mainRef.current])
+  const sliderRef = useRef<Slider | null>(null);
+  const [slideIndex, setSlideIndex] = useState<number>(0);
 
-
+  const settings = {
+    infinite: true,
+    speed: 800,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows: false,
+    dots: false,
+    beforeChange: (_:any, next:any) => {setSlideIndex(next);console.log(next);},
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
+  };
 
   const inputRanges = {
     fame: screenWidth > 650 ? [0.02, 0.09] : [0.02, 0.07],
@@ -89,6 +117,7 @@ export default function Home() {
     {
       startAnimationComplete &&
       <>
+        <Element name="home" />
         <Navbar theme={page === "home" ? 'light' : "dark"} />
         <Section color="dark" page="home" setIntersecting={setIntersecting}>
 
@@ -116,6 +145,7 @@ export default function Home() {
             </div>
           </motion.div>
         </Section>
+        <Element name="fame" />
         <Section color='blue' page='fame' setIntersecting={setIntersecting}>
           <motion.div className='top-0 left-0 w-full pt-[15vh] mb-20 text-dark' style={{ scale: fameScale }} initial={{ scale: 0 }} >
             <div className='w-[100vw] lg:w-[30vw] lg:min-w-[600px] mx-auto'>
@@ -130,18 +160,48 @@ export default function Home() {
           </div>
         </Section>
         <Level level={"04"} />
+        <Element name="events" />
         <Section snap color='green' page='events' setIntersecting={setIntersecting}>
           <motion.div style={{ scale: eventScale }} className='top-0 left-0 w-full pt-[15vh] text-dark'>
             <div className='w-[100vw] lg:w-[30vw] lg:min-w-[600px] mx-auto'>
               <h1 className='font-sans text-[3rem] font-extrabold text-center tracking-wider'>EVENTS</h1>
             </div>
           </motion.div>
-          <div className='text-dark mt-[20vh] top-[50vh] -translate-y-[50%] left-[50%] '>
-            <div className='flex justify-start w-[90vw] mx-auto overflow-scroll'>
+          <div className='flex flex-col text-dark'>
+            {/* <div className='flex justify-start w-[90vw] mx-auto overflow-scroll'> */}
+            <div className='w-5/6 h-full mx-auto mt-[10vh] p-4 pb-3 bg-white border-2 border-black rounded-md'>
+              <Slider ref={sliderRef} {...settings}>
+                {events.map((event, i) => {
+                  return (
+                    event.photos.map((pic, j) => {
+                      return (
+                        <div key={`event${i}pic${j}`}>
+                          <Image src={pic.img} layout='responsive' width={300} height={300} alt='event' />
+                        </div>
+                      )
+                    })
+                  )
+                })}
+              </Slider>
+              {/* </div> */}
+            </div>
+            <div className='relative w-5/6 mx-auto mb-10 text-white mt-14'>
+              <hr className='border top-[18%] border-white bg-white absolute w-full border-2' />
+              <div className="flex flex-row justify-evenly">
+                {events.map((event, i) => {
+                  return (
+                    <div key={"eventname"+i} onClick={() => sliderRef.current?.slickGoTo(i*3)} className='flex flex-col items-center cursor-pointer'>
+                      <div className={`${slideIndex/3==i ? "w-8" : "w-4"} transition-all h-8 rounded-md bg-white`}></div>
+                      <p className='mt-2 text-center w-min'>{event.name}</p>
+                    </div>
+                  )
+                })}
+              </div>
             </div>
           </div>
         </Section>
         <Level level={"03"} />
+        <Element name="team" />
         <Section snap color='yellow' page='team' >
           <HorizontalTranslate mainRef={mainRef} title={"Meet the Team"} style={{ scale: teamScale }}>
             <CardsContainer style={{ paddingLeft: screenWidth > 650 ? "100px" : "5vw" }} className='text-dark' ref={teamRef}>
@@ -151,6 +211,7 @@ export default function Home() {
           </HorizontalTranslate>
         </Section>
         <Level level={"02"} />
+        <Element name="projects" />
         <Section color='pastel_red' page='projects' >
           <HorizontalTranslate mainRef={mainRef} title={"Projects"} style={{ scale: projectScale }}>
             <CardsContainer style={{ paddingLeft: screenWidth > 650 ? "100px" : "5vw", paddingRight: screenWidth > 650 ? "100px" : "5vw" }} className='text-dark' ref={projectRef}>
@@ -159,6 +220,7 @@ export default function Home() {
           </HorizontalTranslate>
         </Section>
         <Level level={"01"} />
+        <Element name="blogs" />
         <Section snap color='blue' page='blogs' >
 
           <div className='flex flex-col md:flex-row xl:p-16 p-5 pt-[11vh] h-[100vh] items-center'>
@@ -177,7 +239,9 @@ export default function Home() {
             </div>
           </div>
 
-        </Section></>}
+        </Section>
+        <Element name="footer" />
+        </>}
   </main >
 
 

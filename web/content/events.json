@@ -1,0 +1,59 @@
+[
+    {
+        "name":"Women Techies 2023",
+        "photos":[
+            {
+                "img": "/vishesh.jpg"
+            },
+            {
+                "img": "/vishesh.jpg"
+            },
+            {
+                "img": "/vishesh.jpg"
+            }
+        ]
+    },
+    {
+        "name":"DevJams 2022",
+        "photos":[
+            {
+                "img": "/vishesh.jpg"
+            },
+            {
+                "img": "/vishesh.jpg"
+            },
+            {
+                "img": "/vishesh.jpg"
+            }
+        ]
+    },
+    {
+        "name":"Hexathon 2022",
+        "photos":[
+            {
+                "img": "/vishesh.jpg"
+            },
+            {
+                "img": "/vishesh.jpg"
+            },
+            {
+                "img": "/vishesh.jpg"
+            }
+        ]
+    },
+    {
+        "name":"CTF 2023",
+        "photos":[
+            {
+                "img": "/vishesh.jpg"
+            },
+            {
+                "img": "/vishesh.jpg"
+            },
+            {
+                "img": "/vishesh.jpg"
+            }
+        ]
+    }
+]
+  
