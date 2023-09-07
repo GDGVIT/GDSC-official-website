@@ -28,10 +28,12 @@ import StartAnim from '@/components/StartAnim'
 import { useScreenWidth } from '@/hooks/useScreenWidth'
 import { useNumInView } from '@/hooks/useNumInView'
 import { useScrollDirection } from 'react-use-scroll-direction'
-import {Element} from 'react-scroll'
+import { Element } from 'react-scroll'
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import BlogsList from '@/components/BlogsList'
+import { Provider } from './provider'
 
 const CardsContainer = styled.div`
     position: relative;
@@ -76,7 +78,7 @@ export default function Home() {
     slidesToScroll: 3,
     arrows: false,
     dots: false,
-    beforeChange: (_:any, next:any) => {setSlideIndex(next);console.log(next);},
+    beforeChange: (_: any, next: any) => { setSlideIndex(next); console.log(next); },
     responsive: [
       {
         breakpoint: 1000,
@@ -190,8 +192,8 @@ export default function Home() {
               <div className="flex flex-row justify-evenly">
                 {events.map((event, i) => {
                   return (
-                    <div key={"eventname"+i} onClick={() => sliderRef.current?.slickGoTo(i*3)} className='flex flex-col items-center cursor-pointer'>
-                      <div className={`${slideIndex/3==i ? "w-8" : "w-4"} transition-all h-8 rounded-md bg-white`}></div>
+                    <div key={"eventname" + i} onClick={() => sliderRef.current?.slickGoTo(i * 3)} className='flex flex-col items-center cursor-pointer'>
+                      <div className={`${slideIndex / 3 == i ? "w-8" : "w-4"} transition-all h-8 rounded-md bg-white`}></div>
                       <p className='mt-2 text-center w-min'>{event.name}</p>
                     </div>
                   )
@@ -234,14 +236,14 @@ export default function Home() {
                   <Image className='w-2/3 h-auto mx-auto' src="/blogs.svg" alt="" width={200} height={200} />
                 </div>
 
-                <div className='flex flex-col overflow-scroll h-fit max-h-[60vh]'>{blogs.map((blog, i) => <BlogListItem key={"blog" + i} {...blog} />)}</div>
+                <Provider><BlogsList startAnimationComplete={false} /></Provider>
               </div>
             </div>
           </div>
 
         </Section>
         <Element name="footer" />
-        </>}
+      </>}
   </main >
 
 
