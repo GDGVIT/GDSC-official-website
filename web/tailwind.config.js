@@ -14,6 +14,8 @@ module.exports = {
       },
       colors: {
         pastel_red: '#EF7167',
+        pastel_blue: '#71A3F5',
+        pastel_green: '#4AB582',
         dark: '#15171B',
         blue: '#4285F4BF',
         green: '#0F9D58BF',
