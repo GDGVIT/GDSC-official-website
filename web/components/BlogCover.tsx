@@ -15,7 +15,7 @@ const BlogCover = ({ i: key, text }: { i: number, text: string }) => {
             <div style={{ rotate: `${key}0deg` }} className='absolute bottom-[2%] right-[2%] w-[50%] aspect-square z-20 transition-all'>
                 <Image src={blogBadge} alt="medium blog" fill />
             </div>
-            <h1 className='absolute z-30 font-mono text-5xl font-semibold text-black top-4 left-4'>{text}</h1>
+            <h1 className='absolute z-30 font-mono font-semibold text-black xl:text-5xl top-4 left-4 lg:text-3xl'>{text}</h1>
         </div>
     </div>
     )
