@@ -4,12 +4,16 @@ import React from 'react'
 type Props = {
     name: string,
     by: string,
-    link: string
+    link: string,
+    i: number,
+    onHover: (key: number, text: string) => void
 }
 
-const BlogListItem = ({ name, by, link }: Props) => {
+const BlogListItem = ({ name, by, link, onHover, i }: Props) => {
     return (
-        <div className='flex justify-between p-5 border-b-2 border-black first-of-type:border-t-2'>
+        <div className='flex justify-between p-5 border-b-2 border-black first-of-type:border-t-2' onMouseOver={() => {
+            onHover(i, name)
+        }}>
             <div className='flex flex-col px-2 text-lg'>
                 <h2>
                     {name}
