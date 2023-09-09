@@ -34,6 +34,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import BlogsList from '@/components/BlogsList'
 import { Provider } from './provider'
+import BlogCover from '@/components/BlogCover'
 
 const CardsContainer = styled.div`
     position: relative;
@@ -70,6 +71,9 @@ export default function Home() {
   }, [mainRef.current])
   const sliderRef = useRef<Slider | null>(null);
   const [slideIndex, setSlideIndex] = useState<number>(0);
+
+  const [hoveringKey, setHoveringKey] = useState(0)
+  const [hoveringText, setHoveringText] = useState("");
 
   const settings = {
     infinite: true,
@@ -112,6 +116,15 @@ export default function Home() {
   const eventScale = useTransform(scrollYProgress, inputRanges.event, outputRanges.event)
   const teamScale = useTransform(scrollYProgress, inputRanges.team, outputRanges.team)
   const projectScale = useTransform(scrollYProgress, inputRanges.project, outputRanges.project)
+
+  const onHover = useCallback((key: number, text: string) => {
+    setHoveringKey(key)
+    setHoveringText(text)
+  }, [])
+
+  useEffect(() => {
+    console.log(hoveringKey)
+  }, [hoveringKey])
 
 
   return <main id='main-thing' ref={mainRef} className='h-[100vh] overflow-scroll overflow-x-hidden snap-y'>
@@ -231,17 +244,12 @@ export default function Home() {
         <Section snap color='blue' page='blogs' >
 
           <div className='flex flex-col md:flex-row xl:p-16 p-5 pt-[11vh] h-[100vh] items-center'>
-            <div className='flex-1 hidden md:block'>
-              <Image src="/blogs.svg" alt="" width={500} height={500} layout='responsive' />
-            </div>
+            <BlogCover i={hoveringKey} text={hoveringText} />
             <div className='w-full p-5 text-black md:flex-1 h-fit'>
               <div className='flex flex-col'>
                 <motion.h1 className='text-black font-sans text-[3rem] font-extrabold tracking-wider'>Blogs</motion.h1>
-                <div className='self-center flex-1 block m-2 max-h-[50vh] mb-10 md:hidden'>
-                  <Image className='w-2/3 h-auto mx-auto' src="/blogs.svg" alt="" width={200} height={200} />
-                </div>
 
-                <Provider><BlogsList startAnimationComplete={false} /></Provider>
+                <Provider><BlogsList startAnimationComplete={false} onHover={onHover} /></Provider>
               </div>
             </div>
           </div>
