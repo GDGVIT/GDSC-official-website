@@ -120,7 +120,7 @@ export default function Home() {
       startAnimationComplete &&
       <>
         <Element name="home" />
-        <Navbar theme={page === "home" ? 'light' : "dark"} />
+        <Navbar landing theme={page === "home" ? 'light' : "dark"} />
         <Section color="dark" page="home" setIntersecting={setIntersecting}>
 
           <motion.div initial={{ y: '100%' }} animate={{ y: 0 }} transition={{ duration: 2 }} className='flex flex-col-reverse lg:flex-row w-[100%] h-[100vh] items-center relative top-0 left-0'>
