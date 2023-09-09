@@ -149,7 +149,7 @@ export default function Home() {
         </Section>
         <Element name="fame" />
         <Section color='blue' page='fame' setIntersecting={setIntersecting}>
-          <motion.div className='top-0 left-0 w-full pt-[15vh] mb-20 text-dark' style={{ scale: fameScale }} initial={{ scale: 0 }} >
+          {/* <motion.div className='top-0 left-0 w-full pt-[15vh] mb-20 text-dark' style={{ scale: fameScale }} initial={{ scale: 0 }} >
             <div className='w-[100vw] lg:w-[30vw] lg:min-w-[600px] mx-auto'>
               <h1 className='font-sans text-[3rem] font-extrabold text-center tracking-wider' >WALL OF FAME</h1>
               <p className='font-mono text-xl tracking-[1.8rem] ml-10 text-center'>ACHIEVEMENTS</p>
@@ -159,7 +159,12 @@ export default function Home() {
             <div className='flex justify-start w-[90vw] mx-auto overflow-x-scroll overflow-y-hidden' ref={fameRef}>
               {fame.map((f, i) => <FameCard key={"fame" + i} i={(numFameInView > i) ? i : 0} title={f.title} />)}
             </div>
-          </div>
+          </div> */}
+          <HorizontalTranslate mainRef={mainRef} title={"Wall of Fame"} style={{ scale: fameScale }}>
+            <CardsContainer style={{ paddingLeft: screenWidth > 650 ? "100px" : "5vw", paddingRight: screenWidth > 650 ? "100px" : "5vw" }} className='text-dark' ref={fameRef}>
+              {fame.map((f, i) => <FameCard key={"fame" + i} i={(numFameInView > i) ? i : 0} title={f.title} />)}
+            </CardsContainer>
+          </HorizontalTranslate>
         </Section>
         <Level level={"04"} />
         <Element name="events" />
