@@ -2,36 +2,36 @@
   {
     "name": "Insta",
     "icon": "insta",
-    "link": "https://instagram.com"
+    "link": "https://dscv.it/instagram"
   },
   {
-    "name": "Insta",
+    "name": "Twitter",
     "icon": "twitter",
-    "link": "https://instagram.com"
+    "link": "https://dscv.it/twitter"
   },
   {
-    "name": "Insta",
+    "name": "FB",
     "icon": "facebook",
-    "link": "https://instagram.com"
+    "link": "https://dscv.it/facebook"
   },
   {
-    "name": "Insta",
+    "name": "Medium",
     "icon": "medium",
-    "link": "https://instagram.com"
+    "link": "https://medium.com/gdg-vit"
   },
   {
-    "name": "Insta",
+    "name": "Telegram",
     "icon": "telegram",
-    "link": "https://instagram.com"
+    "link": "https://dscv.it/telegram"
   },
   {
-    "name": "Insta",
+    "name": "LinkedIn",
     "icon": "linkedin",
-    "link": "https://instagram.com"
+    "link": "https://dscv.it/linkedin"
   },
   {
-    "name": "Insta",
+    "name": "YT",
     "icon": "youtube",
-    "link": "https://instagram.com"
+    "link": "https://dscv.it/youtube"
   }
 ]

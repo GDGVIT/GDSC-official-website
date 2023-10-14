@@ -13,7 +13,7 @@ type Props = {
 
 const Icon = ({ icon, name, link }: Props) => {
     return (
-        <Link href={link} className="flex items-center w-[3rem] h-[3rem]" >
+        <Link target="blank" href={link} className="flex items-center w-[3rem] h-[3rem]" >
             <Image src={getIcon(icon)} alt={name} layout="responsive" />
         </Link>
     );
