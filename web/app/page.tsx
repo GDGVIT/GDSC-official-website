@@ -127,8 +127,15 @@ export default function Home() {
     console.log(hoveringKey)
   }, [hoveringKey])
 
+  useEffect(() => {
+    if(localStorage.getItem("visited") === "true"){
+      setStartAnimationComplete(true)
+    }
+    localStorage.setItem("visited","true")
+  },[])
 
-  return <main id='main-thing' ref={mainRef} className='h-[100vh] overflow-scroll overflow-x-hidden snap-y'>
+
+  return <main id='main-thing' ref={mainRef} className='h-[100vh] overflow-auto overflow-x-hidden snap-y'>
     <StartAnim onComplete={() => { setStartAnimationComplete(true) }} />
     {
       startAnimationComplete &&
