@@ -24,7 +24,7 @@ const BlogsList = ({ startAnimationComplete, onHover }: Props) => {
 
 
     return (
-        <div className='flex flex-col overflow-scroll h-fit'>{blogs ? blogs.map((blog, i) => <BlogListItem i={i} key={"blog" + i} onHover={onHover} name={blog.title} by={blog.user.name} link={""} />) : ""}</div>
+        <div className='flex flex-col h-fit mr-4'>{blogs ? blogs.map((blog, i) => <BlogListItem i={i} key={"blog" + i} onHover={onHover} name={blog.title} by={blog.user.name} link={`https://medium.com/gdg-vit/${blog.uniqueSlug}`} />) : ""}</div>
     );
 }
 

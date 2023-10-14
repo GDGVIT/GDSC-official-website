@@ -21,7 +21,7 @@ const BlogListItem = ({ name, by, link, onHover, i }: Props) => {
                 <p className='text-sm font-thin'>A blog by {by}</p>
             </div>
             <div>
-                <Link href={link} className='whitespace-nowrap'>
+                <Link target='blank' href={link} className='whitespace-nowrap'>
                     View →
                 </Link>
             </div>

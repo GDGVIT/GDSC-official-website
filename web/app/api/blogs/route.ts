@@ -12,6 +12,7 @@ type PostSchema = {
   title: string;
   createdAt: number;
   updatedAt: number;
+  uniqueSlug: string;
 };
 
 export type ResponsePostSchema = PostSchema & {
