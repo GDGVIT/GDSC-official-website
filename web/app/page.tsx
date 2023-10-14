@@ -35,6 +35,7 @@ import "slick-carousel/slick/slick-theme.css";
 import BlogsList from '@/components/BlogsList'
 import { Provider } from './provider'
 import BlogCover from '@/components/BlogCover'
+import SeeMore from '@/components/SeeMore'
 
 const CardsContainer = styled.div`
     position: relative;
@@ -227,6 +228,7 @@ export default function Home() {
             <CardsContainer style={{ paddingLeft: screenWidth > 650 ? "100px" : "5vw" }} className='text-dark' ref={teamRef}>
               {/* <SampleCards /> */}
               {team_members.map((mem, i) => <TeamCard i={(numTeamInView > i) ? i : 0} key={"mem" + i} title={mem.name} img={mem.img} subtitle={mem.position} />)}
+              <SeeMore i={(numTeamInView > team_members.length) ? team_members.length : 0} img='#' title='See All' subtitle='Cool Peeps' />
             </CardsContainer>
           </HorizontalTranslate>
         </Section>
