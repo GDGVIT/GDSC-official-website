@@ -15,7 +15,7 @@ const StartAnim = ({ onComplete }: Props) => {
         }
     })
 
-    return <div className="fixed top-0 bottom-0 left-0 right-0 flex items-center justify-center bg-dark"><Player
+    return <div className="fixed top-0 bottom-0 left-0 right-0 flex items-center justify-center bg-dark -z-10"><Player
         src={LoadingAnimation}
         autoplay
         style={{ minHeight: '100vh', minWidth: '100vw', aspectRatio: 16 / 9, zIndex: 10, backgroundColor: "transparent" }}

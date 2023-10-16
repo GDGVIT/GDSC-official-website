@@ -36,6 +36,9 @@ import BlogsList from '@/components/BlogsList'
 import { Provider } from './provider'
 import BlogCover from '@/components/BlogCover'
 import SeeMore from '@/components/SeeMore'
+import { useRouter } from 'next/navigation'
+import { scroller } from 'react-scroll'
+import Footer from '@/components/Footer'
 
 const CardsContainer = styled.div`
     position: relative;
@@ -61,6 +64,7 @@ export default function Home() {
   const screenWidth = useScreenWidth()
   const { scrollYProgress } = useScroll({ container: mainRef })
   const [startAnimationComplete, setStartAnimationComplete] = useState(false);
+  const router = useRouter()
   const setIntersecting = useCallback((page: string) => {
     setPage(page)
   }, [setPage])
@@ -75,6 +79,17 @@ export default function Home() {
 
   const [hoveringKey, setHoveringKey] = useState(0)
   const [hoveringText, setHoveringText] = useState("");
+
+  const scrollToSection = (section: string) => {
+    router.push("/")
+    scroller.scrollTo(section, {
+      duration: 1500,
+      delay: 150,
+      smooth: true,
+      containerId: 'main-thing',
+      // offset: 50,
+    })
+  }
 
   const settings = {
     infinite: true,
@@ -265,6 +280,7 @@ export default function Home() {
 
         </Section>
         <Element name="footer" />
+        <Footer bg='blue' />
       </>}
   </main >
 
