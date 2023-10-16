@@ -28,13 +28,16 @@ const Navbar: FC<Props> = ({ theme = "light", landing }) => {
   return (
     <>
       {landing ? (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 2 }} style={{ color: (theme === "light" || menu) ? "white" : "black" }} className='fixed top-0 left-0 right-0 flex justify-between w-full gap-4 p-10 z-[100]'>
-          <Image src={(theme === 'light' || menu) ? "/logo-white.png" : "/logo-black.png"} width={300} height={300} alt='Logo' />
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 2 }} style={{ color: (theme === "light" || menu) ? "white" : "black" }} className='fixed top-0 left-0 right-0 flex justify-between w-full gap-4 p-10 z-[100] items-center'>
+          <div className='flex-row flex gap-1 items-center'>
+            <Image className='h-8 w-20' src={(theme === 'light' || menu) ? "/newlogo.svg" : "/newlogo.svg"} width={80} height={100} alt='Logo' />
+            <Button onClick={() => { router.push("/") }} theme={(theme === 'light' || menu) ? 'light' : 'dark'}>GDSC-VIT</Button>
+          </div>
           <Button onClick={() => { setMenu(!menu); theme = "light" }} theme={(theme === 'light' || menu) ? 'light' : 'dark'}>{menu ? "Close" : "Menu"}</Button>
         </motion.div>
       ) : (
         <div style={{ color: (theme === "light" || menu) ? "white" : "black" }} className='fixed top-0 left-0 right-0 flex justify-between w-full gap-4 p-10 z-[100]'>
-          <Image src={(theme === 'light' || menu) ? "/logo-white.png" : "/logo-black.png"} width={300} height={300} alt='Logo' />
+          <Image src={(theme === 'light' || menu) ? "/newlogo.svg" : "/newlogo.svg"} width={70} height={100} alt='Logo' />
           <Button onClick={() => { router.push("/") }} theme={(theme === 'light' || menu) ? 'light' : 'dark'}>Back</Button>
         </div>
       )
