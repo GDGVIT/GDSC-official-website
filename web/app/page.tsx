@@ -143,11 +143,16 @@ export default function Home() {
   }, [hoveringKey])
 
   useEffect(() => {
-    if(localStorage.getItem("visited") === "true"){
+    if (localStorage.getItem('visited') === 'true') {
       setStartAnimationComplete(true)
     }
-    localStorage.setItem("visited","true")
-  },[])
+  }, [])
+
+  useEffect(() => {
+    if (startAnimationComplete) {
+      localStorage.removeItem("visited")
+    }
+  }, [startAnimationComplete])
 
 
   return <main id='main-thing' ref={mainRef} className='h-[100vh] overflow-auto overflow-x-hidden snap-y'>

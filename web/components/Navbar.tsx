@@ -29,19 +29,19 @@ const Navbar: FC<Props> = ({ theme = "light", landing }) => {
     <>
       {landing ? (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 2 }} style={{ color: (theme === "light" || menu) ? "white" : "black" }} className='fixed top-0 left-0 right-0 flex justify-between w-full gap-4 p-10 z-[100] items-center'>
-          <div className='flex-row flex gap-1 items-center'>
-            <Image className='h-8 w-20' src={(theme === 'light' || menu) ? "/newlogo.svg" : "/newlogo.svg"} width={80} height={100} alt='Logo' />
+          <div className='flex flex-row items-center gap-1'>
+            <Image className='w-20 h-8' src={(theme === 'light' || menu) ? "/newlogo.svg" : "/newlogo.svg"} width={80} height={100} alt='Logo' />
             <Button onClick={() => { router.push("/") }} theme={(theme === 'light' || menu) ? 'light' : 'dark'}>GDSC-VIT</Button>
           </div>
           <Button onClick={() => { setMenu(!menu); theme = "light" }} theme={(theme === 'light' || menu) ? 'light' : 'dark'}>{menu ? "Close" : "Menu"}</Button>
         </motion.div>
       ) : (
         <div style={{ color: (theme === "light" || menu) ? "white" : "black" }} className='fixed top-0 left-0 right-0 flex justify-between w-full gap-4 p-10 z-[100]'>
-          <div className='flex-row flex gap-1 items-center'>
-            <Image className='h-8 w-20' src={(theme === 'light' || menu) ? "/newlogo.svg" : "/newlogo.svg"} width={80} height={100} alt='Logo' />
-            <Button onClick={() => { router.push("/") }} theme={(theme === 'light' || menu) ? 'light' : 'dark'}>GDSC-VIT</Button>
+          <div className='flex flex-row items-center gap-1'>
+            <Image className='w-20 h-8' src={(theme === 'light' || menu) ? "/newlogo.svg" : "/newlogo.svg"} width={80} height={100} alt='Logo' />
+            <Button onClick={() => { router.push("/"); localStorage.setItem("visited", 'true') }} theme={(theme === 'light' || menu) ? 'light' : 'dark'}>GDSC-VIT</Button>
           </div>
-          <Button onClick={() => { router.push("/") }} theme={(theme === 'light' || menu) ? 'light' : 'dark'}>Back</Button>
+          <Button onClick={() => { router.push("/"); localStorage.setItem("visited", 'true') }} theme={(theme === 'light' || menu) ? 'light' : 'dark'}>Back</Button>
         </div>
       )
 
