@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Vishesh Bansal",
+    "position": "GDSC Lead",
+    "img": "/team/board/vishesh.webp"
+  },
+  {
+    "name": "Yajat Malhotra",
+    "position": "Technical Lead",
+    "img": "/team/board/yajat.webp"
+  },
+  {
+    "name": "Jeevan Yohan Varghese",
+    "position": "App Lead",
+    "img": "/team/board/jeevan.webp"
+  },
+  {
+    "name": "Pranav Ram",
+    "position": "Design Lead — Projects & Video",
+    "img": "/team/board/pranav.webp"
+  },
+  {
+    "name": "Raggav Subramani",
+    "position": "Management & Operations Lead",
+    "img": "/team/board/raggav.webp"
+  },
+  {
+    "name": "Lokesh Rai",
+    "position": "Projects & External Affairs Lead",
+    "img": "/team/board/lokesh.webp"
+  },
+  {
+    "name": "Krishap Sreenivasan",
+    "position": "Cloud and SecOps Lead",
+    "img": "/team/board/krishap.webp"
+  },
+  {
+    "name": "Kush Ojha",
+    "position": "Machine Learning & Content Lead",
+    "img": "/team/board/kush.webp"
+  },
+  {
+    "name": "Aditya Mitra",
+    "position": "Events & Marketing Lead",
+    "img": "/team/board/aditya.webp"
+  },
+  {
+    "name": "Projukta Mandal",
+    "position": "Design Lead — Events",
+    "img": "/team/board/projukta.webp"
+  }
+]

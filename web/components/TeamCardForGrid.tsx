@@ -12,7 +12,16 @@ const TeamCardForGrid = ({ img, title, subtitle, i }: Props) => {
     return (
         <div className='bg-white flex-col p-3 m-2 lg:m-4 rounded-md border-2 border-black flex'>
             <div className='w-full border-2 border-black rounded-md '>
-                <Image src={img} layout='responsive' width={300} height={300} alt='Logo' />
+                <div className='aspect-square' style={{ width: '100%', overflow: 'hidden' }}>
+                    <Image
+                        src={img}
+                        layout='responsive'
+                        width={300}
+                        height={300}
+                        objectFit='cover'
+                        alt='Logo'
+                    />
+                </div>
             </div>
             <h2 className='my-3 font-sans xl:text-2xl text-xl font-semibold text-black'>
                 {title}

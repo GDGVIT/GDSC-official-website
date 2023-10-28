@@ -1,47 +1,27 @@
 [
   {
-    "name": "Pranav Ram",
-    "position": "Design Lead — Projects",
-    "img": "/vishesh.jpg"
+    "name": "Utkarsh Prasad Sinha",
+    "position": "Video and Graphics",
+    "img": "/team/design/utkarsh.heic"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Kumar Aryan",
+    "position": "UI/UX",
+    "img": "/team/design/kumar_aryan.jpeg"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Chandrima Manik",
+    "position": "UI/UX",
+    "img": "/team/design/chandrima.jpeg"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Esha Santosh",
+    "position": "UI/UX",
+    "img": "/team/design/esha.jpg"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
-  },
-  {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
-  },
-  {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
-  },
-  {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
-  },
-  {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Simar Bhatia",
+    "position": "Video and Graphics",
+    "img": "/team/design/simar.jpeg"
   }
 ]

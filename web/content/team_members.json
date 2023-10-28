@@ -1,47 +1,107 @@
 [
   {
-    "name": "Vishesh Bansal",
-    "position": "Community Lead",
-    "img": "/vishesh.jpg"
+    "name": "Sayar Bhattacharyya",
+    "position": "Frontend",
+    "img": "/team/technical/sayar.jpeg"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Anuj Parihar",
+    "position": "Backend and Security",
+    "img": "/team/technical/anuj.jpeg"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Prashanna Rajbhandari",
+    "position": "App",
+    "img": "/team/technical/prashanna.heic"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Dhruv Shah",
+    "position": "Backend",
+    "img": "/team/technical/dhruv.jpeg"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Rudrank Basant",
+    "position": "App and Backend",
+    "img": "/team/technical/rudrank.jpeg"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Ameya Kore",
+    "position": "Full Stack",
+    "img": "/team/technical/ameya.jpeg"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Sankhayan Bhattacharjee",
+    "position": "Full Stack and Game",
+    "img": "/team/technical/sankhayan.jpeg"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "John Tony",
+    "position": "Backend",
+    "img": "/team/technical/john.jpeg"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Chandram Dutta",
+    "position": "App",
+    "img": "/team/technical/chandram.jpeg"
+  },
+  {
+    "name": "Rounak Agrawal",
+    "position": "App and Frontend",
+    "img": "/team/technical/rounak.jpeg"
+  },
+  {
+    "name": "Pratham Gupta",
+    "position": "Frontend",
+    "img": "/team/technical/pratham.jpeg"
+  },
+  {
+    "name": "Aarabi",
+    "position": "Python",
+    "img": "/team/technical/aarabi.jpeg"
+  },
+  {
+    "name": "Aditya Chowdhary",
+    "position": "Backend",
+    "img": "/team/technical/aditya_chowdhary.jpeg"
+  },
+  {
+    "name": "Dev Keshwani",
+    "position": "App",
+    "img": "/team/technical/dev.jpeg"
+  },
+  {
+    "name": "Divyanshu Singh",
+    "position": "Frontend",
+    "img": "/team/technical/divyanshu.png"
+  },
+  {
+    "name": "Hari Govind",
+    "position": "App and Security",
+    "img": "/team/technical/hari.png"
+  },
+  {
+    "name": "Rupaak S",
+    "position": "Frontend",
+    "img": "/team/technical/rupaak.jpeg"
+  },
+  {
+    "name": "Sanchit Gupta",
+    "position": "Technical",
+    "img": "/team/technical/sanchit.jpeg"
+  },
+  {
+    "name": "Sidhant S Srivastava",
+    "position": "Machine Learning",
+    "img": "/team/technical/sidhant.jpeg"
+  },
+  {
+    "name": "Soham Ghugare",
+    "position": "Backend",
+    "img": "/team/technical/soham.jpeg"
+  },
+  {
+    "name": "Souvik Mahanta",
+    "position": "Security",
+    "img": "/team/technical/souvik.jpeg"
   }
 ]

@@ -13,7 +13,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import FameCard from '@/components/FameCard'
 import { useHorizontalScroll } from '@/hooks/useHorizontalScroll'
 import TeamCard from '@/components/TeamCard'
-import team_members from "@/content/team_members.json"
+import team_members from "@/content/team_members_board.json"
 import events from "@/content/events.json"
 import projects from "@/content/projects.json"
 import fame from "@/content/fame.json"
