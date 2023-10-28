@@ -44,7 +44,7 @@ const Footer: FC<Props> = ({bg}) => {
             <h1 onClick={() => scrollToSection("events")} className='font-bold w-min cursor-pointer'>
               Events
             </h1>
-            <h1 onClick={() => scrollToSection("team")} className='font-bold w-min cursor-pointer'>
+            <h1 onClick={() => router.push("/team")} className='font-bold w-min cursor-pointer'>
               Team
             </h1>
             <h1 onClick={() => scrollToSection("projects")} className='font-bold w-min cursor-pointer'>
