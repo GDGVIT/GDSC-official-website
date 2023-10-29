@@ -18,7 +18,7 @@ const Card: FC<Props> = ({ children, bg, i, borderColor }) => {
             whileInView={{ y: 0 }}
             transition={{ duration: 0.2, delay: i * 0.05 }}
             viewport={{ once: true }}
-            style={{ backgroundColor: bg || "white", borderColor: borderColor || "black" }} className='flex-col p-3 m-2 lg:m-4 min-w-[300px] rounded-md border-2 border-black w-[75vw] sm:max-w-[40vw] lg:max-w-[25vw] xl:max-w-[20vw]'>
+            style={{ backgroundColor: bg || "white", borderColor: borderColor || "black" }} className='flex-col flex p-3 m-2 lg:m-4 min-w-[300px] rounded-md border-2 border-black w-[75vw] sm:max-w-[40vw] lg:max-w-[25vw] xl:max-w-[20vw]'>
             {children}
         </motion.div>
 

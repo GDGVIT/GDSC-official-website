@@ -252,7 +252,7 @@ export default function Home() {
             <CardsContainer style={{ paddingLeft: screenWidth > 650 ? "100px" : "5vw" }} className='text-dark' ref={teamRef}>
               {/* <SampleCards /> */}
               {team_members.map((mem, i) => <TeamCard i={(numTeamInView > i) ? i : 0} key={"mem" + i} title={mem.name} img={mem.img} subtitle={mem.position} />)}
-              <SeeMore linkto='/team' i={(numTeamInView > team_members.length) ? team_members.length : 0} img='#' title='See All' subtitle='Cool Peeps' />
+              <SeeMore linkto='/team' i={(numTeamInView > team_members.length) ? team_members.length : 0} img='#' title='See All' subtitle='Cool Peeps ;)' />
             </CardsContainer>
           </HorizontalTranslate>
         </Section>

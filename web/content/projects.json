@@ -2,21 +2,29 @@
   {
     "title": "VITTY",
     "description": "VITTY is your friendly neighborhood Time table app.",
-    "img": "/vitty.jpg"
+    "img": "/vitty.jpg",
+    "github": ["https://github.com/GDGVIT/vitty-app", "https://github.com/GDGVIT/vitty-backend"],
+    "link": "https://vitty.dscvit.com/"
   },
   {
-    "title": "VITTY",
-    "description": "VITTY is your friendly neighborhood Time table app.",
-    "img": "/vitty.jpg"
+    "title": "StampIt",
+    "description": "Want to bring your sticker collections and awesome gifs to the meeting? Then StampIt is your all-in-one solution.",
+    "img": "/projects/stampit.jpg",
+    "github":["https://github.com/GDGVIT/StampIt-Backend","https://github.com/GDGVIT/StampIt-Extension"],
+    "link":"https://chrome.google.com/webstore/detail/stampit/dnoalbddcffeeifbjakbmgdaljbfeamf"
   },
   {
-    "title": "VITTY",
-    "description": "VITTY is your friendly neighborhood Time table app.",
-    "img": "/vitty.jpg"
+    "title": "Handwriter",
+    "description": "A smart program to convert digital document to hand-written document",
+    "img": "/projects/default.png",
+    "github":["https://github.com/GDGVIT/HandWriter"],
+    "link":"https://handwriter.dscvit.com/"
   },
   {
-    "title": "VITTY",
-    "description": "VITTY is your friendly neighborhood Time table app.",
-    "img": "/vitty.jpg"
+    "title": "Submit an idea",
+    "description": "Didn't get the chance to implement your favourite idea? Why not give us a chance to bring it to real life.",
+    "img": "/projects/ideas.jpeg",
+    "github":[],
+    "link":"https://ideas.dscvit.com/"
   }
 ]
