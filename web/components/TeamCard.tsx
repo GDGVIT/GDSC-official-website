@@ -11,7 +11,7 @@ type Props = {
 const TeamCard = ({ img, title, subtitle, i }: Props) => {
     return (
         <Card bg='white' i={i}>
-            <div className='w-full border-2 border-black rounded-md '>
+            <div className='w-full border-2 border-black rounded-md'>
                 <Image src={img} layout='responsive' width={300} height={300} alt='Logo' />
             </div>
             <h2 className='my-3 font-sans text-2xl font-semibold'>

@@ -46,8 +46,6 @@ const CardsContainer = styled.div`
     padding: 0 0 0 100px;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
     overflow-y:hidden;
   `;
 
@@ -179,7 +177,7 @@ export default function Home() {
                 <p className='mb-10 font-mono text-xl md:text-2xl'>
                   We think slightly out of the box, we believe that a club’s resources must not only be channeled into conducting events but also to propagate learning and teaching, symbiotically.
                   <br /> <br />
-                  That said, we conduct two Flagship events, namely, DevFest and WomenTechies, and tons of insightful workshops!
+                  That said, we conduct Flagship events such as DevJams, Hexathon and WomenTechies, and tons of insightful workshops!
                 </p>
                 <div className='mx-auto lg:m-0 self-end max-w-[700px] w-[100%] flex justify-evenly lg:justify-between'>
                   {socials.map((social, i) => <Icon key={"soc" + i} {...social} />)}
@@ -255,7 +253,7 @@ export default function Home() {
             <CardsContainer style={{ paddingLeft: screenWidth > 650 ? "100px" : "5vw" }} className='text-dark' ref={teamRef}>
               {/* <SampleCards /> */}
               {team_members.map((mem, i) => <TeamCard i={(numTeamInView > i) ? i : 0} key={"mem" + i} title={mem.name} img={mem.img} subtitle={mem.position} />)}
-              <SeeMore i={(numTeamInView > team_members.length) ? team_members.length : 0} img='#' title='See All' subtitle='Cool Peeps' />
+              <SeeMore linkto='/team' i={(numTeamInView > team_members.length) ? team_members.length : 0} img='#' title='See All' subtitle='Cool Peeps' />
             </CardsContainer>
           </HorizontalTranslate>
         </Section>
@@ -265,6 +263,7 @@ export default function Home() {
           <HorizontalTranslate mainRef={mainRef} title={"Projects"} style={{ scale: projectScale }}>
             <CardsContainer style={{ paddingLeft: screenWidth > 650 ? "100px" : "5vw", paddingRight: screenWidth > 650 ? "100px" : "5vw" }} className='text-dark' ref={projectRef}>
               {projects.map((proj, i) => <ProjectCard i={(numProjectInView > i) ? i : 0} key={"mem" + i} {...proj} />)}
+              <SeeMore linkto='https://github.com/GDGVIT/' i={(numProjectInView > projects.length) ? projects.length : 0} img='#' title='See All' subtitle='Groundbreaking Stuff' />
             </CardsContainer>
           </HorizontalTranslate>
         </Section>

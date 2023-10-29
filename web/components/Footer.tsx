@@ -35,7 +35,7 @@ const Footer: FC<Props> = ({bg}) => {
           <div className='flex flex-col gap-2'>
             <Image className='h-8 w-20 mb-3' src={"/newlogowhite.svg"} width={80} height={100} alt='Logo' />
             <p className='pl-2 uppercase'>Google Developer</p>
-            <p className='pl-2 uppercase'>Students Clubs</p>
+            <p className='pl-2 uppercase'>Students Clubs VIT</p>
           </div>
           <div className='flex flex-col xl:gap-4 gap-2 uppercase'>
             <h1 onClick={() => scrollToSection("fame")} className='font-bold w-min cursor-pointer'>
