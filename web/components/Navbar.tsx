@@ -47,7 +47,7 @@ const Navbar: FC<Props> = ({ theme = "light", landing }) => {
 
       }
       <div id="myNav" className={`relative flex-col flex overlay ${menu ? "h-full" : "h-0"}`}>
-        <div className="px-16 text-black overlay-content pt-60">
+        <div className="px-16 text-black overlay-content pt-60 overflow-auto">
           <h1 onClick={() => scrollToSection("home")} className='font-sans text-[3rem] font-extrabold w-min text-grey hover:text-pastel_red mb-5 cursor-pointer'>
             Home
           </h1>
