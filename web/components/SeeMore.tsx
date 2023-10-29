@@ -13,8 +13,8 @@ type Props = {
 const SeeMore = ({ img, title, subtitle, i, linkto }: Props) => {
     return (
         <Card bg='transparent' borderColor='transparent' i={i}>
-            <Link href={linkto}>
-            <div className='hover:bg-white hover:bg-opacity-60 p-3 rounded-md'>
+            <Link className='h-full block w-full' href={linkto}>
+            <div className='hover:bg-white hover:bg-opacity-60 p-3 rounded-md my-auto grow h-full flex flex-col justify-center'>
                 <h2 className='my-3 font-sans text-2xl font-semibold'>
                     {title}
                 </h2>
