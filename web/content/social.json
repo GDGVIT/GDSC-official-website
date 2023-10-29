@@ -2,36 +2,41 @@
   {
     "name": "Insta",
     "icon": "insta",
-    "link": "https://dscv.it/instagram"
+    "link": "https://www.instagram.com/gdscvitvellore/"
   },
   {
     "name": "Twitter",
     "icon": "twitter",
-    "link": "https://dscv.it/twitter"
+    "link": "https://twitter.com/gdscvit"
   },
   {
     "name": "FB",
     "icon": "facebook",
-    "link": "https://dscv.it/facebook"
+    "link": "https://www.facebook.com/gdscvitvellore"
   },
   {
     "name": "Medium",
     "icon": "medium",
-    "link": "https://dscv.it/medium"
+    "link": "https://medium.com/gdg-vit"
   },
   {
     "name": "Telegram",
     "icon": "telegram",
-    "link": "https://dscv.it/telegram"
+    "link": "https://t.me/joinchat/Zlq0k9DMj6cxYTQ9"
   },
   {
     "name": "LinkedIn",
     "icon": "linkedin",
-    "link": "https://dscv.it/linkedin"
+    "link": "https://www.linkedin.com/company/dscvit/"
   },
   {
     "name": "YT",
     "icon": "youtube",
-    "link": "https://dscv.it/youtube"
+    "link": "https://www.youtube.com/channel/UCvT-ZJF7fXHJi9kDeCPR-zg"
+  },
+  {
+    "name": "GitHub",
+    "icon": "github",
+    "link": "https://github.com/GDGVIT"
   }
 ]
