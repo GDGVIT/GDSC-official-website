@@ -5,6 +5,7 @@ import { FC } from 'react'
 import { scroller } from 'react-scroll'
 import socials from "@/content/social.json"
 import Icon from './Icons'
+import Link from 'next/link'
 
 interface Props {
     bg?: string
@@ -32,11 +33,11 @@ const Footer: FC<Props> = ({bg}) => {
       <Image alt='footer' src={"/footer-clouds.svg"} width={200} height={200} className='w-full h-auto pt-8' />
       <div className='absolute bottom-0 w-full flex flex-col lg:px-32 px-20 xl:gap-14 lg:gap-10 gap-4 items-center'>
         <div className="sm:flex hidden w-full flex-row justify-between gap-5 flex-wrap">
-          <div className='flex flex-col gap-2'>
+          <Link target='blank' href={"https://gdsc.community.dev/vellore-institute-of-technology-vit-vellore/"} className='flex flex-col gap-2'>
             <Image className='h-8 w-20 mb-3' src={"/newlogowhite.svg"} width={80} height={100} alt='Logo' />
             <p className='pl-2 uppercase'>Google Developer</p>
             <p className='pl-2 uppercase'>Students Clubs VIT</p>
-          </div>
+          </Link>
           <div className='flex flex-col xl:gap-4 gap-2 uppercase'>
             <h1 onClick={() => scrollToSection("fame")} className='font-bold w-min cursor-pointer'>
               Achievements
