@@ -1,9 +1,7 @@
 
 import './globals.css'
-import { Unbounded } from 'next/font/google'
 import localFont from "next/font/local"
 
-const unbounded = Unbounded({ subsets: ['latin'], variable: '--font-unbounded', display: 'swap' })
 const neue_machina = localFont({
   src: '/NeueMachina-Regular.otf',
   variable: '--font-neuemachina'
@@ -34,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${unbounded.variable} ${neue_machina.variable} text-[10px] md:text-[16px]`} >
+    <html lang="en" className={`${neue_machina.variable} text-[10px] md:text-[16px]`} >
       <body className='overflow-hidden bg-dark'>{children}</body>
     </ html>
   )
