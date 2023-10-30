@@ -33,7 +33,7 @@ const TeamCardForGrid = ({ img, title, subtitle, i, github, link, linkedin }: Pr
             <h3 className='text-grey'>
                 {subtitle}
             </h3>
-            <div className='flex gap-2 justify-end mt-auto'>
+            <div className='flex gap-2 justify-end mt-auto pt-2'>
                 {link ?
                 <Icon icon='web' xsmall link={link || ""} name='userweb' />
                 : null}

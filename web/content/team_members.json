@@ -38,13 +38,15 @@
     "name": "Sayar Bhattacharyya",
     "position": "Frontend",
     "img": "/team/technical/sayar.jpeg",
-    "github":"https://github.com/SayarB"
+    "github":"https://github.com/SayarB",
+    "linkedin":"https://www.linkedin.com/in/sayar-bhattacharyya/"
   },
   {
     "name": "Prashanna Rajbhandari",
     "position": "App",
     "img": "/team/technical/prashanna.jpg",
-    "github":"https://github.com/PrashannaR"
+    "github":"https://github.com/PrashannaR",
+    "linkedin":"https://www.linkedin.com/in/prashannar/"
   },
   {
     "name": "Ameya Kore",
@@ -56,31 +58,36 @@
     "name": "Sankhayan Bhattacharjee",
     "position": "Full Stack and Game",
     "img": "/team/technical/sankhayan.jpeg",
-    "github":"https://github.com/Lioncat2002"
+    "github":"https://github.com/Lioncat2002",
+    "linkedin":"https://www.linkedin.com/in/sankhayan-bhattacharjee-996336220/"
   },
   {
     "name":"Abhijeet Bhardwaj",
     "position":"App",
     "img":"/team/technical/abhijeet.jpeg",
-    "github":"https://github.com/abhijeet-Bh"
+    "github":"https://github.com/abhijeet-Bh",
+    "linkedin":"https://www.linkedin.com/in/abhijeet-bh/"
   },
   {
     "name": "John Tony",
     "position": "Backend",
     "img": "/team/technical/john.jpeg",
-    "github":"https://github.com/johntony366"
+    "github":"https://github.com/johntony366",
+    "linkedin":"https://www.linkedin.com/in/johntony366/"
   },
   {
     "name": "Chandram Dutta",
     "position": "App",
     "img": "/team/technical/chandram.jpeg",
-    "github":"https://github.com/Chandram-Dutta"
+    "github":"https://github.com/Chandram-Dutta",
+    "linkedin":"https://www.linkedin.com/in/chandramdutta/"
   },
   {
     "name": "Rounak Agrawal",
     "position": "App and Frontend",
     "img": "/team/technical/rounak.jpeg",
-    "github":"https://github.com/userrounakk"
+    "github":"https://github.com/userrounakk",
+    "linkedin":"https://www.linkedin.com/in/userrounakk/"
   },
   {
     "name": "Pratham Gupta",
@@ -110,7 +117,8 @@
     "name": "Divyanshu Singh",
     "position": "Frontend",
     "img": "/team/technical/divyanshu.png",
-    "github":"https://github.com/isinghdivyanshu"
+    "github":"https://github.com/isinghdivyanshu",
+    "linkedin":"https://www.linkedin.com/in/isinghdivyanshu/"
   },
   {
     "name": "Hari Govind",
@@ -121,19 +129,22 @@
     "name": "Rupaak S",
     "position": "Frontend",
     "img": "/team/technical/rupaak.jpeg",
-    "github":"https://github.com/RupaakSrinivas"
+    "github":"https://github.com/RupaakSrinivas",
+    "linkedin":"https://www.linkedin.com/in/rupaaksrinivas/"
   },
   {
     "name": "Sidhant S Srivastava",
     "position": "Machine Learning",
     "img": "/team/technical/sidhant.jpeg",
-    "github":"https://github.com/sidhant-sriv"
+    "github":"https://github.com/sidhant-sriv",
+    "linkedin":"https://www.linkedin.com/in/sidhant-srivastava-41803620b/"
   },
   {
     "name": "Soham Ghugare",
     "position": "Backend",
     "img": "/team/technical/soham.jpeg",
-    "github":"https://github.com/SohamGhugare"
+    "github":"https://github.com/SohamGhugare",
+    "linkedin":"https://www.linkedin.com/in/soham-ghugare/"
   },
   {
     "name": "Souvik Mahanta",

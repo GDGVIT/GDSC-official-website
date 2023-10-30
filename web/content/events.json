@@ -1,57 +1,57 @@
 [
     {
-        "name":"Women Techies 2023",
+        "name":"Women Techies",
         "photos":[
             {
-                "img": "/events/wt/logo.png"
+                "img": "/events/wt/WT.png"
             },
             {
-                "img": "/vishesh.jpg"
+                "img": "/events/wt/event1.jpeg"
             },
             {
-                "img": "/vishesh.jpg"
+                "img": "/events/wt/event2.jpeg"
             }
         ]
     },
     {
-        "name":"DevJams 2022",
+        "name":"DevJams",
         "photos":[
             {
-                "img": "/vishesh.jpg"
+                "img": "/events/dj/DJ.png"
             },
             {
-                "img": "/vishesh.jpg"
+                "img": "/events/dj/event1.jpeg"
             },
             {
-                "img": "/vishesh.jpg"
+                "img": "/events/dj/event2.jpeg"
             }
         ]
     },
     {
-        "name":"Hexathon 2022",
+        "name":"Hexathon",
         "photos":[
             {
-                "img": "/events/hexathon/logo.png"
+                "img": "/events/hexathon/Hex2.png"
             },
             {
-                "img": "/vishesh.jpg"
+                "img": "/events/hexathon/HEXP2.png"
             },
             {
-                "img": "/vishesh.jpg"
+                "img": "/events/hexathon/event.jpeg"
             }
         ]
     },
     {
-        "name":"CTF 2023",
+        "name":"CTF",
         "photos":[
             {
-                "img": "/vishesh.jpg"
+                "img": "/events/ctf/CTF2.png"
             },
             {
-                "img": "/vishesh.jpg"
+                "img": "/projects/default.png"
             },
             {
-                "img": "/vishesh.jpg"
+                "img": "/events/ctf/CTF2.png"
             }
         ]
     }

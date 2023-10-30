@@ -25,7 +25,7 @@ const TeamCard = ({ img, title, subtitle, i, linkedin, github, link }: Props) =>
             <h3>
                 {subtitle}
             </h3>
-            <div className='flex gap-2 justify-end mt-auto'>
+            <div className='flex gap-2 justify-end mt-auto pt-2'>
                 {link ?
                 <Icon icon='web' xsmall link={link || ""} name='userweb' />
                 : null}

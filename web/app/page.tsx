@@ -220,8 +220,34 @@ export default function Home() {
                   return (
                     event.photos.map((pic, j) => {
                       return (
-                        <div key={`event${i}pic${j}`}>
-                          <Image src={pic.img} layout='responsive' width={300} height={300} alt='event' />
+                        <div
+                          style={{
+                            width: '100%',
+                            overflow: 'hidden',
+                            aspectRatio: '1/1', // Sets the aspect ratio to 1:1 (square)
+                          }}
+                          key={`event${i}pic${j}`}
+                        >
+                          <div
+                            style={{
+                              width: '100%',
+                              paddingBottom: '100%', // 1:1 aspect ratio, e.g., 100% width and 100% height
+                              position: 'relative',
+                              overflow: 'hidden',
+                            }}
+                          >
+                            <Image
+                              style={{
+                                position: 'absolute',
+                                width: '100%',
+                                height: '100%',
+                              }}
+                              src={pic.img}
+                              layout='fill' // Fills the parent container
+                              objectFit='cover' // Enlarges/shrinks the image to cover the container
+                              alt='event'
+                            />
+                          </div>
                         </div>
                       )
                     })

@@ -8,23 +8,26 @@
   {
     "name": "Deepam Purkayastha",
     "position":"UI/UX",
-    "img":"/projects/default.png",
+    "img":"/team/design/deepam.jpeg",
     "linkedin":"https://www.linkedin.com/in/deepam-purkayastha-309b23224/"
   },
   {
     "name": "Kumar Aryan",
     "position": "UI/UX",
-    "img": "/team/design/kumar_aryan.jpeg"
+    "img": "/team/design/kumar_aryan.jpeg",
+    "linkedin":"https://www.linkedin.com/in/kraryan/"
   },
   {
     "name":"Praful K M",
     "position":"UI/UX",
-    "img":"/team/design/praful.jpeg"
+    "img":"/team/design/praful.jpeg",
+    "linkedin":"https://www.linkedin.com/in/prafulkm/"
   },
   {
     "name": "Chandrima Manik",
     "position": "UI/UX",
-    "img": "/team/design/chandrima.jpeg"
+    "img": "/team/design/chandrima.jpeg",
+    "linkedin":"https://www.linkedin.com/in/chandrima-manik-497028276/"
   },
   {
     "name": "Sanchit Gupta",
@@ -34,11 +37,13 @@
   {
     "name": "Esha Santosh",
     "position": "UI/UX",
-    "img": "/team/design/esha.jpg"
+    "img": "/team/design/esha.jpg",
+    "linkedin":"https://www.linkedin.com/in/eshasantosh/"
   },
   {
     "name": "Simar Bhatia",
     "position": "Video and Graphics",
-    "img": "/team/design/simar.jpeg"
+    "img": "/team/design/simar.jpeg",
+    "linkedin":"https://www.linkedin.com/in/simar-bhatia-2b9504b8/"
   }
 ]
