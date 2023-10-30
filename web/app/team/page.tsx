@@ -58,7 +58,7 @@ export default function Team() {
     return (
         <main id='main-thing' className='h-[100vh] overflow-scroll overflow-x-hidden snap-y' ref={mainRef}>
             <Navbar theme={"light"} />
-            <div className="grid gap-16 p-10 mt-24 sm:grid-cols-12 sm:grid">
+            <div className="xs:grid gap-16 p-10 mt-24 md:grid-cols-12 sm:grid">
                 <div className="col-span-8 pt-24 text-white xl:col-span-4 lg:col-span-4 md:col-span-3">
                     <div className="sticky top-[150px]">
                         <h1 className={`font-extrabold ${curTab === "Board" ? "text-yellow" : curTab === "Technical" ? "text-pastel_green" : curTab === "Design" ? "text-pastel_blue" : "text-pastel_red"} uppercase lg:text-3xl md:text-2xl text-4xl`}>Meet The Team</h1>
