@@ -13,7 +13,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import FameCard from '@/components/FameCard'
 import { useHorizontalScroll } from '@/hooks/useHorizontalScroll'
 import TeamCard from '@/components/TeamCard'
-import team_members from "@/content/team_members.json"
+import team_members from "@/content/team_members_board.json"
 import events from "@/content/events.json"
 import projects from "@/content/projects.json"
 import fame from "@/content/fame.json"
@@ -35,15 +35,16 @@ import "slick-carousel/slick/slick-theme.css";
 import BlogsList from '@/components/BlogsList'
 import { Provider } from './provider'
 import BlogCover from '@/components/BlogCover'
+import SeeMore from '@/components/SeeMore'
+import { useRouter } from 'next/navigation'
+import { scroller } from 'react-scroll'
+import Footer from '@/components/Footer'
 
 const CardsContainer = styled.div`
     position: relative;
-    height: 100%;
     padding: 0 0 0 100px;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
     overflow-y:hidden;
   `;
 
@@ -60,6 +61,7 @@ export default function Home() {
   const screenWidth = useScreenWidth()
   const { scrollYProgress } = useScroll({ container: mainRef })
   const [startAnimationComplete, setStartAnimationComplete] = useState(false);
+  const router = useRouter()
   const setIntersecting = useCallback((page: string) => {
     setPage(page)
   }, [setPage])
@@ -74,6 +76,17 @@ export default function Home() {
 
   const [hoveringKey, setHoveringKey] = useState(0)
   const [hoveringText, setHoveringText] = useState("");
+
+  const scrollToSection = (section: string) => {
+    router.push("/")
+    scroller.scrollTo(section, {
+      duration: 1500,
+      delay: 150,
+      smooth: true,
+      containerId: 'main-thing',
+      // offset: 50,
+    })
+  }
 
   const settings = {
     infinite: true,
@@ -126,9 +139,21 @@ export default function Home() {
     console.log(hoveringKey)
   }, [hoveringKey])
 
+  useEffect(() => {
+    if (localStorage.getItem('visited') === 'true') {
+      setStartAnimationComplete(true)
+    }
+  }, [])
+
+  useEffect(() => {
+    if (startAnimationComplete) {
+      localStorage.removeItem("visited")
+    }
+  }, [startAnimationComplete])
+
 
   return <main id='main-thing' ref={mainRef} className='h-[100vh] overflow-auto overflow-x-hidden snap-y'>
-    {!startAnimationComplete && <StartAnim onComplete={() => { setStartAnimationComplete(true) }} />}
+    <StartAnim onComplete={() => { setStartAnimationComplete(true) }} />
     {
       startAnimationComplete &&
       <>
@@ -151,7 +176,7 @@ export default function Home() {
                 <p className='mb-10 font-mono text-xl md:text-2xl'>
                   We think slightly out of the box, we believe that a club’s resources must not only be channeled into conducting events but also to propagate learning and teaching, symbiotically.
                   <br /> <br />
-                  That said, we conduct two Flagship events, namely, DevFest and WomenTechies, and tons of insightful workshops!
+                  That said, we conduct Flagship events such as DevJams, Hexathon and WomenTechies, and tons of insightful workshops!
                 </p>
                 <div className='mx-auto lg:m-0 self-end max-w-[700px] w-[100%] flex justify-evenly lg:justify-between'>
                   {socials.map((social, i) => <Icon key={"soc" + i} {...social} />)}
@@ -226,7 +251,8 @@ export default function Home() {
           <HorizontalTranslate mainRef={mainRef} title={"Meet the Team"} style={{ scale: teamScale }}>
             <CardsContainer style={{ paddingLeft: screenWidth > 650 ? "100px" : "5vw" }} className='text-dark' ref={teamRef}>
               {/* <SampleCards /> */}
-              {team_members.map((mem, i) => <TeamCard i={(numTeamInView > i) ? i : 0} key={"mem" + i} title={mem.name} img={mem.img} subtitle={mem.position} />)}
+              {team_members.map((mem, i) => <TeamCard i={(numTeamInView > i) ? i : 0} key={"mem" + i} title={mem.name} link={mem.link} github={mem.github} linkedin={mem.linkedin} img={mem.img} subtitle={mem.position} />)}
+              <SeeMore linkto='/team' i={(numTeamInView > team_members.length) ? team_members.length : 0} img='#' title='See All' subtitle='Cool Peeps ;)' />
             </CardsContainer>
           </HorizontalTranslate>
         </Section>
@@ -236,6 +262,7 @@ export default function Home() {
           <HorizontalTranslate mainRef={mainRef} title={"Projects"} style={{ scale: projectScale }}>
             <CardsContainer style={{ paddingLeft: screenWidth > 650 ? "100px" : "5vw", paddingRight: screenWidth > 650 ? "100px" : "5vw" }} className='text-dark' ref={projectRef}>
               {projects.map((proj, i) => <ProjectCard i={(numProjectInView > i) ? i : 0} key={"mem" + i} {...proj} />)}
+              <SeeMore linkto='https://github.com/GDGVIT/' i={(numProjectInView > projects.length) ? projects.length : 0} img='#' title='See All' subtitle='Groundbreaking Stuff :0' />
             </CardsContainer>
           </HorizontalTranslate>
         </Section>
@@ -256,6 +283,7 @@ export default function Home() {
 
         </Section>
         <Element name="footer" />
+        <Footer bg='blue' />
       </>}
   </main >
 

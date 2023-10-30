@@ -1,47 +1,144 @@
 [
   {
-    "name": "Vishesh Bansal",
-    "position": "Community Lead",
-    "img": "/vishesh.jpg"
+    "name": "Anuj Parihar",
+    "position": "Backend and Security",
+    "img": "/team/technical/anuj.jpeg",
+    "github":"https://github.com/bearts",
+    "linkedin":"https://www.linkedin.com/in/anujpflash/"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Dhruv Shah",
+    "position": "Backend",
+    "img": "/team/technical/dhruv.jpeg",
+    "github":"https://github.com/Dhruv9449",
+    "linkedin":"https://www.linkedin.com/in/dhruv9449/"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name":"Anirudh Mishra",
+    "position":"Full Stack",
+    "img":"/team/technical/anirudh.jpeg",
+    "github":"https://github.com/anirudhgray",
+    "linkedin":"https://www.linkedin.com/in/anirudh-mishra/"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name":"Vignesh Natarajan",
+    "position":"Backend",
+    "img":"/team/technical/vignesh.jpeg",
+    "linkedin":"https://www.linkedin.com/in/0x5b",
+    "github":"https://github.com/0x5b-5245444143544544-5d"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Rudrank Basant",
+    "position": "App and Backend",
+    "img": "/team/technical/rudrank.jpeg",
+    "linkedin":"https://www.linkedin.com/in/rudrankbasant/",
+    "github":"https://github.com/rudrankbasant"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Sayar Bhattacharyya",
+    "position": "Frontend",
+    "img": "/team/technical/sayar.jpeg",
+    "github":"https://github.com/SayarB"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Prashanna Rajbhandari",
+    "position": "App",
+    "img": "/team/technical/prashanna.jpg",
+    "github":"https://github.com/PrashannaR"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Ameya Kore",
+    "position": "Full Stack",
+    "img": "/team/technical/ameya.jpeg",
+    "linkedin":"https://www.linkedin.com/in/ameya-kore-925620239/"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Sankhayan Bhattacharjee",
+    "position": "Full Stack and Game",
+    "img": "/team/technical/sankhayan.jpeg",
+    "github":"https://github.com/Lioncat2002"
+  },
+  {
+    "name":"Abhijeet Bhardwaj",
+    "position":"App",
+    "img":"/team/technical/abhijeet.jpeg",
+    "github":"https://github.com/abhijeet-Bh"
+  },
+  {
+    "name": "John Tony",
+    "position": "Backend",
+    "img": "/team/technical/john.jpeg",
+    "github":"https://github.com/johntony366"
+  },
+  {
+    "name": "Chandram Dutta",
+    "position": "App",
+    "img": "/team/technical/chandram.jpeg",
+    "github":"https://github.com/Chandram-Dutta"
+  },
+  {
+    "name": "Rounak Agrawal",
+    "position": "App and Frontend",
+    "img": "/team/technical/rounak.jpeg",
+    "github":"https://github.com/userrounakk"
+  },
+  {
+    "name": "Pratham Gupta",
+    "position": "Frontend",
+    "img": "/team/technical/pratham.jpeg",
+    "github":"https://github.com/SafeTorpedo"
+  },
+  {
+    "name": "Aarabi",
+    "position": "Python",
+    "img": "/team/technical/aarabi.jpeg",
+    "linkedin":"https://www.linkedin.com/in/aarabi-balakrishnan-88629b28a/"
+  },
+  {
+    "name": "Aditya Chowdhary",
+    "position": "Backend",
+    "img": "/team/technical/aditya_chowdhary.jpeg",
+    "github":"https://github.com/Aditya-Chowdhary"
+  },
+  {
+    "name": "Dev Keshwani",
+    "position": "App",
+    "img": "/team/technical/dev.jpeg",
+    "github":"https://github.com/dk-a-dev"
+  },
+  {
+    "name": "Divyanshu Singh",
+    "position": "Frontend",
+    "img": "/team/technical/divyanshu.png",
+    "github":"https://github.com/isinghdivyanshu"
+  },
+  {
+    "name": "Hari Govind",
+    "position": "App and Security",
+    "img": "/team/technical/hari.png"
+  },
+  {
+    "name": "Rupaak S",
+    "position": "Frontend",
+    "img": "/team/technical/rupaak.jpeg",
+    "github":"https://github.com/RupaakSrinivas"
+  },
+  {
+    "name": "Sidhant S Srivastava",
+    "position": "Machine Learning",
+    "img": "/team/technical/sidhant.jpeg",
+    "github":"https://github.com/sidhant-sriv"
+  },
+  {
+    "name": "Soham Ghugare",
+    "position": "Backend",
+    "img": "/team/technical/soham.jpeg",
+    "github":"https://github.com/SohamGhugare"
+  },
+  {
+    "name": "Souvik Mahanta",
+    "position": "Security",
+    "img": "/team/technical/souvik.jpeg",
+    "linkedin":"https://www.linkedin.com/in/souvik-mahanta/"
   }
 ]

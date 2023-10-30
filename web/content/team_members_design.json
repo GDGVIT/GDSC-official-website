@@ -1,47 +1,44 @@
 [
   {
-    "name": "Pranav Ram",
-    "position": "Design Lead — Projects",
-    "img": "/vishesh.jpg"
+    "name": "Utkarsh Prasad Sinha",
+    "position": "Video and Graphics",
+    "img": "/team/design/utkarsh.jpg",
+    "linkedin":"https://www.linkedin.com/in/utkarsh-prasad-sinha-0a267519a/"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Deepam Purkayastha",
+    "position":"UI/UX",
+    "img":"/projects/default.png",
+    "linkedin":"https://www.linkedin.com/in/deepam-purkayastha-309b23224/"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Kumar Aryan",
+    "position": "UI/UX",
+    "img": "/team/design/kumar_aryan.jpeg"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name":"Praful K M",
+    "position":"UI/UX",
+    "img":"/team/design/praful.jpeg"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Chandrima Manik",
+    "position": "UI/UX",
+    "img": "/team/design/chandrima.jpeg"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Sanchit Gupta",
+    "position": "Technical",
+    "img": "/team/technical/sanchit.jpeg"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Esha Santosh",
+    "position": "UI/UX",
+    "img": "/team/design/esha.jpg"
   },
   {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
-  },
-  {
-    "name": "Yajat",
-    "position": "Tech Lead",
-    "img": "/vishesh.jpg"
+    "name": "Simar Bhatia",
+    "position": "Video and Graphics",
+    "img": "/team/design/simar.jpeg"
   }
 ]

@@ -81,3 +81,10 @@
   border-left: 5px solid; /* You can change the color by specifying a different value here */
   margin-left: 8px; /* Adjust the margin as needed for spacing */
 }
+
+/* write css to style the page scrollbar to be black background and high z index */
+::-webkit-scrollbar {
+  width: 0px;
+  background-color: black;
+  z-index: 100;
+}
