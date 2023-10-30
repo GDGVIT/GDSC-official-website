@@ -153,7 +153,7 @@ export default function Home() {
 
 
   return <main id='main-thing' ref={mainRef} className='h-[100vh] overflow-auto overflow-x-hidden snap-y'>
-    <StartAnim onComplete={() => { setStartAnimationComplete(true) }} />
+    {!startAnimationComplete && <StartAnim onComplete={() => { setStartAnimationComplete(true) }} />}
     {
       startAnimationComplete &&
       <>
