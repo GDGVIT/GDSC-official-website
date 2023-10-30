@@ -127,8 +127,8 @@ export default function Home() {
   }, [hoveringKey])
 
 
-  return <main id='main-thing' ref={mainRef} className='h-[100vh] overflow-scroll overflow-x-hidden snap-y'>
-    <StartAnim onComplete={() => { setStartAnimationComplete(true) }} />
+  return <main id='main-thing' ref={mainRef} className='h-[100vh] overflow-auto overflow-x-hidden snap-y'>
+    {!startAnimationComplete && <StartAnim onComplete={() => { setStartAnimationComplete(true) }} />}
     {
       startAnimationComplete &&
       <>
