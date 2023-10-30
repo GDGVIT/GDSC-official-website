@@ -1,8 +1,9 @@
+
 import './globals.css'
 import { Unbounded } from 'next/font/google'
 import localFont from "next/font/local"
 
-const unbounded = Unbounded({ subsets: ['latin'], variable: '--font-unbounded' })
+const unbounded = Unbounded({ subsets: ['latin'], variable: '--font-unbounded', display: 'swap' })
 const neue_machina = localFont({
   src: '/NeueMachina-Regular.otf',
   variable: '--font-neuemachina'
