@@ -87,6 +87,9 @@ export default function Team() {
                             title={mem.name}
                             img={mem.img}
                             subtitle={mem.position}
+                            github={mem.github}
+                            linkedin={mem.linkedin}
+                            link={mem.link}
                         />
                     ))}
                     <div id="Technical" className='flex'>
@@ -101,6 +104,8 @@ export default function Team() {
                             title={mem.name}
                             img={mem.img}
                             subtitle={mem.position}
+                            github={mem.github}
+                            linkedin={mem.linkedin}
                         />
                     ))}
                     <div id="Design" className='flex'>
@@ -115,6 +120,7 @@ export default function Team() {
                             title={mem.name}
                             img={mem.img}
                             subtitle={mem.position}
+                            linkedin={mem.linkedin}
                         />
                     ))}
                     <div id="Managers" className='flex'>
@@ -129,6 +135,7 @@ export default function Team() {
                             title={mem.name}
                             img={mem.img}
                             subtitle={mem.position}
+                            linkedin={mem.linkedin}
                         />
                     ))}
                 </div>

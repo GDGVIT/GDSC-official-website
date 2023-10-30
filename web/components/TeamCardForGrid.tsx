@@ -1,14 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
 import Card from './Card'
+import Icon from './Icons'
 type Props = {
     img: string
     title: string
     subtitle?: string;
     i: number;
+    github?: string;
+    linkedin?: string;
+    link?: string;
 }
 
-const TeamCardForGrid = ({ img, title, subtitle, i }: Props) => {
+const TeamCardForGrid = ({ img, title, subtitle, i, github, link, linkedin }: Props) => {
     return (
         <div className='bg-white flex-col p-3 m-2 lg:m-4 rounded-md border-2 border-black flex'>
             <div className='w-full border-2 border-black rounded-md '>
@@ -29,6 +33,17 @@ const TeamCardForGrid = ({ img, title, subtitle, i }: Props) => {
             <h3 className='text-grey'>
                 {subtitle}
             </h3>
+            <div className='flex gap-2 justify-end mt-auto'>
+                {link ?
+                <Icon icon='web' xsmall link={link || ""} name='userweb' />
+                : null}
+                {github ? 
+                <Icon icon='githubdark' xsmall link={github || ""} name='usergh' />
+                : null}
+                {linkedin ?
+                <Icon icon='linkedindark' xsmall link={linkedin || ""} name='userli' />
+                : null}
+            </div>
         </div>
     )
 }

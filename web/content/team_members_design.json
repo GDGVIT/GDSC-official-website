@@ -2,7 +2,14 @@
   {
     "name": "Utkarsh Prasad Sinha",
     "position": "Video and Graphics",
-    "img": "/team/design/utkarsh.jpg"
+    "img": "/team/design/utkarsh.jpg",
+    "linkedin":"https://www.linkedin.com/in/utkarsh-prasad-sinha-0a267519a/"
+  },
+  {
+    "name": "Deepam Purkayastha",
+    "position":"UI/UX",
+    "img":"/projects/default.png",
+    "linkedin":"https://www.linkedin.com/in/deepam-purkayastha-309b23224/"
   },
   {
     "name": "Kumar Aryan",
@@ -18,6 +25,11 @@
     "name": "Chandrima Manik",
     "position": "UI/UX",
     "img": "/team/design/chandrima.jpeg"
+  },
+  {
+    "name": "Sanchit Gupta",
+    "position": "Technical",
+    "img": "/team/technical/sanchit.jpeg"
   },
   {
     "name": "Esha Santosh",

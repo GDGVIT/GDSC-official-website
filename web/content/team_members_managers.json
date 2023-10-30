@@ -2,17 +2,20 @@
   {
     "name": "Aastha Gupta",
     "position": "Manager",
-    "img": "/team/management/aastha.jpeg"
+    "img": "/team/management/aastha.jpeg",
+    "linkedin":"https://www.linkedin.com/in/aastha-gupta-5a3824224/"
   },
   {
     "name": "Sanksriti Modi",
     "position": "Manager",
-    "img": "/team/management/sanskriti.jpeg"
+    "img": "/team/management/sanskriti.jpeg",
+    "linkedin":"https://www.linkedin.com/in/sanskriti-modi-b1207b229/"
   },
   {
     "name":"Sanvi Chavan",
     "position":"Manager",
-    "img":"/team/management/sanvi.jpeg"
+    "img":"/team/management/sanvi.jpeg",
+    "linkedin":"https://www.linkedin.com/in/sanvi-chavan-849669231/"
   },
   {
     "name": "Arnav Jaggi",
