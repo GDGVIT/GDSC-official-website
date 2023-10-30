@@ -16,6 +16,8 @@ export default function Team() {
     const scaleTransform = useTransform(scrollYProgress, [0, 0.1], [2, 1])
     const leftTransform = useTransform(scrollYProgress, [0, 0.1], ['37%', '3%'])
     const topTransform = useTransform(scrollYProgress, [0, 0.1], ['35%', '13%'])
+    // opacityTransform for full opacity for 90% of path, then fade out
+    const opacityTransform = useTransform(scrollYProgress, [0.80, 1.00], [1, 0])
     const fadeTransform = useTransform(scrollYProgress, [0.4, 0.41], ['none', 'block'])
 
     const [hookedYPostion, setHookedYPosition] = React.useState(0);
@@ -23,7 +25,7 @@ export default function Team() {
         setHookedYPosition(latest);
     })
 
-    const [curTab, setCurTab] = useState('Board');
+    const [curTab, setCurTab] = useState('');
 
     const scrollOptions = (section:string) => {
         const sectionElement = document.querySelector(`#${section}`);
@@ -72,22 +74,22 @@ export default function Team() {
             <Navbar theme={"light"} />
             <div className='lg:block hidden h-[100vh]'>
             </div>
-            <motion.div style={{ scale: scaleTransform, left: leftTransform, top: topTransform }} className="lg:block hidden fixed pointer-events-none left-[50px] w-7/12 text-white xl:w-4/12 lg:w-4/12 md:w-3/12">
-                <h1 className={`font-extrabold ${curTab === "Board" ? "text-yellow" : curTab === "Technical" ? "text-pastel_green" : curTab === "Design" ? "text-pastel_blue" : "text-pastel_red"} uppercase lg:text-3xl md:text-2xl text-4xl`}>Meet The Team</h1>
+            <motion.div style={{ scale: scaleTransform, left: leftTransform, top: topTransform, opacity: opacityTransform }} className="lg:block hidden fixed pointer-events-none left-[50px] w-7/12 text-white xl:w-4/12 lg:w-4/12 md:w-3/12 pr-2">
+                <h1 className={`font-extrabold ${curTab === "Board" ? "text-yellow" : curTab === "Technical" ? "text-pastel_green" : curTab === "Design" ? "text-pastel_blue" : curTab === "Managers" ? "text-pastel_red" : "text-yellow"} uppercase lg:text-3xl md:text-2xl text-4xl`}>Meet The Team</h1>
                 <p className="mt-4 font-light">
                     We’ve got a strong team filled with caffeine addicted developers, gradients loving designers, and machine-like working managers.
                 </p>
-                <div className="flex flex-col gap-2 mt-8 pointer-events-auto">
-                    <p onClick={() => scrollOptions('Board')} className={`w-fit ${curTab === "Board" ? "text-yellow underline underline-offset-4 team-tab-after" : "text-grey"} hover:text-yellow cursor-pointer`}>Board</p>
-                    <p onClick={() => scrollOptions('Technical')} className={`w-fit ${curTab === "Technical" ? "text-pastel_green underline underline-offset-4 team-tab-after" : "text-grey"} hover:text-pastel_green cursor-pointer`}>Techies</p>
-                    <p onClick={() => scrollOptions('Design')} className={`w-fit ${curTab === "Design" ? "text-pastel_blue underline underline-offset-4 team-tab-after" : "text-grey"} hover:text-pastel_blue cursor-pointer`}>Designers</p>
-                    <p onClick={() => scrollOptions('Managers')} className={`w-fit ${curTab === "Managers" ? "text-pastel_red underline underline-offset-4 team-tab-after" : "text-grey"} hover:text-pastel_red cursor-pointer`}>Managers</p>
+                <div className="flex flex-col gap-2 mt-8 w-fit">
+                    <p onClick={() => scrollOptions('Board')} className={`w-fit pointer-events-auto ${curTab === "Board" ? "text-yellow underline underline-offset-4 team-tab-after" : "text-grey"} hover:text-yellow cursor-pointer`}>Board</p>
+                    <p onClick={() => scrollOptions('Technical')} className={`w-fit pointer-events-auto ${curTab === "Technical" ? "text-pastel_green underline underline-offset-4 team-tab-after" : "text-grey"} hover:text-pastel_green cursor-pointer`}>Techies</p>
+                    <p onClick={() => scrollOptions('Design')} className={`w-fit pointer-events-auto ${curTab === "Design" ? "text-pastel_blue underline underline-offset-4 team-tab-after" : "text-grey"} hover:text-pastel_blue cursor-pointer`}>Designers</p>
+                    <p onClick={() => scrollOptions('Managers')} className={`w-fit pointer-events-auto ${curTab === "Managers" ? "text-pastel_red underline underline-offset-4 team-tab-after" : "text-grey"} hover:text-pastel_red cursor-pointer`}>Managers</p>
                 </div>
             </motion.div>
             <div className="xs:grid gap-16 p-10 mt-24 md:grid-cols-12 sm:grid">
                 <div className="col-span-8 pt-24 text-white xl:col-span-4 lg:col-span-4 md:col-span-3">
                 <div className="lg:hidden block sticky top-[150px]">
-                    <h1 className={`font-extrabold ${curTab === "Board" ? "text-yellow" : curTab === "Technical" ? "text-pastel_green" : curTab === "Design" ? "text-pastel_blue" : "text-pastel_red"} uppercase lg:text-3xl md:text-2xl text-4xl`}>Meet The Team</h1>
+                    <h1 className={`font-extrabold ${curTab === "Board" ? "text-yellow" : curTab === "Technical" ? "text-pastel_green" : curTab === "Design" ? "text-pastel_blue" : curTab === "Managers" ? "text-pastel_red" : "text-yellow"} uppercase lg:text-3xl md:text-2xl text-4xl`}>Meet The Team</h1>
                     <p className="mt-4 font-light">
                         We’ve got a strong team filled with caffeine addicted developers, gradients loving designers, and machine-like working managers.
                     </p>
