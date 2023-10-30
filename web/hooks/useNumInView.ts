@@ -12,7 +12,7 @@ export const useNumInView = ({ ref, arr }: Props) => {
   useEffect(() => {
     if (ref.current) {
       const scrollWidth = ref.current.scrollWidth;
-      console.log(scrollWidth);
+      // console.log(scrollWidth);
       const numFame = arr.length;
       const widthPerFrame = parseFloat(scrollWidth + "") / numFame;
       const numFrameInView = Math.ceil(screenWidth / widthPerFrame);

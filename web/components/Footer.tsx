@@ -16,6 +16,7 @@ const Footer: FC<Props> = ({bg}) => {
 
   const scrollToSection = (section: string) => {
     router.push("/")
+    localStorage.setItem("visited", 'true')
     scroller.scrollTo(section, {
       duration: 1500,
       delay: 150,

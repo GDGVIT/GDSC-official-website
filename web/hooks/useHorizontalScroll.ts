@@ -9,7 +9,7 @@ export function useHorizontalScroll() {
     if (ctrl_el) {
       const onWheel = (e: WheelEvent) => {
         if (e.deltaY == 0) return;
-        console.log(ref?.offsetHeight);
+        // console.log(ref?.offsetHeight);
         ref?.scrollTo({
           left: ref?.scrollLeft + e.deltaY,
           behavior: "smooth",
