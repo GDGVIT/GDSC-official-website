@@ -136,7 +136,7 @@ export default function Home() {
   }, [])
 
   useEffect(() => {
-    console.log(hoveringKey)
+    // console.log(hoveringKey)
   }, [hoveringKey])
 
   useEffect(() => {

@@ -18,6 +18,7 @@ export default function Team() {
     const topTransform = useTransform(scrollYProgress, [0, 0.1], ['35%', '13%'])
     // opacityTransform for full opacity for 90% of path, then fade out
     const opacityTransform = useTransform(scrollYProgress, [0.80, 1.00], [1, 0])
+    const arrowOpacityTransform = useTransform(scrollYProgress, [0.0, 0.03], [1, 0])
     const fadeTransform = useTransform(scrollYProgress, [0.4, 0.41], ['none', 'block'])
 
     const [hookedYPostion, setHookedYPosition] = React.useState(0);
@@ -85,6 +86,10 @@ export default function Team() {
                     <p onClick={() => scrollOptions('Design')} className={`w-fit pointer-events-auto ${curTab === "Design" ? "text-pastel_blue underline underline-offset-4 team-tab-after" : "text-grey"} hover:text-pastel_blue cursor-pointer`}>Designers</p>
                     <p onClick={() => scrollOptions('Managers')} className={`w-fit pointer-events-auto ${curTab === "Managers" ? "text-pastel_red underline underline-offset-4 team-tab-after" : "text-grey"} hover:text-pastel_red cursor-pointer`}>Managers</p>
                 </div>
+                {/* down arrow symbol, centred, use html symbol */}
+                <motion.div style={{opacity:arrowOpacityTransform}} className="flex justify-center absolute bottom-0 left-1/2 -translate-x-1/2 xl:-mb-16 -mb-12">
+                    <p className="text-grey text-2xl animate-bounce">&#8964;</p>
+                </motion.div>
             </motion.div>
             <div className="xs:grid gap-16 p-10 mt-24 md:grid-cols-12 sm:grid">
                 <div className="col-span-8 pt-24 text-white xl:col-span-4 lg:col-span-4 md:col-span-3">
