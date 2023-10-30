@@ -17,7 +17,7 @@ export const metadata = {
     site_name: 'GDSC VIT',
     images: [
       {
-        url: 'https://dscvit.com/og.png',
+        url: 'https://dscvit.com/projects/default.png',
         width: 1200,
         height: 630,
         alt: 'GDSC VIT',
