@@ -19,11 +19,11 @@ const TeamCardForGrid = ({ img, title, subtitle, i, github, link, linkedin }: Pr
                 <div className='aspect-square' style={{ width: '100%', overflow: 'hidden' }}>
                     <Image
                         src={img}
-                        layout='responsive'
+                        sizes='100vw'
                         width={300}
                         height={300}
-                        objectFit='cover'
-                        alt='Logo'
+                        className='w-full h-auto object-cover'
+                        alt='pfp'
                     />
                 </div>
             </div>

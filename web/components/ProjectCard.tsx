@@ -19,12 +19,13 @@ const ProjectCard = ({ img, title, description, link, i, github }: Props) => {
                 <div style={{ width: '100%', overflow: 'hidden' }}>
                     <Image
                         src={img}
-                        layout='responsive'
+                        // layout='responsive'
+                        sizes='100vw'
                         width={300}
                         height={300}
-                        objectFit='contain'
+                        // objectFit='contain'
                         alt='proj'
-                        className='aspect-video'
+                        className='aspect-video w-full h-auto object-cover'
                     />
                 </div>
             </div>

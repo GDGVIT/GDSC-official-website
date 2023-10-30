@@ -17,7 +17,14 @@ const TeamCard = ({ img, title, subtitle, i, linkedin, github, link }: Props) =>
     return (
         <Card bg='white' i={i}>
             <div className='w-full border-2 border-black rounded-md'>
-                <Image src={img} layout='responsive' width={300} height={300} alt='Logo' />
+                <Image 
+                    src={img} 
+                    sizes='100vw'
+                    width={300}
+                    height={300}
+                    className='w-full h-auto' 
+                    alt='pfp' 
+                />
             </div>
             <h2 className='my-3 font-sans text-2xl font-semibold'>
                 {title}

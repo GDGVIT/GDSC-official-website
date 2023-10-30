@@ -95,7 +95,7 @@ export default function Home() {
     slidesToScroll: 3,
     arrows: false,
     dots: false,
-    beforeChange: (_: any, next: any) => { setSlideIndex(next); console.log(next); },
+    beforeChange: (_: any, next: any) => { setSlideIndex(next); },
     responsive: [
       {
         breakpoint: 1000,
@@ -239,13 +239,16 @@ export default function Home() {
                             <Image
                               style={{
                                 position: 'absolute',
-                                width: '100%',
-                                height: '100%',
                               }}
+                              // width={300}
+                              // height={300}
                               src={pic.img}
-                              layout='fill' // Fills the parent container
-                              objectFit='cover' // Enlarges/shrinks the image to cover the container
+                              fill
+                              sizes='100vw'
+                              // layout='fill' // Fills the parent container
+                              // objectFit='cover' // Enlarges/shrinks the image to cover the container
                               alt='event'
+                              className='object-cover '
                             />
                           </div>
                         </div>
