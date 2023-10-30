@@ -1,23 +1,8 @@
 [
   {
-    "name": "Sayar Bhattacharyya",
-    "position": "Frontend",
-    "img": "/team/technical/sayar.jpeg"
-  },
-  {
     "name": "Anuj Parihar",
     "position": "Backend and Security",
     "img": "/team/technical/anuj.jpeg"
-  },
-  {
-    "name":"Vignesh Natarajan",
-    "position":"Backend",
-    "img":"/team/technical/vignesh.jpeg"
-  },
-  {
-    "name": "Prashanna Rajbhandari",
-    "position": "App",
-    "img": "/team/technical/prashanna.heic"
   },
   {
     "name": "Dhruv Shah",
@@ -25,9 +10,29 @@
     "img": "/team/technical/dhruv.jpeg"
   },
   {
+    "name":"Anirudh Mishra",
+    "position":"Full Stack",
+    "img":"/team/technical/anirudh.jpeg"
+  },
+  {
+    "name":"Vignesh Natarajan",
+    "position":"Backend",
+    "img":"/team/technical/vignesh.jpeg"
+  },
+  {
     "name": "Rudrank Basant",
     "position": "App and Backend",
     "img": "/team/technical/rudrank.jpeg"
+  },
+  {
+    "name": "Sayar Bhattacharyya",
+    "position": "Frontend",
+    "img": "/team/technical/sayar.jpeg"
+  },
+  {
+    "name": "Prashanna Rajbhandari",
+    "position": "App",
+    "img": "/team/technical/prashanna.jpg"
   },
   {
     "name": "Ameya Kore",
