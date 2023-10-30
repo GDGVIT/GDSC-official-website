@@ -28,7 +28,8 @@ const Footer: FC<Props> = ({bg}) => {
     // <div className={`w-full p-16 ${bg}`}>
     //     <p className="text-center">Made with &#9829; by GDSC-VIT</p>
     // </div>
-    <div className={`relative w-[100vw] text-white max-h-fit snap-y bg-${bg}`}>
+    <div className={`relative w-[100vw] text-white max-h-fit snap-y`}>
+      <div className={`"absolute w-full bg-${bg} top-0 -mt-1 py-2"`}></div>
       {/* add an image sticking to the bottom of this div and with some margin on top */}
       <Image alt='footer' src={"/footer-clouds.svg"} width={200} height={200} className={`w-full h-auto pt-8 bg-${bg}`} />
       <div className='absolute bottom-0 w-full flex flex-col lg:px-32 px-20 xl:gap-14 lg:gap-10 gap-4 items-center'>

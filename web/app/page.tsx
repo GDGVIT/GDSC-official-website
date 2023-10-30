@@ -206,7 +206,7 @@ export default function Home() {
         </Section>
         <Level level={"04"} />
         <Element name="events" />
-        <Section snap color='green' page='events' setIntersecting={setIntersecting}>
+        <Section snap color='pastel_green' page='events' setIntersecting={setIntersecting}>
           <motion.div style={{ scale: eventScale }} className='top-0 left-0 w-full pt-[15vh] text-dark'>
             <div className='w-[100vw] lg:w-[30vw] lg:min-w-[600px] mx-auto'>
               <h1 className='font-sans text-[3rem] font-extrabold text-center tracking-wider'>EVENTS</h1>
@@ -294,7 +294,7 @@ export default function Home() {
         </Section>
         <Level level={"01"} />
         <Element name="blogs" />
-        <Section snap color='blue' page='blogs' >
+        <Section snap color='pastel_blue' page='blogs' >
 
           <div className='flex flex-col md:flex-row xl:p-16 p-5 pt-[11vh] h-[100vh] items-center'>
             <BlogCover i={hoveringKey} text={hoveringText} />
@@ -309,7 +309,7 @@ export default function Home() {
 
         </Section>
         <Element name="footer" />
-        <Footer bg='blue' />
+        <Footer bg='pastel_blue' />
       </>}
   </main >
 
