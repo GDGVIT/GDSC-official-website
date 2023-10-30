@@ -10,6 +10,11 @@
     "img": "/team/management/sanskriti.jpeg"
   },
   {
+    "name":"Sanvi Chavan",
+    "position":"Manager",
+    "img":"/team/management/sanvi.jpeg"
+  },
+  {
     "name": "Arnav Jaggi",
     "position": "Manager",
     "img": "/team/management/arnav.jpeg"
@@ -18,6 +23,11 @@
     "name": "Suhani Kansal",
     "position": "Manager",
     "img": "/team/management/suhani_kansal.jpeg"
+  },
+  {
+    "name":"Rohith Senthil",
+    "position":"Manager",
+    "img":"/team/management/rohith.jpeg"
   },
   {
     "name": "Aditya Chheda",

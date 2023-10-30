@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Card from './Card'
+import Icon from './Icons'
 type Props = {
     img: string
     title: string
@@ -32,7 +33,12 @@ const ProjectCard = ({ img, title, description, link, i }: Props) => {
             <h3 className='mb-2'>
                 {description}
             </h3>
-            <Link className='border-black hover:border-b-2 hover:mb-[-1px] mt-auto' target='blank' href={`${link}`}>View More</Link>
+            {/* <Link className='border-black hover:border-b-2 hover:mb-[-1px] mt-auto' target='blank' href={`${link}`}>View More</Link> */}
+            <div className='flex gap-2 justify-end mt-auto'>
+                {link ?
+                <Icon icon='web' xsmall link={link || ""} name='projweb' />
+                : null}
+            </div>
         </Card>
     )
 }

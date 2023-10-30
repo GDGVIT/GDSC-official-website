@@ -262,7 +262,7 @@ export default function Home() {
           <HorizontalTranslate mainRef={mainRef} title={"Projects"} style={{ scale: projectScale }}>
             <CardsContainer style={{ paddingLeft: screenWidth > 650 ? "100px" : "5vw", paddingRight: screenWidth > 650 ? "100px" : "5vw" }} className='text-dark' ref={projectRef}>
               {projects.map((proj, i) => <ProjectCard i={(numProjectInView > i) ? i : 0} key={"mem" + i} {...proj} />)}
-              <SeeMore linkto='https://github.com/GDGVIT/' i={(numProjectInView > projects.length) ? projects.length : 0} img='#' title='See All' subtitle='Groundbreaking Stuff' />
+              <SeeMore linkto='https://github.com/GDGVIT/' i={(numProjectInView > projects.length) ? projects.length : 0} img='#' title='See All' subtitle='Groundbreaking Stuff :0' />
             </CardsContainer>
           </HorizontalTranslate>
         </Section>

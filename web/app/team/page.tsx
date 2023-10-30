@@ -32,13 +32,13 @@ export default function Team() {
 
             </div>
             <motion.div style={{ scale: scaleTransform, left: leftTransform }} className='fixed top-[40%] left-[50px] pointer-events-none text-white w-[30vw] '>
-                <h1 className={`font-extrabold ${curtab === 0 ? "text-yellow" : curtab === 1 ? "text-pastel_red" : curtab === 2 ? "text-pastel_blue" : "text-pastel_green"} uppercase lg:text-3xl md:text-2xl text-4xl`}>Meet The Team</h1>
+                <h1 className={`font-extrabold ${curtab === 0 ? "text-yellow" : curtab === 1 ? "text-pastel_green" : curtab === 2 ? "text-pastel_blue" : "text-pastel_red"} uppercase lg:text-3xl md:text-2xl text-4xl`}>Meet The Team</h1>
                 <p className="mt-4 font-light">We’ve got a strong team filled with caffeine addicted developers, gradients loving designers and machine like working managers.</p>
                 <div style={{ display: hookedYPostion > 0.4 ? 'block' : 'none' }} className="flex flex-col gap-2 mt-8 pointer-events-auto">
                     <p onClick={() => setCurtab(0)} className={`${curtab === 0 ? "text-yellow underline underline-offset-4 team-tab-after" : "text-grey"} hover:text-yellow cursor-pointer`}>Board</p>
-                    <p onClick={() => setCurtab(1)} className={`${curtab === 1 ? "text-pastel_red underline underline-offset-4 team-tab-after" : "text-grey"} hover:text-pastel_red cursor-pointer`}>Techies</p>
+                    <p onClick={() => setCurtab(1)} className={`${curtab === 1 ? "text-pastel_green underline underline-offset-4 team-tab-after" : "text-grey"} hover:text-pastel_green cursor-pointer`}>Techies</p>
                     <p onClick={() => setCurtab(2)} className={`${curtab === 2 ? "text-pastel_blue underline underline-offset-4 team-tab-after" : "text-grey"} hover:text-blue cursor-pointer`}>Designers</p>
-                    <p onClick={() => setCurtab(3)} className={`${curtab === 3 ? "text-pastel_green underline underline-offset-4 team-tab-after" : "text-grey"} hover:text-green cursor-pointer`}>Managers</p>
+                    <p onClick={() => setCurtab(3)} className={`${curtab === 3 ? "text-pastel_red underline underline-offset-4 team-tab-after" : "text-grey"} hover:text-red cursor-pointer`}>Managers</p>
                 </div>
             </motion.div >
             <div className="gap-16 p-10 mt-24 sm:grid-cols-12 sm:grid">
@@ -50,7 +50,7 @@ export default function Team() {
                     {curtab === 0 ? team_members_board.map((mem, i) => <TeamCardForGrid i={i} key={"mem" + i} title={mem.name} img={mem.img} subtitle={mem.position} />) : curtab === 1 ? team_members_technical.map((mem, i) => <TeamCardForGrid i={i} key={"mem" + i} title={mem.name} img={mem.img} subtitle={mem.position} />) : curtab === 2 ? team_members_design.map((mem, i) => <TeamCardForGrid i={i} key={"mem" + i} title={mem.name} img={mem.img} subtitle={mem.position} />) : team_members_managers.map((mem, i) => <TeamCardForGrid i={i} key={"mem" + i} title={mem.name} img={mem.img} subtitle={mem.position} />)}
                 </div>
             </div>
-            <Footer bg={curtab === 0 ? "bg-pastel_red" : curtab === 1 ? "bg-pastel_blue" : "bg-pastel_green"} />
+            <Footer bg={curtab === 0 ? "bg-yellow" : curtab === 1 ? "bg-pastel_green" : curtab === 2 ? "bg-pastel_blue" : "bg-pastel_red"} />
         </main >
     )
 }

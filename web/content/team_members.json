@@ -10,6 +10,11 @@
     "img": "/team/technical/anuj.jpeg"
   },
   {
+    "name":"Vignesh Natarajan",
+    "position":"Backend",
+    "img":"/team/technical/vignesh.jpeg"
+  },
+  {
     "name": "Prashanna Rajbhandari",
     "position": "App",
     "img": "/team/technical/prashanna.heic"
@@ -33,6 +38,11 @@
     "name": "Sankhayan Bhattacharjee",
     "position": "Full Stack and Game",
     "img": "/team/technical/sankhayan.jpeg"
+  },
+  {
+    "name":"Abhijeet Bhardwaj",
+    "position":"App",
+    "img":"/team/technical/abhijeet.jpeg"
   },
   {
     "name": "John Tony",
