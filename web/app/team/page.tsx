@@ -29,7 +29,7 @@ export default function Team() {
 
     const scrollOptions = (section:string) => {
         const sectionElement = document.querySelector(`#${section}`);
-        console.log(sectionElement)
+        // console.log(sectionElement)
         // scroll to sectionElement
         if (sectionElement) {
             sectionElement.scrollIntoView({ behavior:'smooth' });
