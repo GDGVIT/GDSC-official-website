@@ -30,7 +30,7 @@ const Footer: FC<Props> = ({bg}) => {
     // </div>
     <div className={`relative w-[100vw] text-white max-h-fit snap-y bg-${bg}`}>
       {/* add an image sticking to the bottom of this div and with some margin on top */}
-      <Image alt='footer' src={"/footer-clouds.svg"} width={200} height={200} className='w-full h-auto pt-8' />
+      <Image alt='footer' src={"/footer-clouds.svg"} width={200} height={200} className={`w-full h-auto pt-8 bg-${bg}`} />
       <div className='absolute bottom-0 w-full flex flex-col lg:px-32 px-20 xl:gap-14 lg:gap-10 gap-4 items-center'>
         <div className="sm:flex hidden w-full flex-row justify-between gap-5 flex-wrap">
           <Link target='blank' href={"https://gdsc.community.dev/vellore-institute-of-technology-vit-vellore/"} className='flex flex-col gap-2'>

@@ -9,7 +9,7 @@ const neue_machina = localFont({
 })
 
 export const metadata = {
-  title: 'GDSC VIT',
+  title: 'Team | GDSC VIT',
   description: 'Google Developers Students Club VIT',
 }
 

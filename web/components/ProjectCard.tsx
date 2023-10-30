@@ -9,9 +9,10 @@ type Props = {
     description?: string
     link?: string;
     i: number;
+    github?: string[];
 }
 
-const ProjectCard = ({ img, title, description, link, i }: Props) => {
+const ProjectCard = ({ img, title, description, link, i, github }: Props) => {
     return (
         <Card bg="transparent" i={i}>
             <div className='w-full border-2 border-black rounded-md '>
@@ -37,6 +38,11 @@ const ProjectCard = ({ img, title, description, link, i }: Props) => {
             <div className='flex gap-2 justify-end mt-auto'>
                 {link ?
                 <Icon icon='web' xsmall link={link || ""} name='projweb' />
+                : null}
+                {github ?
+                github.map((gh, i) => (
+                    <Icon key={i} icon='githubdark' xsmall link={gh || ""} name='projgh' />
+                ))
                 : null}
             </div>
         </Card>

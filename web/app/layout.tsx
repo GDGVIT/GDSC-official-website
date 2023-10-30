@@ -11,6 +11,20 @@ const neue_machina = localFont({
 export const metadata = {
   title: 'GDSC VIT',
   description: 'Google Developers Students Club VIT',
+  openGraph: {
+    type: 'website',
+    locale: 'en_IE',
+    url: 'https://dscvit.com',
+    site_name: 'GDSC VIT',
+    images: [
+      {
+        url: 'https://dscvit.com/og.png',
+        width: 1200,
+        height: 630,
+        alt: 'GDSC VIT',
+      },
+    ],
+  },
 }
 
 export default function RootLayout({
