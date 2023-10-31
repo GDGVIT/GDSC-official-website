@@ -55,6 +55,7 @@ const Footer: FC<Props> = ({bg}) => {
             </h1>
           </div>
         </div>
+        <p className='pl-2 flex gap-1 text-sm items-center'><Icon icon='mail' xsmall name='mail' link='mailto:dscvitvellore@gmail.com' /> dscvitvellore@gmail.com</p>
         <div className='lg:m-0 gap-3 flex justify-between'>
           {socials.map((social, i) => <Icon small key={"soc" + i} {...social} />)}
         </div>

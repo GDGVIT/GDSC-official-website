@@ -200,7 +200,7 @@ export default function Home() {
           </div> */}
           <HorizontalTranslate mainRef={mainRef} title={"Wall of Fame"} style={{ scale: fameScale }}>
             <CardsContainer style={{ paddingLeft: screenWidth > 650 ? "100px" : "5vw", paddingRight: screenWidth > 650 ? "100px" : "5vw" }} className='text-dark' ref={fameRef}>
-              {fame.map((f, i) => <FameCard key={"fame" + i} i={(numFameInView > i) ? i : 0} title={f.title} />)}
+              {fame.map((f, i) => <FameCard img={f.img} key={"fame" + i} i={(numFameInView > i) ? i : 0} title={f.title} />)}
             </CardsContainer>
           </HorizontalTranslate>
         </Section>

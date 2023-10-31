@@ -9,6 +9,7 @@ import youtube from "@/assets/youtube.svg";
 import github from "@/assets/github-mark-white.svg"
 import githubdark from "@/assets/github-mark.svg"
 import web from "@/assets/web.svg"
+import mail from "@/assets/mail.svg"
 
 export const getIcon = (name: string) => {
   const icons = {
@@ -22,7 +23,8 @@ export const getIcon = (name: string) => {
     github,
     githubdark,
     linkedindark,
-    web
+    web,
+    mail
   };
   return icons[name as keyof typeof icons];
 };
