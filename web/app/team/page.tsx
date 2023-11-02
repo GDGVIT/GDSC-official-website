@@ -13,12 +13,13 @@ export default function Team() {
     const mainRef = useRef(null);
 
     const { scrollYProgress } = useScroll({ container: mainRef })
-    const scaleTransform = useTransform(scrollYProgress, [0, 0.1], [2, 1])
-    const leftTransform = useTransform(scrollYProgress, [0, 0.1], ['37%', '3%'])
-    const topTransform = useTransform(scrollYProgress, [0, 0.1], ['35%', '13%'])
+    const scaleTransform = useTransform(scrollYProgress, [0, 0.08], [2, 1])
+    const leftTransform = useTransform(scrollYProgress, [0, 0.08], ['37%', '3%'])
+    const topTransform = useTransform(scrollYProgress, [0, 0.08], ['35%', '13%'])
     // opacityTransform for full opacity for 90% of path, then fade out
     const opacityTransform = useTransform(scrollYProgress, [0.80, 1.00], [1, 0])
     const arrowOpacityTransform = useTransform(scrollYProgress, [0.0, 0.03], [1, 0])
+    const hiddenTransform = useTransform(scrollYProgress, [0.03, 0.031], ["flex", "hidden"])
     const fadeTransform = useTransform(scrollYProgress, [0.4, 0.41], ['none', 'block'])
 
     const [hookedYPostion, setHookedYPosition] = React.useState(0);
@@ -87,8 +88,8 @@ export default function Team() {
                     <p onClick={() => scrollOptions('Managers')} className={`w-fit pointer-events-auto ${curTab === "Managers" ? "text-pastel_red underline underline-offset-4 team-tab-after" : "text-grey"} hover:text-pastel_red cursor-pointer`}>Managers</p>
                 </div>
                 {/* down arrow symbol, centred, use html symbol */}
-                <motion.div style={{opacity:arrowOpacityTransform}} className="flex justify-center absolute bottom-0 left-1/2 -translate-x-1/2 xl:-mb-16 -mb-12">
-                    <p className="text-grey text-2xl animate-bounce">&#8964;</p>
+                <motion.div style={{opacity:arrowOpacityTransform, display:hiddenTransform}} className="justify-center absolute bottom-0 left-1/2 -translate-x-1/2 xl:-mb-16 -mb-12">
+                    <p onClick={() => scrollOptions("Board")} className="hover:cursor-pointer text-grey text-2xl animate-bounce pointer-events-auto">&#8964;</p>
                 </motion.div>
             </motion.div>
             <div className="xs:grid gap-16 p-10 mt-24 md:grid-cols-12 sm:grid">
@@ -107,9 +108,9 @@ export default function Team() {
                 </div>
                 </div>
                 <div className="grid col-span-12 mt-16 text-white xl:col-span-8 lg:col-span-8 md:col-span-9 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-3 sm:mt-0">
-                    <div id="Board" className='flex'>
-                        <h2 className="font-extrabold text-yellow m-auto uppercase lg:text-5xl md:text-4xl text-6xl">
-                            B
+                    <div id="Board" className='sm:flex flex py-10'>
+                        <h2 className="font-extrabold text-yellow m-auto uppercase lg:text-3xl sm:text-2xl text-6xl">
+                            Board
                         </h2>
                     </div>
                     {team_members_board.map((mem, i) => (
@@ -124,9 +125,9 @@ export default function Team() {
                             link={mem.link}
                         />
                     ))}
-                    <div id="Technical" className='flex'>
-                        <h2 className="font-extrabold text-pastel_green m-auto uppercase lg:text-5xl md:text-4xl text-6xl">
-                            T
+                    <div id="Technical" className='sm:flex flex py-10'>
+                        <h2 className="font-extrabold text-pastel_green m-auto uppercase lg:text-3xl sm:text-2xl text-6xl">
+                            Techies
                         </h2>
                     </div>
                     {team_members_technical.map((mem, i) => (
@@ -140,9 +141,9 @@ export default function Team() {
                             linkedin={mem.linkedin}
                         />
                     ))}
-                    <div id="Design" className='flex'>
-                        <h2 className="font-extrabold text-pastel_blue m-auto uppercase lg:text-5xl md:text-4xl text-6xl">
-                            D
+                    <div id="Design" className='sm:flex flex py-10'>
+                        <h2 className="font-extrabold text-pastel_blue m-auto uppercase lg:text-3xl sm:text-2xl text-6xl">
+                            Designers
                         </h2>
                     </div>
                     {team_members_design.map((mem, i) => (
@@ -155,9 +156,9 @@ export default function Team() {
                             linkedin={mem.linkedin}
                         />
                     ))}
-                    <div id="Managers" className='flex'>
-                        <h2 className="font-extrabold text-pastel_red m-auto uppercase lg:text-5xl md:text-4xl text-6xl">
-                            M
+                    <div id="Managers" className='sm:flex flex py-10'>
+                        <h2 className="font-extrabold text-pastel_red m-auto uppercase lg:text-3xl sm:text-2xl text-6xl">
+                            Managers
                         </h2>
                     </div>
                     {team_members_managers.map((mem, i) => (
