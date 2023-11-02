@@ -94,12 +94,12 @@ export default function Team() {
             </motion.div>
             <div className="xs:grid gap-16 p-10 mt-24 md:grid-cols-12 sm:grid">
                 <div className="col-span-8 pt-24 text-white xl:col-span-4 lg:col-span-4 md:col-span-3">
-                <div className="lg:hidden block sticky top-[150px]">
+                <div className="lg:hidden block sticky top-[150px] sm:text-base text-2xl">
                     <h1 className={`font-extrabold ${curTab === "Board" ? "text-yellow" : curTab === "Technical" ? "text-pastel_green" : curTab === "Design" ? "text-pastel_blue" : curTab === "Managers" ? "text-pastel_red" : "text-yellow"} uppercase lg:text-3xl md:text-2xl text-4xl`}>Meet The Team</h1>
                     <p className="mt-4 font-light">
                         We’ve got a strong team filled with caffeine addicted developers, gradients loving designers, and machine-like working managers.
                     </p>
-                    <div className="flex flex-col gap-2 mt-8 pointer-events-auto">
+                    <div className="flex flex-col sm:gap-2 gap-4 mt-8 pointer-events-auto">
                         <p onClick={() => scrollOptions('Board')} className={`w-fit ${curTab === "Board" ? "text-yellow underline underline-offset-4 team-tab-after" : "text-grey"} hover:text-yellow cursor-pointer`}>Board</p>
                         <p onClick={() => scrollOptions('Technical')} className={`w-fit ${curTab === "Technical" ? "text-pastel_green underline underline-offset-4 team-tab-after" : "text-grey"} hover:text-pastel_green cursor-pointer`}>Techies</p>
                         <p onClick={() => scrollOptions('Design')} className={`w-fit ${curTab === "Design" ? "text-pastel_blue underline underline-offset-4 team-tab-after" : "text-grey"} hover:text-pastel_blue cursor-pointer`}>Designers</p>
@@ -108,7 +108,7 @@ export default function Team() {
                 </div>
                 </div>
                 <div className="grid col-span-12 mt-16 text-white xl:col-span-8 lg:col-span-8 md:col-span-9 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-3 sm:mt-0">
-                    <div id="Board" className='sm:flex flex py-10'>
+                    <div id="Board" className='sm:flex flex lg:py-0 sm:py-10 py-24'>
                         <h2 className="font-extrabold text-yellow m-auto uppercase lg:text-3xl sm:text-2xl text-6xl">
                             Board
                         </h2>
@@ -125,7 +125,7 @@ export default function Team() {
                             link={mem.link}
                         />
                     ))}
-                    <div id="Technical" className='sm:flex flex py-10'>
+                    <div id="Technical" className='sm:flex flex lg:py-0 sm:py-10 py-24'>
                         <h2 className="font-extrabold text-pastel_green m-auto uppercase lg:text-3xl sm:text-2xl text-6xl">
                             Techies
                         </h2>
@@ -141,7 +141,7 @@ export default function Team() {
                             linkedin={mem.linkedin}
                         />
                     ))}
-                    <div id="Design" className='sm:flex flex py-10'>
+                    <div id="Design" className='sm:flex flex lg:py-0 sm:py-10 py-24'>
                         <h2 className="font-extrabold text-pastel_blue m-auto uppercase lg:text-3xl sm:text-2xl text-6xl">
                             Designers
                         </h2>
@@ -156,7 +156,7 @@ export default function Team() {
                             linkedin={mem.linkedin}
                         />
                     ))}
-                    <div id="Managers" className='sm:flex flex py-10'>
+                    <div id="Managers" className='sm:flex flex lg:py-0 sm:py-10 py-24'>
                         <h2 className="font-extrabold text-pastel_red m-auto uppercase lg:text-3xl sm:text-2xl text-6xl">
                             Managers
                         </h2>
