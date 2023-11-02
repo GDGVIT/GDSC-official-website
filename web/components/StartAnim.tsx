@@ -20,7 +20,7 @@ const StartAnim = ({ onComplete, style }: Props) => {
         if (window) {
             setPotraitMode(window.innerWidth < window.innerHeight)
         }
-    }, [window, window.innerWidth, window.innerHeight])
+    }, [])
 
 
     useEffect(() => {
