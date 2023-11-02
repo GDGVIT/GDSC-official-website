@@ -19,6 +19,7 @@ const StartAnim = ({ onComplete, style }: Props) => {
     useEffect(() => {
         if (window) {
             setPotraitMode(window.innerWidth < window.innerHeight)
+            setScreenAspect(window.innerWidth / window.innerHeight)
         }
     }, [])
 
@@ -33,7 +34,7 @@ const StartAnim = ({ onComplete, style }: Props) => {
     return <div className="fixed top-0 bottom-0 left-0 right-0 flex items-center justify-center overflow-hidden bg-white -z-10" style={style} ><Player
         src={potraitMode ? LoadingMobile : LoadingAnimation}
         autoplay
-        style={{ minHeight: potraitMode ? (screenAspect < aspect ? innerHeight + 'px' : undefined) : (screenAspect < aspect ? innerHeight + 'px' : undefined), minWidth: potraitMode ? (screenAspect > aspect ? innerWidth + "px" : undefined) : (screenAspect > aspect ? innerWidth + "px" : undefined), aspectRatio: aspect, zIndex: 0, backgroundColor: "transparent" }}
+        style={{ minHeight: potraitMode ? (screenAspect < aspect ? innerHeight + 'px' : undefined) : (screenAspect < aspect ? window.innerHeight + 'px' : undefined), minWidth: potraitMode ? (screenAspect > aspect ? innerWidth + "px" : undefined) : (screenAspect > aspect ? window.innerWidth + "px" : undefined), aspectRatio: aspect, zIndex: 0, backgroundColor: "transparent" }}
 
     /></div>
 }
