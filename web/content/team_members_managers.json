@@ -1,0 +1,103 @@
+[
+  {
+    "name": "Aastha Gupta",
+    "position": "Manager",
+    "img": "/team/management/aastha.jpeg",
+    "linkedin":"https://www.linkedin.com/in/aastha-gupta-5a3824224/"
+  },
+  {
+    "name": "Sanksriti Modi",
+    "position": "Manager",
+    "img": "/team/management/sanskriti.jpeg",
+    "linkedin":"https://www.linkedin.com/in/sanskriti-modi-b1207b229/"
+  },
+  {
+    "name":"Sanvi Chavan",
+    "position":"Manager",
+    "img":"/team/management/sanvi.jpeg",
+    "linkedin":"https://www.linkedin.com/in/sanvi-chavan-849669231/"
+  },
+  {
+    "name": "Arnav Jaggi",
+    "position": "Manager",
+    "img": "/team/management/arnav.jpeg",
+    "linkedin":"https://www.linkedin.com/in/arnavjaggi/"
+  },
+  {
+    "name": "Suhani Kansal",
+    "position": "Manager",
+    "img": "/team/management/suhani_kansal.jpeg",
+    "linkedin":"https://www.linkedin.com/in/suhani-kansal-7939a91b6/"
+  },
+  {
+    "name":"Rohith Senthil",
+    "position":"Manager",
+    "img":"/team/management/rohith.jpeg"
+  },
+  {
+    "name": "Aditya Chheda",
+    "position": "Manager",
+    "img": "/team/management/aditya_ch.jpeg",
+    "linkedin":"https://www.linkedin.com/in/aditya-chheda-652a9818b/"
+  },
+  {
+    "name": "Aditya Sareen",
+    "position": "Manager",
+    "img": "/team/management/aditya_sareen.jpeg",
+    "linkedin":"https://www.linkedin.com/in/aditya-sareen-607115250/"
+  },
+  {
+    "name": "Aravind Ajith Kumar",
+    "position": "Manager",
+    "img": "/team/management/aravind.jpeg",
+    "linkedin":"https://www.linkedin.com/in/aravind-ajith-kumar-nair-7b588b276/"
+  },
+  {
+    "name": "Dhriti Soni",
+    "position": "Manager",
+    "img": "/team/management/dhriti.jpeg",
+    "linkedin":"https://www.linkedin.com/in/dhriti-soni-343085267/"
+  },
+  {
+    "name": "Disha Jain",
+    "position": "Manager",
+    "img": "/team/management/disha.jpeg",
+    "linkedin":"https://www.linkedin.com/in/disha-jain-7a0167216/"
+  },
+  {
+    "name": "Emily Gilbert",
+    "position": "Manager",
+    "img": "/team/management/emily.jpeg",
+    "linkedin":"https://www.linkedin.com/in/emily-gilbert-413810271/"
+  },
+  {
+    "name": "Karan Bihani",
+    "position": "Manager",
+    "img": "/team/management/karan.jpeg",
+    "linkedin":"https://www.linkedin.com/in/karan-bihani/"
+  },
+  {
+    "name": "Kritika Sharma",
+    "position": "Manager",
+    "img": "/team/management/kritika.jpg",
+    "linkedin":"https://www.linkedin.com/in/kritika-sharma-539400277/"
+  },
+  {
+    "name": "G Tejojith",
+    "position": "Manager",
+    "img": "/team/management/tejojith.jpeg",
+    "linkedin":"https://www.linkedin.com/in/tejojith-g-student-manager/"
+  },
+  {
+    "name": "Yashita Berry",
+    "position": "Manager",
+    "img": "/team/management/yashita_berry.jpeg",
+    "linkedin":"https://www.linkedin.com/in/yashita-berry-695578277/"
+  },
+  {
+    "name": "Yashita Jindal",
+    "position": "Manager",
+    "img": "/team/management/yashita_jindal.jpeg",
+    "linkedin":"https://www.linkedin.com/in/yashita-jindal-4814ab267/"
+  }
+]

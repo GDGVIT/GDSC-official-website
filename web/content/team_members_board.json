@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Vishesh Bansal",
+    "position": "GDSC Lead",
+    "img": "/team/board/vishesh.webp",
+    "github": "https://github.com/VisheshBansal",
+    "linkedin":"https://www.linkedin.com/in/bansalvishesh/"
+  },
+  {
+    "name": "Yajat Malhotra",
+    "position": "Technical Lead",
+    "img": "/team/board/yajat.webp",
+    "link":"https://iamyajat.com/",
+    "github":"https://github.com/iamyajat",
+    "linkedin":"https://www.linkedin.com/in/iamyajat/"
+  },
+  {
+    "name": "Jeevan Yohan Varghese",
+    "position": "App Lead",
+    "img": "/team/board/jeevan.webp",
+    "linkedin":"https://www.linkedin.com/in/jeevan-yohan-varghese/",
+    "github":"https://github.com/jeevan-yohan-varghese"
+  },
+  {
+    "name": "Pranav Ram",
+    "position": "Design Lead — Projects & Video",
+    "img": "/team/board/pranav.webp",
+    "linkedin":"https://www.linkedin.com/in/pranavramk/"
+  },
+  {
+    "name": "Raggav Subramani",
+    "position": "Management & Operations Lead",
+    "img": "/team/board/raggav.webp",
+    "linkedin":"https://www.linkedin.com/in/r-droid101/"
+  },
+  {
+    "name": "Lokesh Rai",
+    "position": "Projects & External Affairs Lead",
+    "img": "/team/board/lokesh.webp",
+    "linkedin":"https://www.linkedin.com/in/lokeshrai7/"
+  },
+  {
+    "name": "Krishap Sreenivasan",
+    "position": "Cloud and SecOps Lead",
+    "img": "/team/board/krishap_new.webp",
+    "linkedin":"https://www.linkedin.com/in/krishap-sreenivasan-4838b1203/",
+    "github":"https://github.com/orgs/GDGVIT/people/Krishap-s"
+  },
+  {
+    "name": "Kush Ojha",
+    "position": "Machine Learning & Content Lead",
+    "img": "/team/board/kush.jpeg",
+    "linkedin":"https://www.linkedin.com/in/kushojha/"
+  },
+  {
+    "name": "Aditya Mitra",
+    "position": "Events & Marketing Lead",
+    "img": "/team/board/aditya.webp",
+    "linkedin": "https://www.linkedin.com/in/mitra-aditya/"
+  },
+  {
+    "name": "Projukta Mandal",
+    "position": "Design Lead — Events",
+    "img": "/team/board/projukta.webp",
+    "linkedin":"https://www.linkedin.com/in/projukta-mandal"
+  }
+]

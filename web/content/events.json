@@ -1,0 +1,59 @@
+[
+    {
+        "name":"Women Techies",
+        "photos":[
+            {
+                "img": "/events/wt/WT.png"
+            },
+            {
+                "img": "/events/wt/event1.jpeg"
+            },
+            {
+                "img": "/events/wt/event2.jpeg"
+            }
+        ]
+    },
+    {
+        "name":"DevJams",
+        "photos":[
+            {
+                "img": "/events/dj/DJ.png"
+            },
+            {
+                "img": "/events/dj/event1.jpeg"
+            },
+            {
+                "img": "/events/dj/event2.jpeg"
+            }
+        ]
+    },
+    {
+        "name":"Hexathon",
+        "photos":[
+            {
+                "img": "/events/hexathon/Hex2.png"
+            },
+            {
+                "img": "/events/hexathon/HEXP2.png"
+            },
+            {
+                "img": "/events/hexathon/event.jpeg"
+            }
+        ]
+    },
+    {
+        "name":"CTF",
+        "photos":[
+            {
+                "img": "/events/ctf/CTF2.png"
+            },
+            {
+                "img": "/events/ctf/Sponsorsctf.png"
+            },
+            {
+                "img": "/events/ctf/CTF2.png"
+            }
+        ]
+    }
+]
+  

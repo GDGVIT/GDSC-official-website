@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-unbounded: "Unbounded", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.horizontal-section,
+.horizontal-section2 {
+  padding: 100px 0;
+  background-color: pink;
+}
+
+.sticky-wrapper,
+.sticky-wrapper2 {
+  position: sticky;
+  top: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.element-wrapper,
+.element-wrapper2 {
+  position: relative;
+  display: flex;
+}
+
+.element {
+  width: 500px;
+  height: 400px;
+  background-color: purple;
+  margin: 0 20px 0 0;
+  flex-shrink: 0;
+}
+
+.overlay {
+  /* height: 0%; */
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.95);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  width: 100%;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.team-tab-after::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid; /* You can change the color by specifying a different value here */
+  margin-left: 8px; /* Adjust the margin as needed for spacing */
+}
+
+/* write css to style the page scrollbar to be black background and high z index */
+::-webkit-scrollbar {
+  width: 0px;
+  background-color: black;
+  z-index: 100;
+}
