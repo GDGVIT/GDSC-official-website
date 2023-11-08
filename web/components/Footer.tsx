@@ -39,8 +39,8 @@ const Footer: FC<Props> = ({ bg }) => {
         height={200}
         className={`w-full h-auto pt-8 bg-${bg}`}
       />
-      <div className="absolute bottom-0 w-full flex flex-col lg:px-32 px-20 xl:gap-10 lg:gap-6 sm:gap-4 gap-8 ga items-center">
-        <div className="sm:flex hidden w-full flex-row justify-between gap-5 flex-wrap">
+      <div className="absolute bottom-0 flex flex-col items-center w-full gap-8 px-20 lg:px-32 xl:gap-10 lg:gap-6 sm:gap-4 ga">
+        <div className="flex-row flex-wrap justify-between hidden w-full gap-5 sm:flex">
           <Link
             target="blank"
             href={
@@ -49,7 +49,7 @@ const Footer: FC<Props> = ({ bg }) => {
             className="flex flex-col gap-2"
           >
             <Image
-              className="h-8 w-20 mb-3"
+              className="w-20 h-8 mb-3"
               src={'/newlogowhite.svg'}
               width={80}
               height={100}
@@ -58,34 +58,34 @@ const Footer: FC<Props> = ({ bg }) => {
             <p className="pl-2 uppercase">Google Developer</p>
             <p className="pl-2 uppercase">Students Clubs VIT</p>
           </Link>
-          <div className="flex flex-col xl:gap-4 gap-2 uppercase">
+          <div className="flex flex-col gap-2 uppercase xl:gap-4">
             <h1
               onClick={() => scrollToSection('fame')}
-              className="font-bold w-min cursor-pointer"
+              className="font-bold cursor-pointer w-min"
             >
               Achievements
             </h1>
             <h1
               onClick={() => scrollToSection('events')}
-              className="font-bold w-min cursor-pointer"
+              className="font-bold cursor-pointer w-min"
             >
               Events
             </h1>
             <h1
               onClick={() => router.push('/team')}
-              className="font-bold w-min cursor-pointer"
+              className="font-bold cursor-pointer w-min"
             >
               Team
             </h1>
             <h1
               onClick={() => scrollToSection('projects')}
-              className="font-bold w-min cursor-pointer"
+              className="font-bold cursor-pointer w-min"
             >
               Projects
             </h1>
           </div>
         </div>
-        <p className="pl-2 gap-1 text-sm items-center sm:flex hidden">
+        <p className="items-center hidden gap-1 pl-2 text-sm sm:flex">
           <Icon
             icon="mail"
             xsmall
@@ -94,7 +94,7 @@ const Footer: FC<Props> = ({ bg }) => {
           />{' '}
           dscvitvellore@gmail.com
         </p>
-        <div className="lg:m-0 gap-3 flex justify-between">
+        <div className="flex justify-between gap-3 lg:m-0">
           {socials.map((social, i) => (
             <Icon small key={'soc' + i} {...social} />
           ))}
@@ -102,9 +102,10 @@ const Footer: FC<Props> = ({ bg }) => {
         <p className="px-3 font-light text-gray-300">
           Made with &#128153; by GDSC-VIT
         </p>
-        <p className="pb-6 -mt-2 px-3 font-light text-sm text-gray-300">
+        <p className="px-3 pb-6 -mt-2 text-sm font-light text-gray-300">
           Copyright &copy;{new Date().getFullYear()}, All rights reserved.
         </p>
+        <p className='hidden text-center'>Kaunsa Club sab se SEXY<br />GDSC GDSC</p>
       </div>
     </div>
   );
