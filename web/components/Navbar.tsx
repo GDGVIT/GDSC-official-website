@@ -41,13 +41,13 @@ const Navbar: FC<Props> = ({ theme = "light", landing }) => {
             <Image className='w-20 h-8' src={(theme === 'light' || menu) ? "/newlogo.svg" : "/newlogo.svg"} width={80} height={100} alt='Logo' />
             <Button onClick={() => { router.push("/"); localStorage.setItem("visited", 'true') }} theme={(theme === 'light' || menu) ? 'light' : 'dark'}>GDSC-VIT</Button>
           </div>
-          <Button onClick={() => { router.push("/"); localStorage.setItem("visited", 'true') }} theme={(theme === 'light' || menu) ? 'light' : 'dark'}>Back</Button>
+          <Button className='hidden md:block' onClick={() => { router.push("/"); localStorage.setItem("visited", 'true') }} theme={(theme === 'light' || menu) ? 'light' : 'dark'}>Back</Button>
         </div>
       )
 
       }
       <div id="myNav" className={`relative flex-col flex overlay ${menu ? "h-full" : "h-0"}`}>
-        <div className="px-16 text-black overlay-content pt-60 overflow-auto">
+        <div className="px-16 overflow-auto text-black overlay-content pt-60">
           <h1 onClick={() => scrollToSection("home")} className='font-sans text-[3rem] font-extrabold w-min text-grey hover:text-pastel_red mb-5 cursor-pointer'>
             Home
           </h1>
