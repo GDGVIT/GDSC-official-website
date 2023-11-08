@@ -37,6 +37,19 @@ export default function RootLayout({
       className={`${neue_machina.variable} text-[10px] md:text-[16px]`}
     >
       <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-Q1SGQCL6BJ"
+          strategy="afterInteractive"
+        />
+        <Script id="gtagconfig" strategy="afterInteractive">
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Q1SGQCL6BJ');
+    `}
+        </Script>
         <Script id="gtag" strategy="afterInteractive">
           {`
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
