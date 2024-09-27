@@ -33,7 +33,7 @@
 		"name": "Emily Gilbert",
 		"position": "Manager",
 		"img": "/team/management/emily.jpeg",
-		"linkedin": "https://www.linkedin.com/in/emily-gilbert-413810271/"
+		"linkedin": "https://www.linkedin.com/in/emilyliz-gilbert/"
 	},
 	{
 		"name": "G Tejojith",
@@ -75,5 +75,63 @@
 		"position": "Manager",
 		"img": "/team/management/suhani_kansal.jpeg",
 		"linkedin": "https://www.linkedin.com/in/suhani-kansal-7939a91b6/"
+	},
+	{
+		"name": "Aditya Acharya",
+		"position": "Manager",
+		"img": "/team/management/aditya_acharya.jpg",
+		"github": "https://github.com/Aditya-Acharya12",
+		"linkedin": "https://www.linkedin.com/in/aditya-acharya-2425ab29a"
+	},
+	{
+		"name": "Aditya Shukla",
+		"position": "Manager",
+		"img": "/team/management/aditya_shukla.jpg",
+		"github": "https://github.com/Adityashukla2006",
+		"linkedin": "https://www.linkedin.com/in/aditya-shukla-99b39124a/"
+	},
+	{
+		"name": "Bhavya Tyagi",
+		"position": "Manager",
+		"img": "/team/management/bhavya.jpg",
+		"linkedin": "https://www.linkedin.com/in/bhavyatyagi2004/"
+	},
+	{
+		"name": "Jiya Shrimalani",
+		"position": "Manager",
+		"img": "/team/management/jiya.jpg",
+		"linkedin": "http://linkedin.com/in/jiya-shrimalani-28839228b"
+	},
+	{
+		"name": "Nirmit Jain",
+		"position": "Manager",
+		"img": "/team/management/nirmit.jpg",
+		"linkedin": "https://www.linkedin.com/in/nirmitjain2110"
+	},
+	{
+		"name": "Pravenraam Shankar",
+		"position": "Manager",
+		"img": "/team/management/praven.jpg",
+		"link": "https://bento.me/praven",
+		"github": "https://github.com/praventhegenius",
+		"linkedin": "https://www.linkedin.com/in/pravenraam/"
+	},
+	{
+		"name": "Rahul Joseph Thomas",
+		"position": "Manager",
+		"img": "/team/management/rahul.jpg",
+		"linkedin": "https://www.linkedin.com/in/rahul-joseph-thomas-318173306?trk=blended-typeahead"
+	},
+	{
+		"name": "Ranjani S",
+		"position": "Manager",
+		"img": "/team/management/ranjani.jpg",
+		"linkedin": "https://www.linkedin.com/in/ranjani-s-2a1954306/"
+	},
+	{
+		"name": "Reenu B",
+		"position": "Manager",
+		"img": "/team/management/reenu.jpg",
+		"linkedin": "https://www.linkedin.com/in/breenu/"
 	}
 ]
