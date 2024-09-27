@@ -36,5 +36,82 @@
 		"img": "/team/design/simar.jpg",
 		"link": "https://www.behance.net/simarbhatiasb7",
 		"linkedin": "http://linkedin.com/in/simar-bhatia-2b9504b8"
+	},
+	{
+		"name": "Aanavi Patel",
+		"position": "Graphic Design",
+		"img": "/team/design/aanvi.jpg",
+		"linkedin": "https://www.linkedin.com/in/aanavi-patel-a58384283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+	},
+	{
+		"name": "Aditya Sharma",
+		"position": "UI/UX",
+		"img": "/team/design/aditya_sharma.jpeg",
+		"github": "https://github.com/Adi07289",
+		"linkedin": "https://www.linkedin.com/in/aditya-sharma-015a00207/"
+	},
+	{
+		"name": "Akshitha Bijith",
+		"position": "UI/UX",
+		"img": "/team/design/akshitha.jpg",
+		"linkedin": "https://www.linkedin.com/in/akshitha-bijith-5b829328b"
+	},
+	{
+		"name": "Ana Khandelwal",
+		"position": "Video and Graphics",
+		"img": "/team/design/ana.jpg",
+		"github": "https://github.com/AnaKhandelwal",
+		"linkedin": "https://www.linkedin.com/in/ana-khandelwal-a8913128b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+	},
+	{
+		"name": "Google Kakati",
+		"position": "UI/UX",
+		"img": "/team/design/google.jpg",
+		"github": "https://github.com/alpha-centauri-pol",
+		"linkedin": "https://www.linkedin.com/in/google-kakati-899525306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+	},
+	{
+		"name": "Radhika Kundnani",
+		"position": "UI/UX",
+		"img": "/team/design/radhika.jpg",
+		"linkedin": "https://www.linkedin.com/in/radhika-kundnani/"
+	},
+	{
+		"name": "Raisa Jose",
+		"position": "UI/UX",
+		"img": "/team/design/raisa.jpeg",
+		"github": "https://github.com/raisaaajose",
+		"linkedin": "https://www.linkedin.com/in/raisa-jose/"
+	},
+	{
+		"name": "Samridh Suresh",
+		"position": "UI/UX",
+		"img": "/team/design/samridh.jpeg",
+		"linkedin": "https://www.linkedin.com/in/samridh-suresh/"
+	},
+	{
+		"name": "Sarah Susan George",
+		"position": "UI/UX",
+		"img": "/team/design/sarah.jpg",
+		"linkedin": "https://www.linkedin.com/in/sarah-george-b2588528a/"
+	},
+	{
+		"name": "Shreya Sethu",
+		"position": "UI/UX",
+		"img": "/team/design/shreya.jpg",
+		"linkedin": "https://www.linkedin.com/in/shreya-sethu-1baab61bb/"
+	},
+	{
+		"name": "Suhani Pasricha",
+		"position": "Graphic Design",
+		"img": "/team/design/suhani_pasricha.jpg",
+		"github": "https://github.com/suhanipasricha",
+		"linkedin": "https://www.linkedin.com/in/suhanipasricha/"
+	},
+	{
+		"name": "Vedant Patel",
+		"position": "UI/UX",
+		"img": "/team/design/vedant.jpg",
+		"linkedin": "https://www.linkedin.com/in/vedant-patel-a750b3288/"
 	}
 ]
