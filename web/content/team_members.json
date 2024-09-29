@@ -136,6 +136,13 @@
 		"linkedin": "https://www.linkedin.com/in/dipit-madan"
 	},
 	{
+		"name": "Jothish Kamal",
+		"position": "App",
+		"img": "/team/technical/jothish.jpg",
+		"github": "https://github.com/jothishkamal",
+		"linkedin": "https://www.linkedin.com/in/jothishkamal"
+	},
+	{
 		"name": "Kurian Avaran Jojo",
 		"position": "Python",
 		"img": "/team/technical/kurian.jpeg",
