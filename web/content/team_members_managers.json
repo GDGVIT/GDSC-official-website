@@ -1,115 +1,137 @@
 [
-  {
-    "name": "Aastha Gupta",
-    "position": "Manager",
-    "img": "/team/management/aastha.jpeg",
-    "linkedin": "https://www.linkedin.com/in/aastha-gupta-5a3824224/"
-  },
-  {
-    "name": "Sanksriti Modi",
-    "position": "Manager",
-    "img": "/team/management/sanskriti.jpeg",
-    "linkedin": "https://www.linkedin.com/in/sanskriti-modi-b1207b229/"
-  },
-  {
-    "name": "Sanvi Chavan",
-    "position": "Manager",
-    "img": "/team/management/sanvi.jpeg",
-    "linkedin": "https://www.linkedin.com/in/sanvi-chavan-849669231/"
-  },
-  {
-    "name": "Arnav Jaggi",
-    "position": "Manager",
-    "img": "/team/management/arnav.jpeg",
-    "linkedin": "https://www.linkedin.com/in/arnavjaggi/"
-  },
-  {
-    "name": "Suhani Kansal",
-    "position": "Manager",
-    "img": "/team/management/suhani_kansal.jpeg",
-    "linkedin": "https://www.linkedin.com/in/suhani-kansal-7939a91b6/"
-  },
-  {
-    "name": "Raghav Trivedi",
-    "position": "Manager",
-    "img": "/team/management/raghav.jpeg",
-    "linkedin": "https://www.linkedin.com/in/raghav-trivedi/"
-  },
-  {
-    "name": "Pranav Piedy",
-    "position": "Manager",
-    "img": "/team/management/pranav.jpeg",
-    "linkedin": "https://www.linkedin.com/in/pranav-piedy-bb4279223/"
-  },
-  {
-    "name": "Rohith Senthil",
-    "position": "Manager",
-    "img": "/team/management/rohith.jpeg"
-  },
-  {
-    "name": "Aditya Chheda",
-    "position": "Manager",
-    "img": "/team/management/aditya_ch.jpeg",
-    "linkedin": "https://www.linkedin.com/in/aditya-chheda-652a9818b/"
-  },
-  {
-    "name": "Aditya Sareen",
-    "position": "Manager",
-    "img": "/team/management/aditya_sareen.jpeg",
-    "linkedin": "https://www.linkedin.com/in/aditya-sareen-607115250/"
-  },
-  {
-    "name": "Aravind Ajith Kumar",
-    "position": "Manager",
-    "img": "/team/management/aravind.jpeg",
-    "linkedin": "https://www.linkedin.com/in/aravind-ajith-kumar-nair-7b588b276/"
-  },
-  {
-    "name": "Dhriti Soni",
-    "position": "Manager",
-    "img": "/team/management/dhriti.jpeg",
-    "linkedin": "https://www.linkedin.com/in/dhriti-soni-343085267/"
-  },
-  {
-    "name": "Disha Jain",
-    "position": "Manager",
-    "img": "/team/management/disha.jpeg",
-    "linkedin": "https://www.linkedin.com/in/disha-jain-7a0167216/"
-  },
-  {
-    "name": "Emily Gilbert",
-    "position": "Manager",
-    "img": "/team/management/emily.jpeg",
-    "linkedin": "https://www.linkedin.com/in/emily-gilbert-413810271/"
-  },
-  {
-    "name": "Karan Bihani",
-    "position": "Manager",
-    "img": "/team/management/karan.jpeg",
-    "linkedin": "https://www.linkedin.com/in/karan-bihani/"
-  },
-  {
-    "name": "Kritika Sharma",
-    "position": "Manager",
-    "img": "/team/management/kritika.jpg",
-    "linkedin": "https://www.linkedin.com/in/kritika-sharma-539400277/"
-  },
-  {
-    "name": "G Tejojith",
-    "position": "Manager",
-    "img": "/team/management/tejojith.jpeg",
-    "linkedin": "https://www.linkedin.com/in/tejojith-g-student-manager/"
-  },
-  {
-    "name": "Yashita Berry",
-    "position": "Manager",
-    "img": "/team/management/yashita_berry.jpeg",
-    "linkedin": "https://www.linkedin.com/in/yashita-berry-695578277/"
-  },
-  {
-    "name": "Yashita Jindal",
-    "position": "Manager",
-    "img": "/team/management/yashita_jindal.jpeg",
-    "linkedin": "https://www.linkedin.com/in/yashita-jindal-4814ab267/"
-  }
+	{
+		"name": "Aditya Chheda",
+		"position": "Manager",
+		"img": "/team/management/aditya_ch.jpeg",
+		"linkedin": "https://www.linkedin.com/in/aditya-chheda-652a9818b/"
+	},
+	{
+		"name": "Aditya Sareen",
+		"position": "Manager",
+		"img": "/team/management/aditya_sareen.jpeg",
+		"linkedin": "https://www.linkedin.com/in/aditya-sareen-607115250/"
+	},
+	{
+		"name": "Aravind Ajith Kumar",
+		"position": "Manager",
+		"img": "/team/management/aravind.jpeg",
+		"linkedin": "https://www.linkedin.com/in/aravind-ajith-kumar-nair-7b588b276/"
+	},
+	{
+		"name": "Arnav Jaggi",
+		"position": "Manager",
+		"img": "/team/management/arnav.jpeg",
+		"linkedin": "https://www.linkedin.com/in/arnavjaggi/"
+	},
+	{
+		"name": "Disha Jain",
+		"position": "Manager",
+		"img": "/team/management/disha.jpeg",
+		"linkedin": "https://www.linkedin.com/in/disha-jain-7a0167216/"
+	},
+	{
+		"name": "Emily Gilbert",
+		"position": "Manager",
+		"img": "/team/management/emily.jpeg",
+		"linkedin": "https://www.linkedin.com/in/emilyliz-gilbert/"
+	},
+	{
+		"name": "G Tejojith",
+		"position": "Manager",
+		"img": "/team/management/tejojith.jpg",
+		"linkedin": "https://www.linkedin.com/in/tejojith-g-student-manager/"
+	},
+	{
+		"name": "Karan Bihani",
+		"position": "Manager",
+		"img": "/team/management/karan.jpeg",
+		"linkedin": "https://www.linkedin.com/in/karan-bihani/"
+	},
+	{
+		"name": "Kritika Sharma",
+		"position": "Manager",
+		"img": "/team/management/kritika.jpg",
+		"linkedin": "https://www.linkedin.com/in/kritika-sharma-539400277/"
+	},
+	{
+		"name": "Pranav Piedy",
+		"position": "Manager",
+		"img": "/team/management/pranav.jpeg",
+		"linkedin": "https://www.linkedin.com/in/pranav-piedy-bb4279223/"
+	},
+	{
+		"name": "Raghav Trivedi",
+		"position": "Manager",
+		"img": "/team/management/raghav.jpeg",
+		"linkedin": "https://www.linkedin.com/in/raghav-trivedi/"
+	},
+	{
+		"name": "Rohith Senthil",
+		"position": "Manager",
+		"img": "/team/management/rohith.jpeg"
+	},
+	{
+		"name": "Suhani Kansal",
+		"position": "Manager",
+		"img": "/team/management/suhani_kansal.jpeg",
+		"linkedin": "https://www.linkedin.com/in/suhani-kansal-7939a91b6/"
+	},
+	{
+		"name": "Aditya Acharya",
+		"position": "Manager",
+		"img": "/team/management/aditya_acharya.jpg",
+		"github": "https://github.com/Aditya-Acharya12",
+		"linkedin": "https://www.linkedin.com/in/aditya-acharya-2425ab29a"
+	},
+	{
+		"name": "Aditya Shukla",
+		"position": "Manager",
+		"img": "/team/management/aditya_shukla.jpg",
+		"github": "https://github.com/Adityashukla2006",
+		"linkedin": "https://www.linkedin.com/in/aditya-shukla-99b39124a/"
+	},
+	{
+		"name": "Bhavya Tyagi",
+		"position": "Manager",
+		"img": "/team/management/bhavya.jpg",
+		"linkedin": "https://www.linkedin.com/in/bhavyatyagi2004/"
+	},
+	{
+		"name": "Jiya Shrimalani",
+		"position": "Manager",
+		"img": "/team/management/jiya.jpg",
+		"linkedin": "http://linkedin.com/in/jiya-shrimalani-28839228b"
+	},
+	{
+		"name": "Nirmit Jain",
+		"position": "Manager",
+		"img": "/team/management/nirmit.jpg",
+		"linkedin": "https://www.linkedin.com/in/nirmitjain2110"
+	},
+	{
+		"name": "Pravenraam Shankar",
+		"position": "Manager",
+		"img": "/team/management/praven.jpg",
+		"link": "https://bento.me/praven",
+		"github": "https://github.com/praventhegenius",
+		"linkedin": "https://www.linkedin.com/in/pravenraam/"
+	},
+	{
+		"name": "Rahul Joseph Thomas",
+		"position": "Manager",
+		"img": "/team/management/rahul.jpg",
+		"linkedin": "https://www.linkedin.com/in/rahul-joseph-thomas-318173306?trk=blended-typeahead"
+	},
+	{
+		"name": "Ranjani S",
+		"position": "Manager",
+		"img": "/team/management/ranjani.jpg",
+		"linkedin": "https://www.linkedin.com/in/ranjani-s-2a1954306/"
+	},
+	{
+		"name": "Reenu B",
+		"position": "Manager",
+		"img": "/team/management/reenu.jpg",
+		"linkedin": "https://www.linkedin.com/in/breenu/"
+	}
 ]

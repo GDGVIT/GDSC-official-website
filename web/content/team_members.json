@@ -1,155 +1,202 @@
 [
-  {
-    "name": "Anuj Parihar",
-    "position": "Backend and Security",
-    "img": "/team/technical/anuj.jpeg",
-    "github":"https://github.com/bearts",
-    "linkedin":"https://www.linkedin.com/in/anujpflash/"
-  },
-  {
-    "name": "Dhruv Shah",
-    "position": "Backend",
-    "img": "/team/technical/dhruv.jpeg",
-    "github":"https://github.com/Dhruv9449",
-    "linkedin":"https://www.linkedin.com/in/dhruv9449/"
-  },
-  {
-    "name":"Anirudh Mishra",
-    "position":"Full Stack",
-    "img":"/team/technical/anirudh.jpeg",
-    "github":"https://github.com/anirudhgray",
-    "linkedin":"https://www.linkedin.com/in/anirudh-mishra/"
-  },
-  {
-    "name":"Vignesh Natarajan",
-    "position":"Backend",
-    "img":"/team/technical/vignesh.jpeg",
-    "linkedin":"https://www.linkedin.com/in/0x5b",
-    "github":"https://github.com/0x5b-5245444143544544-5d"
-  },
-  {
-    "name": "Rudrank Basant",
-    "position": "App and Backend",
-    "img": "/team/technical/rudrank.jpeg",
-    "linkedin":"https://www.linkedin.com/in/rudrankbasant/",
-    "github":"https://github.com/rudrankbasant"
-  },
-  {
-    "name": "Sayar Bhattacharyya",
-    "position": "Frontend",
-    "img": "/team/technical/sayar.jpeg",
-    "github":"https://github.com/SayarB",
-    "linkedin":"https://www.linkedin.com/in/sayar-bhattacharyya/"
-  },
-  {
-    "name": "Prashanna Rajbhandari",
-    "position": "App",
-    "img": "/team/technical/prashanna.jpg",
-    "github":"https://github.com/PrashannaR",
-    "linkedin":"https://www.linkedin.com/in/prashannar/"
-  },
-  {
-    "name": "Ameya Kore",
-    "position": "Full Stack",
-    "img": "/team/technical/ameya.jpeg",
-    "linkedin":"https://www.linkedin.com/in/ameya-kore-925620239/"
-  },
-  {
-    "name": "Sankhayan Bhattacharjee",
-    "position": "Full Stack and Game",
-    "img": "/team/technical/sankhayan.jpeg",
-    "github":"https://github.com/Lioncat2002",
-    "linkedin":"https://www.linkedin.com/in/sankhayan-bhattacharjee-996336220/"
-  },
-  {
-    "name":"Abhijeet Bhardwaj",
-    "position":"App",
-    "img":"/team/technical/abhijeet.jpeg",
-    "github":"https://github.com/abhijeet-Bh",
-    "linkedin":"https://www.linkedin.com/in/abhijeet-bh/"
-  },
-  {
-    "name": "John Tony",
-    "position": "Backend",
-    "img": "/team/technical/john.jpeg",
-    "github":"https://github.com/johntony366",
-    "linkedin":"https://www.linkedin.com/in/johntony366/"
-  },
-  {
-    "name": "Chandram Dutta",
-    "position": "App",
-    "img": "/team/technical/chandram.jpeg",
-    "github":"https://github.com/Chandram-Dutta",
-    "linkedin":"https://www.linkedin.com/in/chandramdutta/"
-  },
-  {
-    "name": "Rounak Agrawal",
-    "position": "App and Frontend",
-    "img": "/team/technical/rounak.jpeg",
-    "github":"https://github.com/userrounakk",
-    "linkedin":"https://www.linkedin.com/in/userrounakk/"
-  },
-  {
-    "name": "Pratham Gupta",
-    "position": "Frontend",
-    "img": "/team/technical/pratham.jpeg",
-    "github":"https://github.com/SafeTorpedo"
-  },
-  {
-    "name": "Aarabi",
-    "position": "Python",
-    "img": "/team/technical/aarabi.jpeg",
-    "linkedin":"https://www.linkedin.com/in/aarabi-balakrishnan-88629b28a/"
-  },
-  {
-    "name": "Aditya Chowdhary",
-    "position": "Backend",
-    "img": "/team/technical/aditya_chowdhary.jpeg",
-    "github":"https://github.com/Aditya-Chowdhary"
-  },
-  {
-    "name": "Dev Keshwani",
-    "position": "App",
-    "img": "/team/technical/dev.jpeg",
-    "github":"https://github.com/dk-a-dev"
-  },
-  {
-    "name": "Divyanshu Singh",
-    "position": "Frontend",
-    "img": "/team/technical/divyanshu.png",
-    "github":"https://github.com/isinghdivyanshu",
-    "linkedin":"https://www.linkedin.com/in/isinghdivyanshu/"
-  },
-  {
-    "name": "Hari Govind",
-    "position": "App and Security",
-    "img": "/team/technical/hari.png"
-  },
-  {
-    "name": "Rupaak S",
-    "position": "Frontend",
-    "img": "/team/technical/rupaak.jpeg",
-    "github":"https://github.com/RupaakSrinivas",
-    "linkedin":"https://www.linkedin.com/in/rupaaksrinivas/"
-  },
-  {
-    "name": "Sidhant S Srivastava",
-    "position": "Machine Learning",
-    "img": "/team/technical/sidhant.jpeg",
-    "github":"https://github.com/sidhant-sriv",
-    "linkedin":"https://www.linkedin.com/in/sidhant-srivastava-41803620b/"
-  },
-  {
-    "name": "Soham Ghugare",
-    "position": "Backend",
-    "img": "/team/technical/soham.jpeg",
-    "github":"https://github.com/SohamGhugare",
-    "linkedin":"https://www.linkedin.com/in/soham-ghugare/"
-  },
-  {
-    "name": "Souvik Mahanta",
-    "position": "Security",
-    "img": "/team/technical/souvik.jpeg",
-    "linkedin":"https://www.linkedin.com/in/souvik-mahanta/"
-  }
+	{
+		"name": "Aarabi",
+		"position": "Python",
+		"img": "/team/technical/aarabi.jpeg",
+		"linkedin": "https://www.linkedin.com/in/aarabi-balakrishnan-88629b28a/"
+	},
+	{
+		"name": "Abhijeet Bhardwaj",
+		"position": "App",
+		"img": "/team/technical/abhijeet.jpeg",
+		"github": "https://github.com/abhijeet-Bh",
+		"linkedin": "https://www.linkedin.com/in/abhijeet-bh/"
+	},
+	{
+		"name": "Aditya Chowdhary",
+		"position": "Backend",
+		"img": "/team/technical/aditya_chowdhary.jpeg",
+		"github": "https://github.com/Aditya-Chowdhary"
+	},
+	{
+		"name": "Ameya Kore",
+		"position": "Full Stack",
+		"img": "/team/technical/ameya.jpeg",
+		"linkedin": "https://www.linkedin.com/in/ameya-kore-925620239/"
+	},
+	{
+		"name": "Chandram Dutta",
+		"position": "App",
+		"img": "/team/technical/chandram.jpeg",
+		"github": "https://github.com/Chandram-Dutta",
+		"linkedin": "https://www.linkedin.com/in/chandramdutta/"
+	},
+	{
+		"name": "Dev Keshwani",
+		"position": "App",
+		"img": "/team/technical/dev.jpeg",
+		"github": "https://github.com/dk-a-dev"
+	},
+	{
+		"name": "Divyanshu Singh",
+		"position": "Full Stack",
+		"img": "/team/technical/divyanshu.png",
+		"github": "https://github.com/isinghdivyanshu",
+		"linkedin": "https://www.linkedin.com/in/isinghdivyanshu/"
+	},
+	{
+		"name": "Hari Govind",
+		"position": "App and Security",
+		"img": "/team/technical/hari.png"
+	},
+	{
+		"name": "John Tony",
+		"position": "Backend",
+		"img": "/team/technical/john.jpeg",
+		"github": "https://github.com/johntony366",
+		"linkedin": "https://www.linkedin.com/in/johntony366/"
+	},
+	{
+		"name": "Prashanna Rajbhandari",
+		"position": "App",
+		"img": "/team/technical/prashanna.jpg",
+		"github": "https://github.com/PrashannaR",
+		"linkedin": "https://www.linkedin.com/in/prashannar/"
+	},
+	{
+		"name": "Pratham Gupta",
+		"position": "Frontend",
+		"img": "/team/technical/pratham.jpeg",
+		"github": "https://github.com/SafeTorpedo"
+	},
+	{
+		"name": "Rounak Agrawal",
+		"position": "App and Frontend",
+		"img": "/team/technical/rounak.jpeg",
+		"github": "https://github.com/userrounakk",
+		"linkedin": "https://www.linkedin.com/in/userrounakk/"
+	},
+	{
+		"name": "Rupaak S",
+		"position": "Frontend",
+		"img": "/team/technical/rupaak.jpeg",
+		"github": "https://github.com/RupaakSrinivas",
+		"linkedin": "https://www.linkedin.com/in/rupaaksrinivas/"
+	},
+	{
+		"name": "Sankhayan Bhattacharjee",
+		"position": "Backend, Game and Blockchain",
+		"img": "/team/technical/sankhayan.png",
+		"link": "https://lioncatdevstudio.itch.io/",
+		"github": "https://github.com/Lioncat2002",
+		"linkedin": "https://www.linkedin.com/in/sankhayan-bhattacharjee-996336220/"
+	},
+	{
+		"name": "Sayar Bhattacharyya",
+		"position": "Frontend",
+		"img": "/team/technical/sayar.jpeg",
+		"github": "https://github.com/SayarB",
+		"linkedin": "https://www.linkedin.com/in/sayar-bhattacharyya/"
+	},
+	{
+		"name": "Sidhant Srivastava",
+		"position": "Machine Learning",
+		"img": "/team/technical/sidhant.jpg",
+		"link": "https://www.sidsodsud.tech/",
+		"github": "https://www.github.com/sidhant-sriv",
+		"linkedin": "https://www.linkedin.com/in/sidhant-srivastava-41803620b/"
+	},
+	{
+		"name": "Souvik Mahanta",
+		"position": "Cyber Security",
+		"img": "/team/technical/souvik.jpeg",
+		"github": "https://github.com/souvik03-136",
+		"linkedin": "https://www.linkedin.com/in/souvik-mahanta/"
+	},
+	{
+		"name": "Aakaash SS",
+		"position": "Security",
+		"img": "/team/technical/aakaash.jpg",
+		"link": "https://ssaakaash.in",
+		"github": "https://github.com/ssaakaash",
+		"linkedin": " https://www.linkedin.com/in/ssaakaash"
+	},
+	{
+		"name": "Aman Singh",
+		"position": "Backend",
+		"img": "/team/technical/aman.jpg",
+		"github": "https://github.com/DevloperAmanSingh",
+		"linkedin": "https://www.linkedin.com/in/amansingh2112"
+	},
+	{
+		"name": "Dipit Madan",
+		"position": "Python",
+		"img": "/team/technical/dipit.jpeg",
+		"github": "https://github.com/Dipit12",
+		"linkedin": "https://www.linkedin.com/in/dipit-madan"
+	},
+	{
+		"name": "Jothish Kamal",
+		"position": "App",
+		"img": "/team/technical/jothish.jpg",
+		"github": "https://github.com/jothishkamal",
+		"linkedin": "https://www.linkedin.com/in/jothishkamal"
+	},
+	{
+		"name": "Kurian Avaran Jojo",
+		"position": "Python",
+		"img": "/team/technical/kurian.jpeg",
+		"github": "https://github.com/polyesterswing",
+		"linkedin": "https://www.linkedin.com/in/kurian-jojo-544a54215"
+	},
+	{
+		"name": "Mudit Pandey",
+		"position": "Backend",
+		"img": "/team/technical/mudit.jpg",
+		"github": "https://github.com/creationsofm7",
+		"linkedin": "https://www.linkedin.com/in/mudit-m7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+	},
+	{
+		"name": "Nitin Kumar Pandey",
+		"position": "Frontend",
+		"img": "/team/technical/nitin.jpg",
+		"github": "https://github.com/NitinTheGreat",
+		"linkedin": "https://linkedin.com/in/nitinkrpandey"
+	},
+	{
+		"name": "Noel Alex",
+		"position": "AI/ML",
+		"img": "/team/technical/noel.jpg",
+		"github": "https://github.com/Noel-Alex",
+		"linkedin": "https://www.linkedin.com/in/noel-alex-b1731128b/"
+	},
+	{
+		"name": "P Geetha Pranay",
+		"position": "Backend",
+		"img": "/team/technical/pranay.jpg",
+		"github": "https://github.com/Geethapranay1",
+		"linkedin": "https://www.linkedin.com/in/geetha-pranay-1b97192b4"
+	},
+	{
+		"name": "Rayan Vishal Madan",
+		"position": "Game Dev",
+		"img": "/team/technical/rayan.jpg",
+		"link": "https://graphicmismatch.itch.io",
+		"github": "https://github.com/graphicmismatch",
+		"linkedin": "https://www.linkedin.com/in/rayan-madan"
+	},
+	{
+		"name": "Rujin Devkota",
+		"position": "App",
+		"img": "/team/technical/rujin.jpg",
+		"github": "https://github.com/rujin2003",
+		"linkedin": "https://www.linkedin.com/in/rujin-devkota/"
+	},
+	{
+		"name": "Sarvesh Dakhore",
+		"position": "Backend",
+		"img": "/team/technical/sarvesh.jpg",
+		"github": "https://github.com/sarveshdakhore",
+		"linkedin": "https://www.linkedin.com/in/sarveshdakhore"
+	}
 ]
